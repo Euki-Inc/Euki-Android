@@ -1,0 +1,142 @@
+{
+  "id": "miscarriage",
+  "icon": "IconMiscarriage",
+  "content": "miscarriage_content",
+  "selectable_row_items": [
+    {
+      "id": "treatment_options",
+      "icon": "IconMiscarriage",
+      "content": "treatment_options_content",
+      "source": "american_family_physician",
+      "bold_strings": [
+        "treatment_options_content_bold_1",
+        "treatment_options_content_bold_2",
+        "treatment_options_content_bold_3"
+      ]
+    },
+    {
+      "id": "emotional_care",
+      "icon": "IconMiscarriage",
+      "content": "emotional_care_content",
+      "source": "everyday_feminism"
+    },
+    {
+      "id": "shared_stories",
+      "icon": "IconMiscarriage",
+      "expandable_items": [
+        {
+          "id": "shared_stories_heading_1",
+          "content": "shared_stories_content_1",
+          "links": {
+            "Sue": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html",
+            "Sue's": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html"
+          }
+        },
+        {
+          "id": "shared_stories_heading_2",
+          "content": "shared_stories_content_2",
+          "links": {
+            "Jennine": "http://www.mothermag.com/miscarriage-stories/",
+            "Jennine's": "http://www.mothermag.com/miscarriage-stories/"
+          }
+        },
+        {
+          "id": "shared_stories_heading_3",
+          "content": "shared_stories_content_3",
+          "links": {
+            "Gabrielle": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html",
+            "Gabrielle's": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html"
+          }
+        },
+        {
+          "id": "shared_stories_heading_4",
+          "content": "shared_stories_content_4",
+          "links": {
+            "Lisa": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html",
+            "Lisa's": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html"
+          }
+        },
+        {
+          "id": "shared_stories_heading_5",
+          "content": "shared_stories_content_5",
+          "links": {
+            "Irene": "http://www.mothermag.com/miscarriage-stories/",
+            "Irene's": "http://www.mothermag.com/miscarriage-stories/"
+          }
+        },
+        {
+          "id": "shared_stories_heading_6",
+          "content": "shared_stories_content_6",
+          "links": {
+            "Trisha": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html",
+            "Trisha's": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html"
+          }
+        },
+        {
+          "id": "shared_stories_heading_7",
+          "content": "shared_stories_content_7",
+          "links": {
+            "Kelli": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html",
+            "Kelli's": "https://www.thecut.com/2014/09/15-women-on-their-miscarriages.html"
+          }
+        },
+        {
+          "id": "shared_stories_heading_8",
+          "content": "shared_stories_content_8",
+          "links": {
+            "Jimasia": "http://www.mothermag.com/miscarriage-stories/",
+            "Jimasia's": "http://www.mothermag.com/miscarriage-stories/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "miscarriage_faqs",
+      "icon": "IconMiscarriage",
+      "content": "miscarriage_faqs_content",
+      "source": "miscarriage_source",
+      "expandable_items": [
+        {
+          "id": "miscarriage_faqs_heading_1",
+          "content": "miscarriage_faqs_content_1"
+        },
+        {
+          "id": "miscarriage_faqs_heading_2",
+          "content": "miscarriage_faqs_content_2"
+        },
+        {
+          "id": "miscarriage_faqs_heading_3",
+          "content": "miscarriage_faqs_content_3"
+        },
+        {
+          "id": "miscarriage_faqs_heading_4",
+          "content": "miscarriage_faqs_content_4"
+        },
+        {
+          "id": "miscarriage_faqs_heading_5",
+          "content": "miscarriage_faqs_content_5"
+        },
+        {
+          "id": "miscarriage_faqs_heading_6",
+          "content": "miscarriage_faqs_content_6",
+          "links": {
+            "Miscarriage Association": "https://www.miscarriageassociation.org.uk/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "miscarriage_resources",
+      "icon": "IconMiscarriage",
+      "content": "miscarriage_resources_content",
+      "links": {
+        "All-Options Talkline": "https://www.all-options.org/find-support/talkline/",
+        "The Miscarriage Association": "https://www.miscarriageassociation.org.uk/",
+        "@IHadaMiscarriage": "https://www.instagram.com/ihadamiscarriage/",
+        "aquí": "http://shop.drjessicazucker.com/",
+        "here": "http://shop.drjessicazucker.com/",
+        "Miscarriage and Abortion Hotline": "https://www.mahotline.org/"
+      }
+    }
+  ]
+}

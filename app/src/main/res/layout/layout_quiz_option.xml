@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_x2_5"
+    android:layout_marginRight="@dimen/dimen_x2_5"
+    android:layout_marginTop="@dimen/dimen_x1_5"
+    android:layout_marginBottom="@dimen/dimen_x1_5"
+    android:orientation="horizontal">
+    
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_x1_6"
+        android:src="@drawable/ic_quiz_option_on"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When I have sex"
+        style="@style/BodyDefault"/>
+
+</LinearLayout>

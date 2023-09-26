@@ -1,0 +1,16 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.kollectivemobile.euki.ui.common.views.SelectableButton
+        android:id="@+id/sb_item"
+        app:title="@string/bleeding_size_2"
+        app:singleSelection="true"
+        app:imageRes="@drawable/icon_bleeding_size_2"
+        app:isRadio="true"
+        android:layout_centerHorizontal="true"
+        style="@style/SelectableButton"/>
+
+</RelativeLayout>

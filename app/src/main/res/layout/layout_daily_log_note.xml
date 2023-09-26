@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ExpandableContainer">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        style="@style/DailyItemNameContainer">
+        
+        <View
+            android:id="@+id/v_circle"
+            android:backgroundTint="@color/note"
+            style="@style/DailyItemCircle"/>
+
+        <TextView
+            android:text="@string/note"
+            style="@style/DailyItemText"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_x3_5"
+            android:paddingBottom="@dimen/dimen_x3_5"
+            android:paddingRight="@dimen/dimen_x2_5"
+            android:hint="@string/whats_up"
+            android:background="@color/pale_lavender_50"
+            style="@style/EditText"/>
+
+        <View
+            style="@style/ViewSeparator"/>
+
+        <TextView
+            android:id="@+id/tv_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x2_5"
+            android:layout_marginBottom="@dimen/dimen_x6_5"
+            android:text="0/200"
+            android:gravity="right"
+            style="@style/DaysOfWeek" />
+
+    </LinearLayout>
+
+</LinearLayout>

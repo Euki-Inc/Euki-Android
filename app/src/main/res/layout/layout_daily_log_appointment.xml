@@ -1,0 +1,43 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingHorizontal="0dp"
+    style="@style/ExpandableContainer">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:paddingHorizontal="@dimen/dimen_x3_5"
+        style="@style/DailyItemNameContainer">
+        
+        <View
+            android:id="@+id/v_circle"
+            android:backgroundTint="@color/appointment"
+            style="@style/DailyItemCircle"/>
+
+        <TextView
+            android:text="@string/appointment"
+            style="@style/DailyItemText"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/layout_daily_log_appointment_edit" />
+
+        <Button
+            android:id="@+id/btn_set_future_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_x8_5"
+            android:text="@string/future_appointment"
+            android:background="@null"
+            android:gravity="center"
+            style="@style/LinkOrButtonInactiveOrSecondary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

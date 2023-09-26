@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <LinearLayout
+        android:layout_above="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_x10_5"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/dimen_x2_5"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_5_title"
+            android:layout_marginBottom="@dimen/dimen_x6_5"
+            style="@style/TextStyle5"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_x3_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/onboarding_terms_of_service"
+                    android:layout_marginBottom="@dimen/dimen_x6_5"
+                    style="@style/TextStyle7"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_x19_5">
+
+        <Button
+            android:id="@+id/btn_agree"
+            android:text="@string/i_agree"
+            android:layout_marginBottom="@dimen/dimen_x3_5"
+            style="@style/PurpleButton" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/blue_button_width"
+            android:text="@string/cancel"
+            style="@style/PurpleBorderedButton" />
+
+    </LinearLayout>
+
+</RelativeLayout>

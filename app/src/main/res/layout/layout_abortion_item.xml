@@ -1,0 +1,23 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_x3_5"
+    android:layout_marginBottom="@dimen/dimen_x3_5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_x6_5"
+        android:text="Before the abortion, clinic staff might suggest a pregnancy test, complete an ultrasound, and do routine blood work."
+        style="@style/BodyDefault"/>
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_dilation_1"/>
+
+</LinearLayout>

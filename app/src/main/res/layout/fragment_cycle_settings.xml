@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_x1_100"
+        android:layout_marginBottom="@dimen/dimen_x9_5"
+        android:layout_marginHorizontal="@dimen/dimen_x3_5"
+        android:text="@string/cycle_settings_title"
+        style="@style/TextStyle39"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/euki_main"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x12_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_x3_5"
+            android:layout_marginRight="@dimen/dimen_x2_5"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/stch_track_period"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cycle_settings_option_1_title"
+                style="@style/TextStyle40"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x1_5"
+                android:text="@string/cycle_settings_option_1_text"
+                style="@style/TextStyle41"/>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/stch_track_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x4_5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_x3_5"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/euki_main"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x1_100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_x3_5"
+            android:layout_marginRight="@dimen/dimen_x2_5"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/stch_period_prediction"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cycle_settings_option_2_title"
+                style="@style/TextStyle40"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x1_5"
+                android:text="@string/cycle_settings_option_2_text"
+                style="@style/TextStyle41"/>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/stch_period_prediction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x4_5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_x3_5"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/euki_main"/>
+
+</LinearLayout>

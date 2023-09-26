@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_x3_5"
+    android:paddingRight="@dimen/dimen_x3_5"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x8_10"
+        android:text="Breast self exam"
+        android:gravity="center_vertical"
+        style="@style/LinkExpandableOnTap"/>
+
+    <include
+        layout="@layout/layout_appointments_fields"/>
+
+</LinearLayout>

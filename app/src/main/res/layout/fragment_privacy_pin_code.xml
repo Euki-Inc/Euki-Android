@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_code"
+            android:textSize="@dimen/text_size_18sp"
+            android:gravity="center"
+            style="@style/BodyDefault"/>
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x4_5"
+            android:text="@string/wrong_pass"
+            android:textSize="@dimen/text_size_15sp"
+            android:textColor="@android:color/holo_red_light"
+            android:gravity="center"
+            style="@style/BodyDefault"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_x6_5"
+        android:paddingRight="@dimen/dimen_x6_5"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_x19_5">
+
+        <LinearLayout
+            style="@style/WrapContainer">
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/dimen_x4_5"
+                style="@style/CodeDigitContainer">
+
+                <TextView
+                    android:id="@+id/tv_digit_1"
+                    android:text="1"
+                    android:tag="1"
+                    style="@style/CodeDigitText"/>
+                
+                <View
+                    android:id="@+id/v_digit_1"
+                    android:tag="1"
+                    style="@style/CodeDigitLine"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/dimen_x4_5"
+                style="@style/CodeDigitContainer">
+
+                <TextView
+                    android:id="@+id/tv_digit_2"
+                    android:text="2"
+                    android:tag="2"
+                    style="@style/CodeDigitText"/>
+
+                <View
+                    android:id="@+id/v_digit_2"
+                    android:tag="2"
+                    style="@style/CodeDigitLine"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/dimen_x4_5"
+                style="@style/CodeDigitContainer">
+
+                <TextView
+                    android:id="@+id/tv_digit_3"
+                    android:text="3"
+                    android:tag="3"
+                    style="@style/CodeDigitText"/>
+
+                <View
+                    android:id="@+id/v_digit_3"
+                    android:tag="3"
+                    style="@style/CodeDigitLine"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/CodeDigitContainer">
+
+                <TextView
+                    android:id="@+id/tv_digit_4"
+                    android:text="4"
+                    android:tag="4"
+                    style="@style/CodeDigitText"/>
+
+                <View
+                    android:id="@+id/v_digit_4"
+                    android:tag="4"
+                    style="@style/CodeDigitLine"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_x6_5"
+            style="@style/WrapContainer">
+
+            <TextView
+                android:id="@+id/tv_button_1"
+                android:text="1"
+                android:tag="1"
+                android:layout_marginRight="@dimen/dimen_x7_5"
+                style="@style/CodeButton"/>
+
+            <TextView
+                android:id="@+id/tv_button_2"
+                android:text="2"
+                android:tag="2"
+                android:layout_marginRight="@dimen/dimen_x7_5"
+                style="@style/CodeButton"/>
+
+            <TextView
+                android:id="@+id/tv_button_3"
+                android:text="3"
+                android:tag="3"
+                style="@style/CodeButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_x5_5"
+            style="@style/WrapContainer">
+
+            <TextView
+                android:id="@+id/tv_button_4"
+                android:text="4"
+                android:tag="4"
+                android:layout_marginRight="@dimen/dimen_x7_5"
+                style="@style/CodeButton"/>
+
+            <TextView
+                android:id="@+id/tv_button_5"
+                android:text="5"
+                android:tag="5"
+                android:layout_marginRight="@dimen/dimen_x7_5"
+                style="@style/CodeButton"/>
+
+            <TextView
+                android:id="@+id/tv_button_6"
+                android:text="6"
+                android:tag="6"
+                style="@style/CodeButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_x5_5"
+            style="@style/WrapContainer">
+
+            <TextView
+                android:id="@+id/tv_button_7"
+                android:text="7"
+                android:tag="7"
+                android:layout_marginRight="@dimen/dimen_x7_5"
+                style="@style/CodeButton"/>
+
+            <TextView
+                android:id="@+id/tv_button_8"
+                android:text="8"
+                android:tag="8"
+                android:layout_marginRight="@dimen/dimen_x7_5"
+                style="@style/CodeButton"/>
+
+            <TextView
+                android:id="@+id/tv_button_9"
+                android:text="9"
+                android:tag="9"
+                style="@style/CodeButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_x5_5"
+            style="@style/WrapContainer">
+
+            <View
+                android:layout_width="@dimen/dimen_x10_6"
+                android:layout_height="@dimen/dimen_x10_6"
+                android:layout_marginRight="@dimen/dimen_x7_5" />
+
+            <TextView
+                android:id="@+id/tv_button_0"
+                android:text="0"
+                android:tag="0"
+                android:layout_marginRight="@dimen/dimen_x7_5"
+                style="@style/CodeButton"/>
+
+            <ImageView
+                android:id="@+id/tv_button_back"
+                android:layout_width="@dimen/dimen_x10_6"
+                android:layout_height="@dimen/dimen_x10_6"
+                android:tag="-"
+                android:src="@drawable/ic_code_back"
+                android:tint="@color/iris"
+                android:scaleType="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_set_pin"
+            android:text="@string/set_pin"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_x7_5"
+            style="@style/PurpleButton" />
+
+    </LinearLayout>
+
+</RelativeLayout>

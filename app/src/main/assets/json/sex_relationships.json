@@ -1,0 +1,133 @@
+{
+  "id": "sexuality",
+  "icon": "IconSexuality",
+  "content": "sexuality_content",
+  "selectable_row_items": [
+    {
+      "id": "sexuality_101",
+      "icon": "IconSexuality",
+      "content": "sexuality_101_content",
+      "links": {
+        "resources": "sexuality_resources",
+        "recursos": "sexuality_resources"
+      },
+      "expandable_items": [
+        {
+          "id": "sexuality_101_heading_1",
+          "content": "sexuality_101_content_1",
+          "links": {
+            "mira esta lista de definiciones": "http://www.scarleteen.com/article/advice/whats_sex",
+            "Scarleteen's": "http://www.scarleteen.com/article/advice/whats_sex",
+            "Scarleteen": "http://www.scarleteen.com/article/advice/whats_sex",
+            "this list of definitions": "http://transstudent.org/definitions"
+          }
+        },
+        {
+          "id": "sexuality_101_heading_2",
+          "content": "sexuality_101_content_2"
+        },
+        {
+          "id": "sexuality_101_heading_3",
+          "content": "sexuality_101_content_3",
+          "links": {
+            "esta lista de Scarleteen": "http://www.scarleteen.com/article/advice/whats_sex",
+            "this Scarleteen list": "http://www.scarleteen.com/article/advice/whats_sex"
+          }
+        },
+        {
+          "id": "sexuality_101_heading_4",
+          "content": "sexuality_101_content_4",
+          "links": {
+            "glosario de Sex Etc": "https://sexetc.org/sex-ed/sex-terms/",
+            "Sex Etc’s glossary": "https://sexetc.org/sex-ed/sex-terms/"
+          }
+        },
+        {
+          "id": "sexuality_101_heading_5",
+          "content": "sexuality_101_content_5",
+          "links": {
+            "Scarleteen": "http://www.scarleteen.com/article/bodies/with_pleasure_a_view_of_whole_sexual_anatomy_for_every_body"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sexuality_consent",
+      "content": "sexuality_consent_content",
+      "icon": "IconSexuality"
+    },
+    {
+      "id": "sexuality_practicing_abstinence",
+      "icon": "IconSexuality",
+      "content": "sexuality_practicing_abstinence_content"
+    },
+    {
+      "id": "sexuality_improving_sex_life",
+      "icon": "IconSexuality",
+      "content": "sexuality_improving_sex_life_content",
+      "links": {
+        "Scareteen": "http://www.scarleteen.com/",
+        "Sex etc": "https://sexetc.org/",
+        "Mira este vídeo": "https://www.youtube.com/watch?v=xoYxd3E3UXU",
+        "video": "https://www.youtube.com/watch?v=xoYxd3E3UXU",
+        "Scarleteen ": "http://www.scarleteen.com/article/relationships/be_a_blabbermouth_the_whys_whats_and_hows_of_talking_about_sex_with_a_partner"
+      }
+    },
+    {
+      "id": "sexuality_resources",
+      "icon": "IconSexuality",
+      "expandable_items": [
+        {
+          "id": "sexuality_resources_heading_1",
+          "content": "sexuality_resources_content_1",
+          "links": {
+            "Línea de Texto para crisis": "https://www.crisistextline.org/",
+            "Crisis Text Line": "https://www.crisistextline.org/",
+            "Love Is Respect": "http://www.loveisrespect.org/",
+            "Línea Nacional contra la Violencia Doméstica": "https://www.thehotline.org/",
+            "National Domestic Violence Hotline": "https://www.thehotline.org/",
+            "Línea de Ayuda Nacional Online de Asalto Sexual": "https://www.rainn.org/about-national-sexual-assault-telephone-hotline",
+            "National Sexual Assault Hotline": "https://www.rainn.org/about-national-sexual-assault-telephone-hotline",
+            "Línea de ayuda de la Red Nacional de Prevención del Suicidio": "https://suicidepreventionlifeline.org/",
+            "The National Suicide Prevention Lifeline": "https://suicidepreventionlifeline.org/",
+            "The Trevor Project": "https://www.thetrevorproject.org/get-help-now/"
+          }
+        },
+        {
+          "id": "sexuality_resources_heading_2",
+          "content": "sexuality_resources_content_2",
+          "links": {
+            "la Carta de Derechos de Babeland": "http://www.babeland.com/sexinfo/features/babeland_bill_of_rights",
+            "Bill of Rights": "http://www.babeland.com/sexinfo/features/babeland_bill_of_rights",
+            "Pregúntale a Alicia": "http://goaskalice.columbia.edu/category/sexual-reproductive-health",
+            "Go Ask Alice": "https://goaskalice.columbia.edu/",
+            "Scarleteen": "http://www.scarleteen.com/",
+            "Sex, etc": "https://sexetc.org/",
+            "TeenSource": "http://www.teensource.org"
+          }
+        },
+        {
+          "id": "sexuality_resources_heading_3",
+          "content": "sexuality_resources_content_3",
+          "links": {
+            "Gender Spectrum": "https://www.genderspectrum.org/",
+            "YouTube": "https://www.youtube.com/channel/UCNJcf6GSphlzT8xIcNUqcwg",
+            "YouTube channel": "https://www.youtube.com/channel/UCNJcf6GSphlzT8xIcNUqcwg",
+            "Conoce Tus Derechos": "https://www.aclu.org/files/assets/transstudent_kyr_20120508.pdf",
+            "Know Your Rights guide": "https://www.aclu.org/files/assets/transstudent_kyr_20120508.pdf",
+            "Sylvia Rivera Law Project": "https://srlp.org/",
+            "Transgender Law Center": "https://transgenderlawcenter.org/",
+            "Trans Youth Sexual Health Booklet": "https://transgenderinfo.be/wp-content/uploads/17-14-04-GI-sexual-health-booklet.pdf",
+            "Centro Nacional para la Igualdad Transgénero": "https://transequality.org/about",
+            "National Center for Transgender Equality": "https://transequality.org/about",
+            "Trans Life Line": "https://www.translifeline.org/",
+            "Trans Student Educational Resources": "http://www.transstudent.org/",
+            "Trans Women of Color Collective": "https://www.twocc.us/",
+            "the Taskforce.": "http://www.thetaskforce.org/",
+            "Ibis Reproductive Health": "https://www.inclusivesrh.com/community-resources"
+          }
+        }
+      ]
+    }
+  ]
+}

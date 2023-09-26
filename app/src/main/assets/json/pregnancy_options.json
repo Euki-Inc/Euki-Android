@@ -1,0 +1,57 @@
+{
+  "id": "pregnancy_options",
+  "icon": "IconPregnancyOptions",
+  "content": "pregnancy_options_content",
+  "selectable_row_items": [
+    {
+      "id": "pregnancy_parenting",
+      "icon": "IconPregnancyOptions",
+      "content": "pregnancy_parenting_content",
+      "links": {
+        "National Parenting Center": "http://www.tnpc.com/",
+        "National Parent Helpline": "http://www.nationalparenthelpline.org/",
+        "Strong Families Network": "https://forwardtogether.org/programs/strong-families-network/"
+      }
+    },
+    {
+      "id": "pregnancy_adoption",
+      "icon": "IconPregnancyOptions",
+      "content": "pregnancy_adoption_content",
+      "links": {
+        "Adoption Connection": "http://www.adoptionconnection.org/",
+        "Friends in Adoption": "http://www.friendsinadoption.org/",
+        "Pact: An Adoption Alliance": "http://www.pactadopt.org/",
+        "Open Adoption & Family Services": "http://www.openadopt.org/",
+        "Adoptions Together": "http://www.adoptionstogether.org/",
+        "Choice Network": "https://choicenetworkadoptions.com/",
+        "Adoptions Together website": "https://www.adoptionstogether.org/pregnant/options/faq/",
+        "aquí": "https://adoptionconnection.jfcs.org/birthparents-tell-their-stories.php",
+        " here": "https://adoptionconnection.jfcs.org/birthparents-tell-their-stories.php"
+      }
+    },
+    {
+      "id": "pregnancy_abortion",
+      "icon": "IconPregnancyOptions",
+      "content": "pregnancy_abortion_content",
+      "links": {
+        "abortion homepage": "abortion"
+      }
+    },
+    {
+      "id": "pregnancy_im_unsure",
+      "icon": "IconPregnancyOptions",
+      "content": "pregnancy_im_unsure_content",
+      "links": {
+        "Pregnancy Options Workbook": "http://www.pregnancyoptions.info/pregnant.htm",
+        "A Guide to Making the Right Decision for You": "https://5aa1b2xfmfh2e2mk03kk8rsx-wpengine.netdna-ssl.com/wp-content/uploads/pregnancy_guide_english.pdf",
+        "website": "https://www.all-options.org/",
+        "sitio web": "https://www.all-options.org/"
+      }
+    },
+    {
+      "id": "pregnancy_more_info",
+      "icon": "IconPregnancyOptions",
+      "content": "pregnancy_more_info_content"
+    }
+  ]
+}

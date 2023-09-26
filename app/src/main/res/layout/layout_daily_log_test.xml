@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ExpandableContainer">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        style="@style/DailyItemNameContainer">
+        
+        <View
+            android:id="@+id/v_circle"
+            android:backgroundTint="@color/test"
+            style="@style/DailyItemCircle"/>
+
+        <TextView
+            android:text="@string/test"
+            style="@style/DailyItemText"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        style="@style/DailyItemContent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x1_5"
+            android:layout_marginLeft="@dimen/dimen_x4_5"
+            android:layout_marginBottom="@dimen/dimen_x2_5"
+            android:text="@string/test_sti"
+            style="@style/BodyDefault"/>
+
+        <androidx.gridlayout.widget.GridLayout
+            style="@style/GridLayout">
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_test_sti_1"
+                android:tag="1"
+                app:title="@string/test_sti_1"
+                app:imageRes="@drawable/icon_test_sti_1"
+                app:isRadio="true"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_test_sti_2"
+                android:tag="2"
+                app:title="@string/test_sti_2"
+                app:imageRes="@drawable/icon_test_sti_2"
+                app:isRadio="true"
+                style="@style/SelectableButton"/>
+
+            <View
+                android:layout_width="@dimen/calendar_item_width"
+                style="@style/SelectableButton"/>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x3_5"
+            android:layout_marginLeft="@dimen/dimen_x4_5"
+            android:layout_marginBottom="@dimen/dimen_x2_5"
+            android:text="@string/test_pregnancy"
+            style="@style/BodyDefault"/>
+
+        <androidx.gridlayout.widget.GridLayout
+            style="@style/GridLayout">
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_test_pregnancy_1"
+                android:tag="1"
+                app:title="@string/test_pregnancy_1"
+                app:imageRes="@drawable/icon_test_pregnancy_1"
+                app:isRadio="true"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_test_pregnancy_2"
+                android:tag="2"
+                app:title="@string/test_pregnancy_2"
+                app:imageRes="@drawable/icon_test_pregnancy_2"
+                app:isRadio="true"
+                style="@style/SelectableButton"/>
+
+            <View
+                android:layout_width="@dimen/calendar_item_width"
+                style="@style/SelectableButton"/>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

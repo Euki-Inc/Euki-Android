@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/content_cells_height"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dimen_x3_5">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_x2_5"
+            android:text="Compare methods"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            style="@style/LinkExpandableOnTap"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:tint="@color/blueberry"
+            android:src="@drawable/ic_arrow_right"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_separator_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/euki_main"/>
+
+    <View
+        android:id="@+id/v_separator_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/euki_main"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

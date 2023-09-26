@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_x3_5"
+        android:src="@drawable/ic_bookmark_on"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_x3_5"
+        android:layout_marginLeft="@dimen/dimen_x3_5"
+        android:layout_marginTop="@dimen/dimen_x1_5"
+        android:layout_marginBottom="@dimen/dimen_x3_5"
+        android:text="Compare methods"
+        android:gravity="center_vertical"
+        style="@style/BodyDefault"/>
+
+    <View
+        android:id="@+id/v_separator_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/euki_main" />
+
+</LinearLayout>

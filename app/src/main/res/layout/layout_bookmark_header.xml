@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_x3_5"
+        android:paddingHorizontal="@dimen/dimen_x3_5"
+        android:text="@string/bookmarks"
+        android:layout_marginBottom="@dimen/dimen_x1_5"
+        style="@style/TextStyle9"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x2_100"
+        android:src="@drawable/icon_bookmark"
+        android:padding="@dimen/dimen_x3_5"/>
+
+</LinearLayout>

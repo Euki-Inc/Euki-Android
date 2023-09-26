@@ -1,0 +1,60 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_header_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dimen_x3_5"
+                android:paddingHorizontal="@dimen/dimen_x3_5"
+                android:clipToPadding="false" />
+
+            <LinearLayout
+                android:id="@+id/ll_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_empty"
+                    android:layout_width="@dimen/dimen_x8_10"
+                    android:layout_height="@dimen/dimen_x8_10"
+                    android:layout_marginTop="@dimen/dimen_x7_5"
+                    android:layout_marginBottom="@dimen/dimen_x11_5"
+                    android:src="@drawable/ic_day_summary_empty"/>
+
+                <Button
+                    android:id="@+id/btn_log_now"
+                    android:text="@string/log_now"
+                    android:layout_centerInParent="true"
+                    style="@style/PurpleButton" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

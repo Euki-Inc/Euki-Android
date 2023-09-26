@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+    
+    <com.kollectivemobile.euki.utils.KKViewPager
+        android:id="@+id/kkvp_questions"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x27_10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_methods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false" />
+
+</LinearLayout>

@@ -1,0 +1,332 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    style="@style/ExpandableContainer">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:paddingLeft="@dimen/dimen_x3_5"
+        android:paddingRight="@dimen/dimen_x3_5"
+        style="@style/DailyItemNameContainer">
+        
+        <View
+            android:id="@+id/v_circle"
+            android:backgroundTint="@color/contraception"
+            style="@style/DailyItemCircle"/>
+
+        <TextView
+            android:text="@string/contraception"
+            style="@style/DailyItemText"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            style="@style/ViewSeparator" />
+
+        <LinearLayout
+            android:id="@+id/ll_daily_title"
+            android:paddingLeft="@dimen/dimen_x3_5"
+            android:paddingRight="@dimen/dimen_x3_5"
+            style="@style/DailyItemNameContainer">
+
+            <TextView
+                android:text="@string/daily_m"
+                android:layout_marginLeft="0dp"
+                style="@style/DailyItemText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_daily_container"
+            android:layout_marginLeft="@dimen/dimen_x3_5"
+            android:layout_marginRight="@dimen/dimen_x3_5"
+            android:visibility="visible"
+            style="@style/DailyItemContent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x1_5"
+                android:layout_marginLeft="@dimen/dimen_x4_5"
+                android:layout_marginBottom="@dimen/dimen_x2_5"
+                android:text="@string/pill"
+                style="@style/BodyDefault"/>
+
+            <androidx.gridlayout.widget.GridLayout
+                style="@style/GridLayout">
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_pill_1"
+                    android:tag="1"
+                    app:title="@string/contraception_pill_1"
+                    app:imageRes="@drawable/icon_contraception_pill_1"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_pill_2"
+                    android:tag="2"
+                    app:title="@string/contraception_pill_2"
+                    app:imageRes="@drawable/icon_contraception_pill_2"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_pill_3"
+                    android:tag="3"
+                    app:title="@string/contraception_pill_3"
+                    app:imageRes="@drawable/icon_contraception_pill_3"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x1_5"
+                android:layout_marginLeft="@dimen/dimen_x4_5"
+                android:layout_marginBottom="@dimen/dimen_x2_5"
+                android:text="@string/protection_other"
+                style="@style/BodyDefault"/>
+
+            <androidx.gridlayout.widget.GridLayout
+                style="@style/GridLayout">
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_other_1"
+                    android:tag="1"
+                    app:title="@string/contraception_other_1"
+                    app:imageRes="@drawable/icon_contraception_other_1"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_other_2"
+                    android:tag="2"
+                    app:title="@string/contraception_other_2"
+                    app:imageRes="@drawable/icon_contraception_other_2"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_other_3"
+                    android:tag="3"
+                    app:title="@string/contraception_other_3"
+                    app:imageRes="@drawable/icon_contraception_other_3"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_other_4"
+                    android:tag="4"
+                    app:title="@string/contraception_other_4"
+                    app:imageRes="@drawable/icon_contraception_other_4"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_other_5"
+                    android:tag="5"
+                    app:title="@string/contraception_other_5"
+                    app:imageRes="@drawable/icon_contraception_other_5"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_other_6"
+                    android:tag="6"
+                    app:title="@string/contraception_other_6"
+                    app:imageRes="@drawable/icon_contraception_other_6"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_contraception_other_7"
+                    android:tag="7"
+                    app:title="@string/contraception_other_7"
+                    app:imageRes="@drawable/icon_contraception_other_7"
+                    style="@style/SelectableButton"/>
+
+                <View
+                    android:layout_width="@dimen/calendar_item_width"
+                    style="@style/SelectableButton"/>
+
+                <View
+                    android:layout_width="@dimen/calendar_item_width"
+                    style="@style/SelectableButton"/>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/ViewSeparator" />
+
+        <LinearLayout
+            android:id="@+id/ll_longer_term_methods_title"
+            android:paddingLeft="@dimen/dimen_x3_5"
+            android:paddingRight="@dimen/dimen_x3_5"
+            style="@style/DailyItemNameContainer">
+
+            <TextView
+                android:text="@string/long_m"
+                android:layout_marginLeft="0dp"
+                style="@style/DailyItemText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_longer_term_methods_container"
+            android:layout_marginLeft="@dimen/dimen_x3_5"
+            android:layout_marginRight="@dimen/dimen_x3_5"
+            android:visibility="gone"
+            style="@style/DailyItemContent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x1_5"
+                android:layout_marginLeft="@dimen/dimen_x4_5"
+                android:layout_marginBottom="@dimen/dimen_x2_5"
+                android:text="@string/iud"
+                style="@style/BodyDefault"/>
+
+            <androidx.gridlayout.widget.GridLayout
+                style="@style/GridLayout">
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_uid_1"
+                    android:tag="1"
+                    app:title="@string/contraception_uid_1"
+                    app:imageRes="@drawable/icon_contraception_iud_1"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_uid_2"
+                    android:tag="2"
+                    app:title="@string/contraception_uid_2"
+                    app:imageRes="@drawable/icon_contraception_iud_2"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_uid_3"
+                    android:tag="3"
+                    app:title="@string/contraception_uid_3"
+                    app:imageRes="@drawable/icon_contraception_iud_3"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x1_5"
+                android:layout_marginLeft="@dimen/dimen_x4_5"
+                android:layout_marginBottom="@dimen/dimen_x2_5"
+                android:text="@string/implant"
+                style="@style/BodyDefault"/>
+
+            <androidx.gridlayout.widget.GridLayout
+                style="@style/GridLayout">
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_implant_1"
+                    android:tag="1"
+                    app:title="@string/contraception_implant_1"
+                    app:imageRes="@drawable/icon_contraception_implant_1"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_implant_2"
+                    android:tag="2"
+                    app:title="@string/contraception_implant_2"
+                    app:imageRes="@drawable/icon_contraception_implant_2"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <View
+                    android:layout_width="@dimen/calendar_item_width"
+                    style="@style/SelectableButton"/>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x3_5"
+                android:layout_marginLeft="@dimen/dimen_x4_5"
+                android:layout_marginBottom="@dimen/dimen_x2_5"
+                android:text="@string/patch"
+                style="@style/BodyDefault"/>
+
+            <androidx.gridlayout.widget.GridLayout
+                style="@style/GridLayout">
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_patch_1"
+                    android:tag="1"
+                    app:title="@string/contraception_patch_1"
+                    app:imageRes="@drawable/icon_contraception_patch_1"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_patch_2"
+                    android:tag="2"
+                    app:title="@string/contraception_patch_2"
+                    app:imageRes="@drawable/icon_contraception_patch_2"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <View
+                    android:layout_width="@dimen/calendar_item_width"
+                    style="@style/SelectableButton"/>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x3_5"
+                android:layout_marginLeft="@dimen/dimen_x4_5"
+                android:layout_marginBottom="@dimen/dimen_x2_5"
+                android:text="@string/ring"
+                style="@style/BodyDefault"/>
+
+            <androidx.gridlayout.widget.GridLayout
+                style="@style/GridLayout">
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_ring_1"
+                    android:tag="1"
+                    app:title="@string/contraception_ring_1"
+                    app:imageRes="@drawable/icon_contraception_ring_1"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_ring_2"
+                    android:tag="2"
+                    app:title="@string/contraception_ring_2"
+                    app:imageRes="@drawable/icon_contraception_ring_2"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+                <View
+                    android:layout_width="@dimen/calendar_item_width"
+                    style="@style/SelectableButton"/>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

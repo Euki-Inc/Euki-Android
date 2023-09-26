@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <com.kollectivemobile.euki.ui.common.views.SegmentedButton
+        android:id="@+id/sb_sections"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x10_5"
+        app:titleLeft="@string/day_summary"
+        app:titleRight="@string/cycle_summary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.kollectivemobile.euki.ui.common.views.NoSwipeViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.kollectivemobile.euki.ui.common.views.SquaredLinearLayout
+            android:id="@+id/v_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_x3_5"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bkg_circular_green"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/dimen_x6_5"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cycle_summary_tutorial_title"
+                        style="@style/TextStyle39"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_x2_5"
+                        android:text="@string/cycle_summary_tutorial_content"
+                        style="@style/TextStyle31"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.kollectivemobile.euki.ui.common.views.SquaredLinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

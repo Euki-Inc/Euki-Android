@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_x8_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x8_5"
+            android:text="@string/onboarding_fake_pin_title"
+            android:textSize="@dimen/text_size_20sp"
+            android:textColor="@color/euki_main"
+            android:gravity="center"
+            style="@style/BodyDefault"/>
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x4_5"
+            android:text="@string/onboarding_fake_pin_info"
+            android:textSize="@dimen/text_size_20sp"
+            android:textColor="@color/euki_main"
+            android:textStyle="bold"
+            android:gravity="center"
+            style="@style/BodyDefault"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_x6_5"
+        android:paddingRight="@dimen/dimen_x6_5"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_x19_5">
+
+        <LinearLayout
+            style="@style/WrapContainer">
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/dimen_x4_5"
+                style="@style/CodeDigitContainer">
+
+                <TextView
+                    android:id="@+id/tv_digit_1"
+                    android:text="1"
+                    android:tag="1"
+                    style="@style/CodeDigitText"/>
+
+                <View
+                    android:id="@+id/v_digit_1"
+                    android:tag="1"
+                    style="@style/CodeDigitLine"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/dimen_x4_5"
+                style="@style/CodeDigitContainer">
+
+                <TextView
+                    android:id="@+id/tv_digit_2"
+                    android:text="2"
+                    android:tag="2"
+                    style="@style/CodeDigitText"/>
+
+                <View
+                    android:id="@+id/v_digit_2"
+                    android:tag="2"
+                    style="@style/CodeDigitLine"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/dimen_x4_5"
+                style="@style/CodeDigitContainer">
+
+                <TextView
+                    android:id="@+id/tv_digit_3"
+                    android:text="3"
+                    android:tag="3"
+                    style="@style/CodeDigitText"/>
+
+                <View
+                    android:id="@+id/v_digit_3"
+                    android:tag="3"
+                    style="@style/CodeDigitLine"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/CodeDigitContainer">
+
+                <TextView
+                    android:id="@+id/tv_digit_4"
+                    android:text="4"
+                    android:tag="4"
+                    style="@style/CodeDigitText"/>
+
+                <View
+                    android:id="@+id/v_digit_4"
+                    android:tag="4"
+                    style="@style/CodeDigitLine"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_x2_5"
+                android:text="@string/onboarding_fake_pin_message"
+                android:textSize="@dimen/text_size_20sp"
+                android:textColor="@color/euki_main"
+                android:gravity="center"
+                style="@style/BodyDefault"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:text="@string/ok"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_x7_5"
+            style="@style/PurpleButton" />
+
+    </LinearLayout>
+
+</RelativeLayout>

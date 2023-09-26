@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_x3_5"
+    android:paddingRight="@dimen/dimen_x3_5"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:hint="@string/title"
+        android:background="@color/pale_lavender_50"
+        style="@style/EditText"/>
+
+    <View
+        style="@style/ViewSeparator"/>
+
+    <EditText
+        android:id="@+id/et_location"
+        android:layout_marginTop="@dimen/inputs_spacing"
+        android:hint="@string/locaiton"
+        android:background="@color/pale_lavender_50"
+        style="@style/EditText"/>
+
+    <View
+        style="@style/ViewSeparator"/>
+
+    <TextView
+        android:id="@+id/tv_day_time"
+        android:layout_marginTop="@dimen/inputs_spacing"
+        android:text="@string/day_time"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        style="@style/EditText"/>
+
+    <View
+        style="@style/ViewSeparator"/>
+
+    <TextView
+        android:id="@+id/tv_alert"
+        android:layout_marginTop="@dimen/inputs_spacing"
+        android:text="@string/alert"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        style="@style/EditText"/>
+
+    <View
+        style="@style/ViewSeparator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_x7_5"
+        android:paddingRight="@dimen/dimen_x7_5"
+        android:paddingTop="@dimen/dimen_x2_5"
+        android:paddingBottom="@dimen/dimen_x2_5"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:background="@null"
+            android:gravity="center"
+            style="@style/LinkOrButtonInactiveOrSecondary"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:text="@string/save"
+            android:background="@null"
+            android:gravity="center"
+            style="@style/LinkOrButtonInactiveOrSecondary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

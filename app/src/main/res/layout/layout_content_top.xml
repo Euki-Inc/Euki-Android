@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_x3_5"
+    android:orientation="vertical"
+    android:background="@color/main_background">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraception"
+        android:layout_marginBottom="@dimen/dimen_x4_5"
+        style="@style/TextStyle9"/>
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x2_100"
+        android:layout_marginBottom="@dimen/dimen_x8_5"
+        android:src="@drawable/icon_contraception1large"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraception helps you prevent pregnancy. There are many contraceptive methods available today and many different reasons why people choose one method over the other. It is important to use the method that best matches your current needs and priorities. "
+        style="@style/HeadlineLargeDefault"/>
+
+</LinearLayout>

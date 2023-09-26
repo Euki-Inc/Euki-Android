@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_x2_5"
+        android:layout_marginBottom="@dimen/dimen_x2_5"
+        android:text="Today, April 30"
+        style="@style/NameLabelForAScreen"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_logged_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_day"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false" />
+
+        <LinearLayout
+            android:id="@+id/ll_main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_x15_10"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_set_appointment_1"
+                android:text="@string/set_appointment"
+                android:layout_centerInParent="true"
+                style="@style/PurpleButton" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x3_5"
+                android:layout_marginBottom="@dimen/dimen_x3_5"
+                android:text="@string/or"
+                style="@style/DaysInCalendarQuestions"/>
+
+            <Button
+                android:id="@+id/btn_set_reminder_1"
+                android:text="@string/set_reminder"
+                android:layout_centerInParent="true"
+                style="@style/PurpleButton" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_past"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_x6_5"
+        android:layout_marginRight="@dimen/dimen_x6_5"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_calendar_past"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x8_10"
+            android:text="@string/no_log_title"
+            style="@style/TextStyle32"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x6_5"
+            android:text="@string/no_log_message"
+            style="@style/TextStyle33"/>
+
+        <Button
+            android:id="@+id/btn_log_now"
+            android:layout_marginTop="@dimen/dimen_x10_6"
+            android:text="@string/log_now"
+            android:layout_centerInParent="true"
+            style="@style/PurpleButton" />
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_future"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_day"
+        android:layout_marginLeft="@dimen/dimen_x6_5"
+        android:layout_marginRight="@dimen/dimen_x6_5"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_bottom_text">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_calendar_future"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_x10_6"
+                    android:text="@string/what_would"
+                    style="@style/BigHeadlineCenter"/>
+
+                <Button
+                    android:id="@+id/btn_set_appointment"
+                    android:text="@string/set_appointment"
+                    android:layout_marginTop="@dimen/dimen_x6_5"
+                    android:layout_centerInParent="true"
+                    style="@style/PurpleButton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_x3_5"
+                    android:layout_marginBottom="@dimen/dimen_x3_5"
+                    android:text="@string/or"
+                    style="@style/DaysInCalendarQuestions"/>
+
+                <Button
+                    android:id="@+id/btn_set_reminder"
+                    android:text="@string/set_reminder"
+                    android:layout_centerInParent="true"
+                    style="@style/PurpleButton" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/tv_bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_x10_5"
+            android:text="@string/appointments_stay"
+            android:layout_alignParentBottom="true"
+            style="@style/EukiLabelsIconsForLogging"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

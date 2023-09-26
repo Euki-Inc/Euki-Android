@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_x3_5"
+    android:paddingRight="@dimen/dimen_x3_5"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x8_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v_circle"
+            android:backgroundTint="@color/appointment"
+            android:background="@drawable/bkg_circular_daily_log_on"
+            style="@style/DailyItemCircle"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/appointment"
+            android:layout_weight="1"
+            style="@style/DailyItemText"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_appointments_fields"/>
+
+</LinearLayout>

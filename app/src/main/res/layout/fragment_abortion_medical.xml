@@ -1,0 +1,193 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_x3_5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/medical_abortion"
+                android:layout_marginBottom="@dimen/dimen_x4_5"
+                style="@style/TextStyle9"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_x2_100"
+                android:layout_marginBottom="@dimen/dimen_x8_5"
+                android:src="@drawable/icon_medical_abortion"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/medical_abortion_content"
+                style="@style/HeadlineLargeDefault"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x6_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextStyle10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/dimen_x4_5"
+                    android:text="@string/first_day_last_period" />
+
+                <ImageView
+                    android:id="@+id/iv_info_first_day"
+                    android:layout_width="@dimen/dimen_x8_5"
+                    android:layout_height="@dimen/dimen_x8_5"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_info_off"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_info_first_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x5_5"
+                android:text="@string/how_far_someone_pregnancy"
+                style="@style/BodyDefault"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_pick_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_x10_6"
+                android:layout_marginTop="@dimen/dimen_x3_5">
+
+                <TextView
+                    android:id="@+id/tv_pick_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_x3_5"
+                    android:text="@string/pick_date"
+                    android:gravity="center_vertical"
+                    style="@style/BodyLink"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/blueberry"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_weeks_pregnant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x5_5"
+                android:text="@string/weeks_pregnand_format"
+                style="@style/BodyDefault"/>
+
+            <LinearLayout
+                android:id="@+id/ll_pills_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_x7_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_x4_5"
+                        android:text="@string/pill_options"
+                        style="@style/TextStyle10"/>
+
+                    <ImageView
+                        android:id="@+id/iv_pill_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_info_off"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_pill_options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_x5_5"
+                    android:text="@string/pills_content"
+                    style="@style/BodyDefault"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_x6_5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_miso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_pill_miso"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Misoprostol"
+                            android:gravity="center_horizontal"
+                            style="@style/BodyLink"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mife_miso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_pill_miso"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mifepristone &amp; misoprostol"
+                            android:gravity="center_horizontal"
+                            style="@style/BodyLink"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

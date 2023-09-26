@@ -1,0 +1,136 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/euki_main"
+        android:textSize="@dimen/text_size_12sp"
+        android:layout_marginVertical="3dp"
+        android:text="Sun"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.kollectivemobile.euki.ui.common.views.SquaredLinearLayout
+        android:id="@+id/v_clickable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_blur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_blur_day"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_bleeding_size"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_circle_bleeding_none"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:gravity="center"
+                android:background="@drawable/bkg_calendar_item_normal"
+                style="@style/TextStyle15"/>
+
+        </RelativeLayout>
+
+    </com.kollectivemobile.euki.ui.common.views.SquaredLinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/v_circle_1"
+            android:tag="1"
+            android:layout_width="@dimen/dimen_x2_5"
+            android:layout_height="@dimen/dimen_x2_5"
+            android:background="@drawable/bkg_circular_purple_solid" />
+
+        <View
+            android:id="@+id/v_circle_2"
+            android:tag="2"
+            android:layout_width="@dimen/dimen_x2_5"
+            android:layout_height="@dimen/dimen_x2_5"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bkg_circular_purple_solid" />
+
+        <View
+            android:id="@+id/v_circle_3"
+            android:tag="3"
+            android:layout_width="@dimen/dimen_x2_5"
+            android:layout_height="@dimen/dimen_x2_5"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bkg_circular_purple_solid" />
+
+        <View
+            android:id="@+id/v_circle_4"
+            android:tag="4"
+            android:layout_width="@dimen/dimen_x2_5"
+            android:layout_height="@dimen/dimen_x2_5"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bkg_circular_purple_solid" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x4_5"
+        android:layout_marginTop="2dp"
+        android:paddingBottom="@dimen/dimen_x2_5"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/v_circle_5"
+            android:tag="5"
+            android:layout_width="@dimen/dimen_x2_5"
+            android:layout_height="@dimen/dimen_x2_5"
+            android:background="@drawable/bkg_circular_purple_solid" />
+
+        <View
+            android:id="@+id/v_circle_6"
+            android:tag="6"
+            android:layout_width="@dimen/dimen_x2_5"
+            android:layout_height="@dimen/dimen_x2_5"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bkg_circular_purple_solid" />
+
+        <View
+            android:id="@+id/v_circle_7"
+            android:tag="7"
+            android:layout_width="@dimen/dimen_x2_5"
+            android:layout_height="@dimen/dimen_x2_5"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bkg_circular_purple_solid" />
+
+        <View
+            android:id="@+id/v_circle_8"
+            android:tag="8"
+            android:layout_width="@dimen/dimen_x2_5"
+            android:layout_height="@dimen/dimen_x2_5"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bkg_circular_purple_solid" />
+
+    </LinearLayout>
+
+</LinearLayout>

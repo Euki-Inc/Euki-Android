@@ -1,0 +1,454 @@
+{
+  "id": "knowledge_base",
+  "title": "knowledge_base_title",
+  "icon": "IconAbortion",
+  "selectable_row_items": [
+    {
+      "id": "abortion_types",
+      "icon": "IconAbortion",
+      "content": "abortion_types_content",
+      "selectable_items": [
+        {
+          "id": "medication",
+          "icon": "IconMedicalAbortion",
+          "title": "medication_abortion_101_title",
+          "content": "medication_abortion_101_content",
+          "source": "national_abortion_federation",
+          "expandable_items": [
+            {
+              "id": "how_medication_work",
+              "title": "medication_abortion_title",
+              "content": "medication_abortion_content",
+              "source": "national_abortion_federation"
+            },
+            {
+              "id": "what_pills_look_like",
+              "title": "what_pills_look_like_title",
+              "content": "what_pills_look_like_content",
+              "links": {
+                "drugs.com": "http://www.drugs.com",
+                "Women Help Women": "http://www.abortionpillinfo.org",
+                "Women on Waves": "https://www.womenonwaves.org/en/page/801/what-do-abortion-pills--mifepristone--ru486--mifeprex--mifegyne--look-like"
+              }
+            },
+            {
+              "id": "what_will_be_like",
+              "title": "what_to_expect_title",
+              "content": "what_to_expect_content",
+              "source": "national_abortion_federation"
+            },
+            {
+              "id": "when_seek_medical_help",
+              "title": "when_seek_care_title",
+              "content": "when_seek_care_content",
+              "source": "women_on_web",
+              "links": {
+                "The Miscarriage and Abortion hotline": "https://www.mahotline.org/",
+                "Repro Legal Hotline": "https://www.reprolegalhelpline.org/sma-contact-the-helpline/"
+              }
+            }
+          ]
+        },
+        {
+          "id": "surgical",
+          "icon": "IconSuctionAbortion",
+          "title": "suction_abortion_title",
+          "content": "suction_abortion_content",
+          "source": "national_abortion_federation",
+          "expandable_items": [
+            {
+              "id": "suction_abortion_subheading_1",
+              "content": "suction_abortion_content_1"
+            },
+            {
+              "id": "suction_abortion_subheading_2",
+              "content": "suction_abortion_content_2"
+            },
+            {
+              "id": "suction_abortion_subheading_3",
+              "content": "suction_abortion_content_3",
+              "links": {
+                "National Abortion Federation": "https://prochoice.org/think-you're-pregnant/find-a-provider/",
+                "Later Abortion Initiative": "https://www.laterabortion.org/",
+                "many reasons people seek abortions": "https://laterabortion.org/sites/default/files/lai_who_needs.pdf",
+                "Abortions after 12 weeks": "https://laterabortion.org/sites/default/files/lai_procedure_revised.pdf",
+                "abortion funds": "https://abortionfunds.org/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abortion_faqs",
+      "icon": "IconAbortion",
+      "title": "abortion_faqs_title",
+      "source": "national_abortion_federation",
+      "expandable_items": [
+        {
+          "id": "abortion_faqs_subheading_1",
+          "content": "abortion_faqs_content_1"
+        },
+        {
+          "id": "abortion_faqs_subheading_2",
+          "content": "abortion_faqs_content_2"
+        },
+        {
+          "id": "abortion_faqs_subheading_3",
+          "content": "abortion_faqs_content_3"
+        },
+        {
+          "id": "abortion_faqs_subheading_4",
+          "content": "abortion_faqs_content_4"
+        },
+        {
+          "id": "abortion_faqs_subheading_5",
+          "content": "abortion_faqs_content_5"
+        },
+        {
+          "id": "abortion_faqs_subheading_6",
+          "content": "abortion_faqs_content_6"
+        }
+      ],
+      "content": "abortion_faqs_content",
+      "links": {
+        "resources": "resources"
+      }
+    },
+    {
+      "id": "info_care_at_clinic",
+      "icon": "IconAbortion",
+      "title": "getting_care_clinic_title",
+      "expandable_items": [
+        {
+          "id": "getting_care_clinic_subheading_1",
+          "content": "getting_care_clinic_content_1",
+          "links": {
+            "National Abortion Federation": "https://prochoice.org/think-you're-pregnant/find-a-provider/",
+            "Planned Parenthood": "https://www.plannedparenthood.org/health-center",
+            "Abortion Care Network": "https://www.abortioncarenetwork.org/abortion-care-providers/",
+            "Bedsider's Clinic Finder": "https://www.abortionfinder.org/",
+            "I Need an A": "https://ineedana.com/",
+            "National Network of Abortion Funds website": "https://abortionfunds.org/",
+            "Buscador de Clínicas de Bedsider": "https://www.abortionfinder.org/",
+            "Federación Nacional del Aborto": "https://prochoice.org/think-you're-pregnant/find-a-provider/",
+            "National Network of Abortion Funds": "https://abortionfunds.org/"
+          }
+        },
+        {
+          "id": "getting_care_clinic_subheading_2",
+          "content": "getting_care_clinic_content_2",
+          "links": {
+            "ⓘ": "telehealth_popup_info"
+          }
+        },
+        {
+          "id": "getting_care_clinic_subheading_3",
+          "content": "getting_care_clinic_content_3",
+          "links": {
+            "ⓘ": "telehealth_popup_info"
+          }
+        },
+        {
+          "id": "getting_care_clinic_subheading_4",
+          "content": "getting_care_clinic_content_4",
+          "links": {
+            "National Network of Abortion Funds": "https://abortionfunds.org/"
+          }
+        },
+        {
+          "id": "getting_care_clinic_subheading_5",
+          "content": "getting_care_clinic_content_5",
+          "links": {
+            "National Abortion Federation": "https://prochoice.org/think-you're-pregnant/find-a-provider/",
+            "Planned Parenthood": "https://www.plannedparenthood.org/health-center",
+            "Abortion Care Network": "https://www.abortioncarenetwork.org/abortion-care-providers/",
+            "I Need an A": "https://ineedana.com/",
+            "Bedsider's Clinic Finder": "https://www.abortionfinder.org/",
+            "Federación Nacional del Aborto": "https://prochoice.org/think-you're-pregnant/find-a-provider/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "telehealth",
+      "icon": "IconAbortion",
+      "title": "telehealth_title",
+      "content": "telehealth_content"
+    },
+    {
+      "id": "self_managed_abortion_title",
+      "title": "self_managed_abortion_title",
+      "content": "self_managed_abortion_content",
+      "links": {
+        "Repro Legal Helpline": "https://www.reprolegalhelpline.org/sma-contact-the-helpline/",
+        "Abortion On Our Own Terms": "https://abortiononourownterms.org/",
+        "línea directa de Repro Legal": "https://www.reprolegalhelpline.org/sma-contact-the-helpline/",
+        "Aborto en nuestros propios términos": "https://abortiononourownterms.org/"
+      }
+    },
+    {
+      "id": "abortion_stories",
+      "icon": "IconAbortion",
+      "title": "abortion_stories_title",
+      "content": "abortion_stories_content",
+      "links": {
+        "online": "https://www.wetestify.org/stories"
+      },
+      "expandable_items": [
+        {
+          "id": "abortion_story_1_title",
+          "content": "abortion_story_1_content",
+          "links": {
+            "Aimee's": "https://www.wetestify.org/storytellers/aimee",
+            "Aimee": "https://www.wetestify.org/storytellers/aimee"
+          }
+        },
+        {
+          "id": "abortion_story_2_title",
+          "content": "abortion_story_2_content",
+          "links": {
+            "Jack's": "https://www.wetestify.org/storytellers/jack-quemi",
+            "Jack": "https://www.wetestify.org/storytellers/jack-quemi"
+          }
+        },
+        {
+          "id": "abortion_story_3_title",
+          "content": "abortion_story_3_content",
+          "links": {
+            "We Testify": "https://www.wetestify.org/stories"
+          }
+        },
+        {
+          "id": "abortion_story_4_title",
+          "content": "abortion_story_4_content",
+          "links": {
+            "We Testify": "https://www.wetestify.org/stories"
+          }
+        },
+        {
+          "id": "abortion_story_5_title",
+          "content": "abortion_story_5_content",
+          "links": {
+            "We Testify": "https://www.wetestify.org/stories"
+          }
+        },
+        {
+          "id": "abortion_story_6_title",
+          "content": "abortion_story_6_content",
+          "links": {
+            "The Abortion Diary Podcast": "http://theabortiondiary.com/",
+            "Podcast Los Diarios del Aborto": "https://www.theabortiondiary.com/el-diario-del-aborto",
+            "Los Diarios del Aborto": "http://theabortiondiary.com/",
+            "Project Voice": "http://www.projectvoice.org/",
+            "1 in 3 campaign": "http://www.1in3campaign.org/",
+            "Ending a Wanted Pregnancy": "https://endingawantedpregnancy.com/",
+            "We Testify": "https://wetestify.org/stories/",
+            "Shout Your Abortion": "https://shoutyourabortion.com/abortion-stories/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "payment_abortion",
+      "icon": "IconAbortion",
+      "expandable_items": [
+        {
+          "id": "payment_subheading_1",
+          "content": "payment_content_1",
+          "links": {
+            "abortion fund": "https://abortionfunds.org/",
+            "abortion funds": "https://abortionfunds.org/",
+            "fondo de aborto": "https://abortionfunds.org/"
+          }
+        },
+        {
+          "id": "payment_subheading_2",
+          "content": "payment_content_2",
+          "links": {
+            "National Abortion Federation": "https://prochoice.org/patients/naf-hotline/",
+            "National Network of Abortion Funds": "https://abortionfunds.org/need-abortion/"
+          }
+        },
+        {
+          "id": "payment_subheading_3",
+          "content": "payment_content_3",
+          "links": {
+            "National Network of Abortion Funds": "https://abortionfunds.org/medicaid/",
+            "La Red Nacional de Fondos de Aborto": "https://abortionfunds.org/Medicaid/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "post_abortion_care",
+      "icon": "IconAbortion",
+      "expandable_items": [
+        {
+          "id": "post_abortion_subheading_1",
+          "content": "post_abortion_content_1",
+          "links": {
+            "Miscarriage and Abortion Hotline": "https://www.mahotline.org/",
+            "Repro Legal Hotline": "https://www.reprolegalhelpline.org/"
+          }
+        },
+        {
+          "id": "post_abortion_subheading_2",
+          "content": "post_abortion_content_2",
+          "links": {
+            "Reading stories": "https://www.wetestify.org/stories"
+          }
+        },
+        {
+          "id": "post_abortion_subheading_3",
+          "content": "post_abortion_content_3",
+          "links": {
+            "All-Options": "https://www.all-options.org/",
+            "We Testify": "https://wetestify.org/stories/"
+          }
+        },
+        {
+          "id": "post_abortion_subheading_4",
+          "content": "post_abortion_content_4",
+          "links": {
+            "1 in 3 Campaign": "http://www.1in3campaign.org/",
+            "All-Options": "https://www.all-options.org/",
+            "We Testify": "https://wetestify.org/stories/"
+          }
+        },
+        {
+          "id": "post_abortion_subheading_5",
+          "content": "post_abortion_content_5"
+        },
+        {
+          "id": "post_abortion_subheading_6",
+          "content": "post_abortion_content_6"
+        }
+      ]
+    },
+    {
+      "id": "abortion_laws",
+      "icon": "IconAbortion",
+      "title": "abortion_laws_title",
+      "content": "abortion_laws_content",
+      "links": {
+        "Center for Reproductive Rights": "https://reproductiverights.org/maps/abortion-laws-by-state/",
+        "Repro Legal Hotline": "https://www.reprolegalhelpline.org/",
+        "Repro Legal Defense Fund": "https://reprolegaldefensefund.org/",
+        "Pregnancy Justice": "https://www.nationaladvocatesforpregnantwomen.org/"
+      }
+    },
+    {
+      "id": "resources",
+      "icon": "IconAbortion",
+      "title": "resources_title",
+      "content": "resources_description",
+      "expandable_items": [
+        {
+          "id": "resources_subheading_1",
+          "content": "resources_content_1",
+          "links": {
+            "I Need an A": "https://ineedana.com/",
+            "SASS": "https://abortionpillinfo.org/",
+            "How to Use the Abortion Pill": "https://www.howtouseabortionpill.org/",
+            "Women Help Women": "https://womenhelp.org/",
+            "Women on Web": "https://www.womenonwaves.org/",
+            "Aid Access": "https://aidaccess.org/",
+            "Repro Legal Helpline": "https://www.reprolegalhelpline.org/",
+            "Miscarriage and Abortion Hotline": "https://www.mahotline.org/",
+            "World Health Organization": "https://apps.who.int/iris/bitstream/handle/10665/349316/9789240039483-eng.pdf?sequence=1&isAllowed=y",
+            "Reddit's abortion forum": "https://www.reddit.com/r/abortion/",
+            "Online Abortion Resource Support": "https://www.abortionsquad.org/"
+          }
+        },
+        {
+          "id": "resources_subheading_2",
+          "content": "resources_content_2",
+          "links": {
+            "Abortion on Demand": "https://abortionondemand.org/",
+            "Abortion Care Network (ACN)": "https://abortioncarenetwork.org/",
+            "National Abortion Federation": "https://prochoice.org/",
+            "National Abortion Federation (NAF)": "https://prochoice.org/",
+            "National Network of Abortion Funds": "https://abortionfunds.org/",
+            "National Network of Abortion Funds (NNAF)": "https://abortionfunds.org/",
+            "Planned Parenthood": "https://www.plannedparenthood.org/",
+            "Nurses for Sexual and Reproductive Health": "https://nsrh.org/",
+            "Physicians for Reproductive Health": "https://prh.org/",
+            "Reproductive Health Access Project": "https://www.reproductiveaccess.org/",
+            "Federación Nacional del Aborto (NAF, por sus siglas en inglés)": "https://prochoice.org/",
+            "La Red Nacional de Fondos de Aborto (NNAF, por sus siglas en inglés)": "https://abortionfunds.org/"
+          }
+        },
+        {
+          "id": "resources_subheading_3",
+          "content": "resources_content_3",
+          "links": {
+            "AVOW Texas": "https://avowtexas.org/",
+            "Black Women for Wellness": "https://bwwla.org/",
+            "Black Women's Health Imperative": "https://bwhi.org/",
+            "Bold Futures": "https://www.boldfuturesnm.org/who-we-are/",
+            "California Latinas for Reproductive Justice": "https://californialatinas.org/",
+            "Colorado Organization for Latina Opportunity and Reproductive Rights": "https://www.colorlatina.org/",
+            "Forward Together": "https://forwardtogether.org/",
+            "Holler Health Justice": "https://www.hollerhealthjustice.org",
+            "Illinois Caucus for Adolescent Health (ICAH)": "https://www.icah.org/",
+            "Indigenous Women Rising": "https://www.iwrising.org/",
+            "In Our Own Voice: National Black Women’s Reproductive Justice Agenda": "https://blackrj.org/",
+            "National Asian Pacific American Women’s Forum": "https://www.napawf.org/",
+            "National Latina Institute for Reproductive Health": "https://www.latinainstitute.org/",
+            "New Voices for Reproductive Justice": "https://newvoicesrj.org/",
+            "Our Justice": "https://www.ourjustice.net/",
+            "ReproAction": "https://reproaction.org/",
+            "SisterLove": "https://www.sisterlove.org/",
+            "Sister Reach": "https://www.sisterreach-tn.org/",
+            "SisterSong: Women of Color Reproductive Justice Collective": "https://www.sistersong.net/",
+            "Shero Mississippi": "https://www.sheroms.org/",
+            "SPARK: Reproductive Justice NOW": "http://www.sparkrj.org/",
+            "We Testify": "https://www.wetestify.org/"
+          }
+        },
+        {
+          "id": "resources_subheading_4",
+          "content": "resources_content_4",
+          "links": {
+            "ACLU": "https://www.aclu.org/",
+            "Center for Reproductive Rights": "https://reproductiverights.org/",
+            "If/When/How": "https://www.ifwhenhow.org/",
+            "Jane's Due Process": "https://janesdueprocess.org/",
+            "Pregnancy Justice": "https://www.pregnancyjusticeus.org/",
+            "NARAL": "https://www.prochoiceamerica.org/",
+            "Centro de Derechos Reproductivos": "https://reproductiverights.org/"
+          }
+        },
+        {
+          "id": "resources_subheading_5",
+          "content": "resources_content_5",
+          "links": {
+            "Advancing New Standards in Reproductive Health (ANSIRH)": "https://www.ansirh.org/",
+            "Guttmacher Institute": "https://www.guttmacher.org/",
+            "Gynuity Health Projects": "https://gynuity.org/",
+            "Ibis Reproductive Health": "https://www.ibisreproductivehealth.org/",
+            "Ipas": "https://www.ipas.org/"
+          }
+        },
+        {
+          "id": "resources_subheading_6",
+          "content": "resources_content_6",
+          "links": {
+            "Emotional and Spiritual Resolution After an Abortion": "http://pregnancyoptions.info/emotional&spiritual.htm",
+            "Healthy Coping After an Abortion": "https://allentownwomenscenter.com/wp-content/uploads/2018/02/Healthy-Coping-After-Abortion.pdf",
+            "Ending a Wanted Pregnancy": "http://endingawantedpregnancy.com/",
+            "You Are Not Alone": "https://www.catholicsforchoice.org/wp-content/uploads/2015/04/2015_YouAreNotAlone.pdf",
+            "All-Options Talkline": "https://www.all-options.org/find-support/talkline/",
+            "this list of post-abortion support referrals": "https://static1.squarespace.com/static/599c9a3d6f4ca3531892d817/t/5a22df5a652deacb4188ced5/1512234843738/OurJustice_Post-Abortion+Support+Resources.pdf",
+            "Ideas for self-care after an abortion": "https://exhaleprovoice.org/self-care",
+            "this list of post-abortion support referrals.": "https://static1.squarespace.com/static/599c9a3d6f4ca3531892d817/t/5a22df5a652deacb4188ced5/1512234843738/OurJustice_Post-Abortion+Support+Resources.pdf",
+            "Our Justice": "https://www.ourjustice.net/community-resources"
+          }
+        }
+      ]
+    }
+  ],
+  "title": "knowledge_base_title",
+  "content": "knowledge_base_content"
+}

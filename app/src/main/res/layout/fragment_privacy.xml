@@ -1,0 +1,297 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_x3_5"
+            android:paddingRight="@dimen/dimen_x3_5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x6_5"
+                android:layout_marginBottom="@dimen/dimen_x6_5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/NameLabelForAScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logged_data_title" />
+
+                <TextView
+                    style="@style/BodyDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_x7_5"
+                    android:text="@string/logged_data_message" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/euki_main" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x6_5"
+                android:layout_marginBottom="@dimen/dimen_x6_5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LinkExpandableOnTapPressedThisColorUntilSomethingElseTaped"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_x3_5"
+                        android:layout_weight="1"
+                        android:text="@string/recurring_data_title" />
+
+                    <Switch
+                        android:id="@+id/swch_recurring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/BodyDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_x1_5"
+                    android:text="@string/recurring_data_text"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll__recurring_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_recurring"
+                        style="@style/EukiLabelsIconsForLoggingTapped"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_x6_5"
+                        android:text="@string/weekly" />
+
+                    <SeekBar
+                        android:id="@+id/db_recurring"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_x6_5"
+                        android:layout_marginTop="@dimen/dimen_x4_5"
+                        android:layout_marginRight="@dimen/dimen_x6_5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/euki_main" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_x8_10"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/b_delette_all_data"
+                    style="@style/LinkExpandableOnTap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/delete_all_data"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/euki_main" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_x3_5"
+            android:paddingRight="@dimen/dimen_x3_5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x6_5"
+                android:layout_marginBottom="@dimen/dimen_x6_5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/NameLabelForAScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pin_title" />
+
+                <TextView
+                    style="@style/BodyDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_x7_5"
+                    android:text="@string/pin_text" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/euki_main" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_x8_10"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/b_set_pin"
+                    style="@style/LinkExpandableOnTap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/set_pin"
+                    android:gravity="left|center_vertical"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/euki_main" />
+
+            <LinearLayout
+                android:id="@+id/ll_remove_pin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_x8_10"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/b_remove_pin"
+                    style="@style/LinkExpandableOnTap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/remove_pin"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_remove_pin"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/euki_main" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x6_5"
+                android:layout_marginBottom="@dimen/dimen_x6_5"
+                android:text="@string/we_dont_store_info"
+                style="@style/BodyDefault"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/euki_main" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_x1_100"
+            android:text="@string/more_info"
+            android:gravity="center"
+            style="@style/NameLabelForAScreen"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/euki_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_x8_10"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dimen_x3_5"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_right"/>
+
+            <Button
+                android:id="@+id/b_pricavy_faqs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_x3_5"
+                android:gravity="left|center_vertical"
+                android:text="@string/privacy_faq"
+                android:background="@null"
+                android:textAllCaps="false"
+                style="@style/LinkExpandableOnTap"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/euki_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_x8_10"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dimen_x3_5"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_right"/>
+
+            <Button
+                android:id="@+id/b_privacy_statement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_x3_5"
+                android:gravity="left|center_vertical"
+                android:text="@string/privacy_statement"
+                android:background="@null"
+                android:textAllCaps="false"
+                style="@style/LinkExpandableOnTap"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

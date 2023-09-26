@@ -1,0 +1,80 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">25dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tiles_height">230dp</dimen>
+    <dimen name="content_cells_height">84dp</dimen>
+    <dimen name="bookmark_cells_height">160dp</dimen>
+    <dimen name="calendar_item_width">96dp</dimen>
+    <dimen name="calendar_item_height">84dp</dimen>
+    <dimen name="calendar_item_text_size">28dp</dimen>
+    <dimen name="inputs_spacing">@dimen/dimen_x6_5</dimen>
+    <dimen name="blue_button_width">250dp</dimen>
+
+    <!-- Generic sizes -->
+    <dimen name="dimen_x1_2">2dp</dimen>
+    <dimen name="dimen_x1_6">6dp</dimen>
+    <dimen name="dimen_x1_8">8dp</dimen>
+    <dimen name="dimen_x4_4">16dp</dimen>
+    <dimen name="dimen_x1_5">5dp</dimen>
+    <dimen name="dimen_x1_9">9dp</dimen>
+    <dimen name="dimen_x2_5">10dp</dimen>
+    <dimen name="dimen_x2_9">18dp</dimen>
+    <dimen name="dimen_x3_5">15dp</dimen>
+    <dimen name="dimen_x4_5">20dp</dimen>
+    <dimen name="dimen_x4_6">24dp</dimen>
+    <dimen name="dimen_x5_5">25dp</dimen>
+    <dimen name="dimen_x6_5">30dp</dimen>
+    <dimen name="dimen_x7_5">35dp</dimen>
+    <dimen name="dimen_x8_5">40dp</dimen>
+    <dimen name="dimen_x9_5">45dp</dimen>
+    <dimen name="dimen_x10_5">50dp</dimen>
+    <dimen name="dimen_x10_6">60dp</dimen>
+    <dimen name="dimen_x11_5">55dp</dimen>
+    <dimen name="dimen_x13_5">65dp</dimen>
+    <dimen name="dimen_x15_5">75dp</dimen>
+    <dimen name="dimen_x17_5">85dp</dimen>
+    <dimen name="dimen_x19_5">95dp</dimen>
+    <dimen name="dimen_x8_6">48dp</dimen>
+    <dimen name="dimen_x3_7">21dp</dimen>
+    <dimen name="dimen_x7_10">70dp</dimen>
+    <dimen name="dimen_x8_10">80dp</dimen>
+    <dimen name="dimen_x9_10">90dp</dimen>
+    <dimen name="dimen_x2_11">22dp</dimen>
+    <dimen name="dimen_x1_100">100dp</dimen>
+    <dimen name="dimen_x2_100">200dp</dimen>
+    <dimen name="dimen_x12_10">120dp</dimen>
+    <dimen name="dimen_x13_10">130dp</dimen>
+    <dimen name="dimen_x14_10">140dp</dimen>
+    <dimen name="dimen_x15_10">150dp</dimen>
+    <dimen name="dimen_x17_10">170dp</dimen>
+    <dimen name="dimen_x19_10">190dp</dimen>
+    <dimen name="dimen_x25_10">250dp</dimen>
+    <dimen name="dimen_x27_10">270dp</dimen>
+    <dimen name="dimen_x3_100">300dp</dimen>
+    <dimen name="dimen_x1_130">130dp</dimen>
+    <dimen name="dimen_x1_140">140dp</dimen>
+    <dimen name="dimen_x3_13">39dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_36sp">36sp</dimen>
+
+    <dimen name="corner_radius_small">3dp</dimen>
+    <dimen name="corners_rounded_large">25dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="toolbar_title">16dp</dimen>
+    <dimen name="header_list_height">140dp</dimen>
+    <dimen name="tab_bar_padding">7dp</dimen>
+    <dimen name="tab_bar_height">75dp</dimen>
+    <dimen name="tutorial_radius">380dp</dimen>
+
+</resources>

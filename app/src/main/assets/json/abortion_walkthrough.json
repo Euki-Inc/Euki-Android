@@ -1,0 +1,29 @@
+{
+  "id": "walk_me_through_the_process",
+  "title": "abortion_walk_through",
+  "content": "abortion_walk_through_content",
+  "icon": "IconWalkThrough",
+  "source": "guttmacher_institute",
+  "selectable_items": [
+    {
+      "id": "medical_abortion",
+      "icon": "IconMedicalAbortion"
+    },
+    {
+      "id": "surgical_abortion",
+      "icon": "IconSuctionAbortion",
+      "content": "surgical_abortion_content",
+      "source": "national_abortion_federation",
+      "selectable_items": [
+        {
+          "id": "suction_or_vacuum",
+          "icon": "IconAbortionSuctionAspiration"
+        },
+        {
+          "id": "dilation_evacuation",
+          "icon": "IconAbortionDilation"
+        }
+      ]
+    }
+  ]
+}

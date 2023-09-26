@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <com.kollectivemobile.euki.ui.common.views.SegmentedButton
+        android:id="@+id/sb_sections"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_x10_5"
+        app:titleLeft="@string/track_calendar_tab"
+        app:titleRight="@string/track_list_tab" />
+    
+    <com.kollectivemobile.euki.ui.common.views.NoSwipeViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bookmark_cells_height"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/dimen_x3_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Is my abortion complete?"
+                android:maxLines="1"
+                style="@style/LinkExpandableOnTap"/>
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x6_5"
+                android:text="Most people know if medications were successful because pregnancy symptoms begin to disappear within a few days…"
+                android:maxLines="3"
+                style="@style/BodyDefault"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_separator_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/euki_main"/>
+
+    <View
+        android:id="@+id/v_separator_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/euki_main"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

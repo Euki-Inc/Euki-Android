@@ -1,0 +1,14 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_x13_5">
+
+    <TextView
+        android:id="@+id/tv_see_past"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/see_past_cycles"
+        android:gravity="center"
+        style="@style/TextStyle38"/>
+
+</RelativeLayout>

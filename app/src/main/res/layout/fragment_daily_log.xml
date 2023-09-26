@@ -1,0 +1,21 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/dimen_x17_5"
+        android:clipToPadding="false" />
+
+    <TextView
+        android:id="@+id/tv_done"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_x8_5"
+        android:text="@string/done_tracking"
+        style="@style/PurpleButton"/>
+
+</RelativeLayout>

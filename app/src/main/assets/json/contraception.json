@@ -1,0 +1,655 @@
+{
+  "id": "contraception",
+  "icon": "IconContraception",
+  "content": "contraception_content",
+  "selectable_row_items": [
+    {
+      "id": "compare_methods",
+      "icon": "IconContraception"
+    },
+    {
+      "id": "method_information",
+      "icon": "IconContraception",
+      "selectable_items": [
+        {
+          "id": "iud",
+          "icon": "IconContraception1Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_iud",
+              "title": "what_is_it",
+              "content": "iud_content_1"
+            },
+            {
+              "id": "how_use_it_iud",
+              "title": "how_use_it",
+              "content": "iud_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_iud",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "iud_content_3"
+            },
+            {
+              "id": "positive_negative_effect_iud",
+              "title": "positive_negative_effect",
+              "content": "iud_content_4"
+            },
+            {
+              "id": "how_where_get_it_iud",
+              "title": "how_where_get_it",
+              "content": "iud_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_it_iud",
+              "title": "who_shouldnt_use_it",
+              "content": "iud_content_6"
+            },
+            {
+              "id": "more_information_iud",
+              "title": "more_information",
+              "content": "iud_content_7"
+            }
+          ]
+        },
+        {
+          "id": "copper_uid",
+          "icon": "IconContraception2Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_copper_uid",
+              "title": "what_is_it",
+              "content": "copper_uid_content_1"
+            },
+            {
+              "id": "how_use_it_copper_uid",
+              "title": "how_use_it",
+              "content": "copper_uid_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_copper_uid",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "copper_uid_content_3"
+            },
+            {
+              "id": "positive_negative_effect_copper_uid",
+              "title": "positive_negative_effect",
+              "content": "copper_uid_content_4"
+            },
+            {
+              "id": "how_where_get_it_copper_uid",
+              "title": "how_where_get_it",
+              "content": "copper_uid_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_it_copper_uid",
+              "title": "who_shouldnt_use_it",
+              "content": "copper_uid_content_6"
+            },
+            {
+              "id": "more_information_copper_uid",
+              "title": "more_information",
+              "content": "copper_uid_content_7"
+            }
+          ]
+        },
+        {
+          "id": "implant",
+          "icon": "IconContraception3Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_implant",
+              "title": "what_is_it",
+              "content": "implant_content_1"
+            },
+            {
+              "id": "how_use_it_implant",
+              "title": "how_use_it",
+              "content": "implant_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_implant",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "implant_content_3",
+              "links": {
+                "ⓘ": "implant_content_3_info"
+              }
+            },
+            {
+              "id": "positive_negative_effect_implant",
+              "title": "positive_negative_effect",
+              "content": "implant_content_4"
+            },
+            {
+              "id": "how_where_get_it_implant",
+              "title": "how_where_get_it",
+              "content": "implant_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_it_implant",
+              "title": "who_shouldnt_use_it",
+              "content": "implant_content_6"
+            },
+            {
+              "id": "more_information_implant",
+              "title": "more_information",
+              "content": "implant_content_7"
+            }
+          ]
+        },
+        {
+          "id": "shot",
+          "icon": "IconContraception4Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_shot",
+              "title": "what_is_it",
+              "content": "shot_content_1"
+            },
+            {
+              "id": "how_use_it_shot",
+              "title": "how_use_it",
+              "content": "shot_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_shot",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "shot_content_3"
+            },
+            {
+              "id": "positive_negative_effect_shot",
+              "title": "positive_negative_effect",
+              "content": "shot_content_4"
+            },
+            {
+              "id": "how_where_get_it_shot",
+              "title": "how_where_get_it",
+              "content": "shot_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_it_shot",
+              "title": "who_shouldnt_use_it",
+              "content": "shot_content_6"
+            },
+            {
+              "id": "more_information_shot",
+              "title": "more_information",
+              "content": "shot_content_7"
+            }
+          ]
+        },
+        {
+          "id": "patch",
+          "icon": "IconContraception5Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_patch",
+              "title": "what_is_it",
+              "content": "patch_content_1"
+            },
+            {
+              "id": "how_use_it_patch",
+              "title": "how_use_it",
+              "content": "patch_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_patch",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "patch_content_3"
+            },
+            {
+              "id": "positive_negative_effect_patch",
+              "title": "positive_negative_effect",
+              "content": "patch_content_4"
+            },
+            {
+              "id": "how_where_get_it_patch",
+              "title": "how_where_get_it",
+              "content": "patch_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_it_patch",
+              "title": "who_shouldnt_use_it",
+              "content": "patch_content_6"
+            },
+            {
+              "id": "more_information_patch",
+              "title": "more_information",
+              "content": "patch_content_7"
+            }
+          ]
+        },
+        {
+          "id": "pill",
+          "icon": "IconContraception6Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_pill",
+              "title": "what_is_it",
+              "content": "pill_content_1",
+              "links": {
+                "Free The Pill": "https://freethepill.org/"
+              }
+            },
+            {
+              "id": "how_use_it_pill",
+              "title": "how_use_it",
+              "content": "pill_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_pill",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "pill_content_3"
+            },
+            {
+              "id": "positive_negative_effect_pill",
+              "title": "positive_negative_effect",
+              "content": "pill_content_4"
+            },
+            {
+              "id": "how_where_get_it_pill",
+              "title": "how_where_get_it",
+              "content": "pill_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_it_pill",
+              "title": "who_shouldnt_use_it",
+              "content": "pill_content_6"
+            },
+            {
+              "id": "more_information_pill",
+              "title": "more_information",
+              "content": "pill_content_7"
+            }
+          ]
+        },
+        {
+          "id": "ring",
+          "icon": "IconContraception7Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_ring",
+              "title": "what_is_it",
+              "content": "ring_content_1"
+            },
+            {
+              "id": "how_use_it_ring",
+              "title": "how_use_it",
+              "content": "ring_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_ring",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "ring_content_3"
+            },
+            {
+              "id": "positive_negative_effect_ring",
+              "title": "positive_negative_effect",
+              "content": "ring_content_4"
+            },
+            {
+              "id": "how_where_get_it_ring",
+              "title": "how_where_get_it",
+              "content": "ring_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_it_ring",
+              "title": "who_shouldnt_use_it",
+              "content": "ring_content_6"
+            },
+            {
+              "id": "more_information_ring",
+              "title": "more_information",
+              "content": "ring_content_7"
+            }
+          ]
+        },
+        {
+          "id": "other_barriers",
+          "icon": "IconContraception8Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_are_they_other_barriers",
+              "title": "what_are_they",
+              "content": "other_barriers_content_1"
+            },
+            {
+              "id": "how_use_them_other_barriers",
+              "title": "how_use_them",
+              "content": "other_barriers_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_other_barriers",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "other_barriers_content_3"
+            },
+            {
+              "id": "positive_negative_effect_other_barriers",
+              "title": "positive_negative_effect",
+              "content": "other_barriers_content_4"
+            },
+            {
+              "id": "how_where_get_them_other_barriers",
+              "title": "how_where_get_them",
+              "content": "other_barriers_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_them_other_barriers",
+              "title": "who_shouldnt_use_them",
+              "content": "other_barriers_content_6"
+            },
+            {
+              "id": "more_information_other_barriers",
+              "title": "more_information",
+              "content": "other_barriers_content_7"
+            }
+          ]
+        },
+        {
+          "id": "condom",
+          "icon": "IconContraception9Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_condom",
+              "title": "what_are_they",
+              "content": "condom_content_1"
+            },
+            {
+              "id": "how_use_it_condom",
+              "title": "how_use_it",
+              "content": "condom_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_condom",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "condom_content_3"
+            },
+            {
+              "id": "positive_negative_effect_condom",
+              "title": "positive_negative_effect",
+              "content": "condom_content_4"
+            },
+            {
+              "id": "how_where_get_it_condom",
+              "title": "how_where_get_it",
+              "content": "condom_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_it_condom",
+              "title": "who_shouldnt_use_it",
+              "content": "condom_content_6"
+            },
+            {
+              "id": "more_information_condom",
+              "title": "more_information",
+              "content": "condom_content_7"
+            }
+          ]
+        },
+        {
+          "id": "pull_out",
+          "icon": "IconContraception10Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_pull_out",
+              "title": "what_is_it",
+              "content": "pull_out_content_1"
+            },
+            {
+              "id": "how_use_it_pull_out",
+              "title": "how_use_it",
+              "content": "pull_out_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_pull_out",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "pull_out_content_3"
+            },
+            {
+              "id": "positive_negative_effect_pull_out",
+              "title": "positive_negative_effect",
+              "content": "pull_out_content_4"
+            },
+            {
+              "id": "who_shouldnt_use_it_pull_out",
+              "title": "who_shouldnt_use_it",
+              "content": "pull_out_content_5"
+            },
+            {
+              "id": "more_information_pull_out",
+              "title": "more_information",
+              "content": "pull_out_content_6"
+            }
+          ]
+        },
+        {
+          "id": "tubes_tied",
+          "icon": "IconContraception11Large",
+          "source": "bedsider_association",
+          "expandable_items": [
+            {
+              "id": "what_is_it_tubes_tied",
+              "title": "what_is_it",
+              "content": "tubes_tied_content_1"
+            },
+            {
+              "id": "how_use_it_tubes_tied",
+              "title": "how_use_it",
+              "content": "tubes_tied_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_tubes_tied",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "tubes_tied_content_3"
+            },
+            {
+              "id": "positive_negative_effect_tubes_tied",
+              "title": "positive_negative_effect",
+              "content": "tubes_tied_content_4"
+            },
+            {
+              "id": "how_where_get_it_tubes_tied",
+              "title": "how_where_get_it",
+              "content": "tubes_tied_content_5"
+            },
+            {
+              "id": "who_shouldnt_use_it_tubes_tied",
+              "title": "who_shouldnt_use_it",
+              "content": "tubes_tied_content_6"
+            },
+            {
+              "id": "more_information_tubes_tied",
+              "title": "more_information",
+              "content": "tubes_tied_content_7"
+            }
+          ]
+        },
+        {
+          "id": "rhythm",
+          "icon": "IconContraception12Large",
+          "title": "rhythm_title",
+          "source": "Guttmacher Institute",
+          "expandable_items": [
+            {
+              "id": "what_is_it_rhythm",
+              "title": "what_is_it",
+              "content": "rhythm_content_1"
+            },
+            {
+              "id": "how_use_it_rhythm",
+              "title": "how_use_it",
+              "content": "rhythm_content_2"
+            },
+            {
+              "id": "pregnancy_prevention_effectiveness_rhythm",
+              "title": "pregnancy_prevention_effectiveness",
+              "content": "rhythm_content_3"
+            },
+            {
+              "id": "positive_negative_effect_rhythm",
+              "title": "positive_negative_effect",
+              "content": "rhythm_content_4"
+            },
+            {
+              "id": "who_shouldnt_use_it_rhythm",
+              "title": "who_shouldnt_use_it",
+              "content": "rhythm_content_5"
+            },
+            {
+              "id": "more_information_rhythm",
+              "title": "more_information",
+              "content": "rhythm_content_6"
+            }
+          ]
+        },
+        {
+          "id": "practicing_abstinence",
+          "icon": "IconContraception13Large",
+          "content": "practicing_abstinence_content"
+        }
+      ]
+    },
+    {
+      "id": "i_had_unprotected_sex",
+      "icon": "IconContraception",
+      "selectable_row_items": [
+        {
+          "id": "learn_ec",
+          "title": "emergency_contraception",
+          "icon": "IconContraception",
+          "source": "Bedsider, Association of Reproductive Health Professionals",
+          "expandable_items": [
+            {
+              "id": "what_is_it_learn_ec",
+              "title": "what_is_it",
+              "content": "learn_ec_content_1"
+            },
+            {
+              "id": "what_kinds_are_there_learn_ec",
+              "title": "what_kinds_are_there",
+              "content": "learn_ec_content_2"
+            },
+            {
+              "id": "when_use_it_learn_ec",
+              "title": "when_use_it",
+              "content": "learn_ec_content_3"
+            },
+            {
+              "id": "how_does_it_work_learn_ec",
+              "title": "how_does_it_work",
+              "content": "learn_ec_content_4"
+            },
+            {
+              "id": "positive_negative_effect_learn_ec",
+              "title": "positive_negative_effect",
+              "content": "learn_ec_content_5"
+            },
+            {
+              "id": "how_where_get_it_learn_ec",
+              "title": "how_where_get_it",
+              "content": "learn_ec_content_6"
+            },
+            {
+              "id": "is_it_safe_learn_ec",
+              "title": "are_they_safe",
+              "content": "learn_ec_content_7"
+            },
+            {
+              "id": "who_shouldnt_use_it_learn_ec",
+              "title": "who_shouldnt_use_it",
+              "content": "learn_ec_content_8"
+            }
+          ]
+        },
+        {
+          "id": "concerned_sti_hiv",
+          "icon": "IconContraception"
+        },
+        {
+          "id": "concerned_pregnancy",
+          "icon": "IconContraception"
+        }
+      ]
+    },
+    {
+      "id": "preparing_for_clinic",
+      "icon": "IconContraception",
+      "expandable_items": [
+        {
+          "id": "prepare_clinic_heading_1",
+          "content": "prepare_clinic_content_1",
+          "bold_strings": [
+            "prepare_clinic_content_1_bold_1",
+            "prepare_clinic_content_1_bold_2"
+          ]
+        },
+        {
+          "id": "prepare_clinic_heading_2",
+          "content": "prepare_clinic_content_2",
+          "bold_strings": [
+            "prepare_clinic_content_2_bold_1",
+            "prepare_clinic_content_2_bold_2",
+            "prepare_clinic_content_2_bold_3",
+            "prepare_clinic_content_2_bold_4"
+          ],
+          "links": {
+            "Capsule": "https://capsule.com/",
+            "Nurx": "https://www.nurx.com/",
+            "Favor": "https://heyfavor.com/join-today",
+            "Pill Club": "https://heyfavor.com/join-today",
+            "PillPack": "https://www.pillpack.com/"
+          }
+        },
+        {
+          "id": "prepare_clinic_heading_3",
+          "content": "prepare_clinic_content_3",
+          "links": {
+            "Aquí": "reminders",
+            "right here": "reminders"
+          }
+        }
+      ]
+    },
+    {
+      "id": "talking_contraception_title",
+      "icon": "IconContraception",
+      "content": "talking_contraception_content",
+      "links": {
+        "Bedsider": "https://www.bedsider.org/features/311-not-awkward-5-tips-for-talking-to-anyone-about-sex-and-birth-control",
+        "Your Life": "https://www.your-life.com/en/your-questions/lets-talk-about-it/",
+        "Planned Parenthood": "https://www.plannedparenthood.org/learn/teens/preventing-pregnancy-stds/how-do-i-talk-my-parents-about-birth-control-and-stds"
+      }
+    },
+    {
+      "id": "coercion_title",
+      "icon": "IconContraception",
+      "content": "coercion_content"
+    },
+    {
+      "id": "what_if_no_method_works_title",
+      "icon": "IconContraception",
+      "content": "what_if_no_method_works_content"
+    },
+    {
+      "id": "resources",
+      "icon": "IconContraception",
+      "content": "contraception_resources_content",
+      "links": {
+        "Bedsider": "https://www.bedsider.org",
+        "Planned Parenthood": "https://www.plannedparenthood.org/",
+        "Scarleteen": "http://www.scarleteen.com/article/sexual_health/birth_control_bingo",
+        "Free the Pill": "https://freethepill.org/online-pill-prescribing-resources/"
+      }
+    }
+  ]
+}

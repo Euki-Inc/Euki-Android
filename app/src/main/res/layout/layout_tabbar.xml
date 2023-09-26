@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tab_bar_height">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tab_bar_padding"
+        android:background="@color/main_background">
+
+        <View
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.kollectivemobile.euki.ui.common.views.NavBarItem
+            android:id="@+id/nb_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:title="@string/nav_cycle"
+            app:imageResNormal="@drawable/ic_tabbar_cycle_off"
+            app:imageResSelected="@drawable/ic_tabbar_cycle_on"
+            app:selected="true" />
+
+        <com.kollectivemobile.euki.ui.common.views.NavBarItem
+            android:id="@+id/nb_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:title="@string/nav_calendar"
+            app:imageResNormal="@drawable/ic_tabbar_calendar_off"
+            app:imageResSelected="@drawable/ic_tabbar_calendar_on"
+            app:selected="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/v_tutorial_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_x2_9">
+
+                <com.kollectivemobile.euki.ui.common.views.NavBarItem
+                    android:id="@+id/nb_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:title="@string/nav_track"
+                    app:imageResNormal="@drawable/ic_tabbar_track_off"
+                    app:imageResSelected="@drawable/ic_tabbar_track_on"
+                    app:centered="false"
+                    app:selected="true" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.kollectivemobile.euki.ui.common.views.NavBarItem
+            android:id="@+id/nb_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:title="@string/nav_info"
+            app:imageResNormal="@drawable/ic_tabbar_info_off"
+            app:imageResSelected="@drawable/ic_tabbar_info_on"
+            app:selected="true" />
+
+        <com.kollectivemobile.euki.ui.common.views.NavBarItem
+            android:id="@+id/nb_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:title="@string/nav_privacy"
+            app:imageResNormal="@drawable/ic_tabbar_privacy_off"
+            app:imageResSelected="@drawable/ic_tabbar_privacy_on"
+            app:selected="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

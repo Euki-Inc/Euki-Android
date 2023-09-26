@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_x17_10"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_x5_5"
+        android:layout_marginLeft="@dimen/dimen_x3_5"
+        android:layout_marginRight="@dimen/dimen_x3_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title of the reminder"
+            android:singleLine="true"
+            style="@style/HeadlineLargeDefault"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_x2_5"
+            android:text="Optional content text goes here and can be as long as two lines"
+            android:lines="2"
+            style="@style/BodyDefault"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:paddingRight="@dimen/dimen_x5_5"
+        android:paddingTop="@dimen/dimen_x1_5"
+        android:paddingBottom="@dimen/dimen_x1_5">
+
+        <Button
+            android:id="@+id/btn_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_x4_5"
+            android:text="@string/dimsiss"
+            android:background="@null"
+            android:gravity="center"
+            style="@style/LinkOrButtonInactiveOrSecondary"/>
+
+        <Button
+            android:id="@+id/btn_go_to_daily_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_daily_log"
+            android:background="@null"
+            android:gravity="center"
+            style="@style/LinkOrButtonInactiveOrSecondary"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

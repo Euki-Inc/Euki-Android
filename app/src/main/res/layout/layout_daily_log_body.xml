@@ -1,0 +1,130 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ExpandableContainer">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        style="@style/DailyItemNameContainer">
+        
+        <View
+            android:id="@+id/v_circle"
+            android:backgroundTint="@color/body"
+            style="@style/DailyItemCircle"/>
+
+        <TextView
+            android:text="@string/body"
+            style="@style/DailyItemText"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        style="@style/DailyItemContent">
+
+        <androidx.gridlayout.widget.GridLayout
+            style="@style/GridLayout">
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body1"
+                android:tag="1"
+                app:title="@string/body_1"
+                app:imageRes="@drawable/icon_body_1"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body2"
+                android:tag="2"
+                app:title="@string/body_2"
+                app:imageRes="@drawable/icon_body_2"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body3"
+                android:tag="3"
+                app:title="@string/body_3"
+                app:imageRes="@drawable/icon_body_3"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body4"
+                android:tag="4"
+                app:title="@string/body_4"
+                app:imageRes="@drawable/icon_body_4"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body5"
+                android:tag="5"
+                app:title="@string/body_5"
+                app:imageRes="@drawable/icon_body_5"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body6"
+                android:tag="6"
+                app:title="@string/body_6"
+                app:imageRes="@drawable/icon_body_6"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body7"
+                android:tag="7"
+                app:title="@string/body_7"
+                app:imageRes="@drawable/icon_body_7"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body8"
+                android:tag="8"
+                app:title="@string/body_8"
+                app:imageRes="@drawable/icon_body_8"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body9"
+                android:tag="9"
+                app:title="@string/body_9"
+                app:imageRes="@drawable/icon_body_9"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body10"
+                android:tag="10"
+                app:title="@string/body_10"
+                app:imageRes="@drawable/icon_body_10"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body11"
+                android:tag="11"
+                app:title="@string/body_11"
+                app:imageRes="@drawable/icon_body_11"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body12"
+                android:tag="12"
+                app:title="@string/body_12"
+                app:imageRes="@drawable/icon_body_12"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body13"
+                android:tag="13"
+                app:title="@string/body_13"
+                app:imageRes="@drawable/icon_body_13"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_body14"
+                android:tag="14"
+                app:title="@string/body_14"
+                app:imageRes="@drawable/icon_body_14"
+                style="@style/SelectableButton"/>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

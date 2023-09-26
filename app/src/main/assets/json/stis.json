@@ -1,0 +1,329 @@
+{
+  "id": "stis",
+  "icon": "IconSTIs",
+  "content": "stis_description",
+  "selectable_row_items": [
+    {
+      "id": "sti_information",
+      "icon": "IconSTIs",
+      "title": "sti_info",
+      "selectable_items": [
+        {
+          "id": "bacterial_vaginosis",
+          "icon": "iconBacterialInfection",
+          "expandable_items": [
+            {
+              "id": "what_is_it_bacterial_vaginosis",
+              "title": "what_is_it",
+              "content": "bacterial_vaginosis_content_1"
+            },
+            {
+              "id": "how_do_you_get_it_bacterial_vaginosis",
+              "title": "how_do_you_get_it",
+              "content": "bacterial_vaginosis_content_2"
+            },
+            {
+              "id": "what_are_the_symptoms_bacterial_vaginosis",
+              "title": "what_are_the_symptoms",
+              "content": "bacterial_vaginosis_content_3"
+            },
+            {
+              "id": "how_can_you_prevent_it_bacterial_vaginosis",
+              "title": "how_can_you_prevent_it",
+              "content": "bacterial_vaginosis_content_4"
+            },
+            {
+              "id": "how_do_you_treat_it_bacterial_vaginosis",
+              "title": "how_do_you_treat_it",
+              "content": "bacterial_vaginosis_content_5"
+            }
+          ],
+          "source": "center_for_disease_control"
+        },
+        {
+          "id": "chlamydia",
+          "icon": "iconChlamydia",
+          "expandable_items": [
+            {
+              "id": "what_is_it_chlamydia",
+              "title": "what_is_it",
+              "content": "chlamydia_content_1"
+            },
+            {
+              "id": "how_do_you_get_it_chlamydia",
+              "title": "how_do_you_get_it",
+              "content": "chlamydia_content_2"
+            },
+            {
+              "id": "what_are_the_symptoms_chlamydia",
+              "title": "what_are_the_symptoms",
+              "content": "chlamydia_content_3"
+            },
+            {
+              "id": "how_can_you_prevent_it_chlamydia",
+              "title": "how_can_you_prevent_it",
+              "content": "chlamydia_content_4"
+            },
+            {
+              "id": "how_do_you_treat_it_chlamydia",
+              "title": "how_do_you_treat_it",
+              "content": "chlamydia_content_5"
+            }
+          ],
+          "source": "center_for_disease_control"
+        },
+        {
+          "id": "herpes",
+          "icon": "iconHerpes",
+          "expandable_items": [
+            {
+              "id": "what_is_it_herpes",
+              "title": "what_is_it",
+              "content": "herpes_content_1"
+            },
+            {
+              "id": "how_do_you_get_it_herpes",
+              "title": "how_do_you_get_it",
+              "content": "herpes_content_2"
+            },
+            {
+              "id": "what_are_the_symptoms_herpes",
+              "title": "what_are_the_symptoms",
+              "content": "herpes_content_3"
+            },
+            {
+              "id": "how_can_you_prevent_it_herpes",
+              "title": "how_can_you_prevent_it",
+              "content": "herpes_content_4"
+            },
+            {
+              "id": "how_do_you_treat_it_herpes",
+              "title": "how_do_you_treat_it",
+              "content": "herpes_content_5"
+            }
+          ],
+          "source": "center_for_disease_control"
+        },
+        {
+          "id": "gonorrhea",
+          "icon": "iconGonorrhea",
+          "expandable_items": [
+            {
+              "id": "what_is_it_gonorrhea",
+              "title": "what_is_it",
+              "content": "gonorrhea_content_1"
+            },
+            {
+              "id": "how_do_you_get_it_gonorrhea",
+              "title": "how_do_you_get_it",
+              "content": "gonorrhea_content_2"
+            },
+            {
+              "id": "what_are_the_symptoms_gonorrhea",
+              "title": "what_are_the_symptoms",
+              "content": "gonorrhea_content_3"
+            },
+            {
+              "id": "how_can_you_prevent_it_gonorrhea",
+              "title": "how_can_you_prevent_it",
+              "content": "gonorrhea_content_4"
+            },
+            {
+              "id": "how_do_you_treat_it_gonorrhea",
+              "title": "how_do_you_treat_it",
+              "content": "gonorrhea_content_5"
+            }
+          ],
+          "source": "center_for_disease_control"
+        },
+        {
+          "id": "hiv_aids",
+          "icon": "iconHivAids",
+          "expandable_items": [
+            {
+              "id": "what_is_it_hiv_aids",
+              "title": "what_is_it",
+              "content": "hiv_aids_content_1"
+            },
+            {
+              "id": "how_do_you_get_it_hiv_aids",
+              "title": "how_do_you_get_it",
+              "content": "hiv_aids_content_2"
+            },
+            {
+              "id": "what_are_the_symptoms_hiv_aids",
+              "title": "what_are_the_symptoms",
+              "content": "hiv_aids_content_3"
+            },
+            {
+              "id": "how_can_you_prevent_it_hiv_aids",
+              "title": "how_can_you_prevent_it",
+              "content": "hiv_aids_content_4"
+            },
+            {
+              "id": "how_do_you_treat_it_hiv_aids",
+              "title": "how_do_you_treat_it",
+              "content": "hiv_aids_content_5"
+            }
+          ],
+          "source": "center_for_disease_control"
+        },
+        {
+          "id": "hpv",
+          "icon": "iconHpv",
+          "expandable_items": [
+            {
+              "id": "what_is_it_hpv",
+              "title": "what_is_it",
+              "content": "hpv_content_1"
+            },
+            {
+              "id": "how_do_you_get_it_hpv",
+              "title": "how_do_you_get_it",
+              "content": "hpv_content_2"
+            },
+            {
+              "id": "what_are_the_symptoms_hpv",
+              "title": "what_are_the_symptoms",
+              "content": "hpv_content_3"
+            },
+            {
+              "id": "how_can_you_prevent_it_hpv",
+              "title": "how_can_you_prevent_it",
+              "content": "hpv_content_4"
+            },
+            {
+              "id": "how_do_you_treat_it_hpv",
+              "title": "how_do_you_treat_it",
+              "content": "hpv_content_5"
+            }
+          ],
+          "source": "center_for_disease_control"
+        },
+        {
+          "id": "syphilis",
+          "icon": "iconSyphilis",
+          "expandable_items": [
+            {
+              "id": "what_is_it_syphilis",
+              "title": "what_is_it",
+              "content": "syphilis_content_1"
+            },
+            {
+              "id": "how_do_you_get_it_syphilis",
+              "title": "how_do_you_get_it",
+              "content": "syphilis_content_2"
+            },
+            {
+              "id": "what_are_the_symptoms_syphilis",
+              "title": "what_are_the_symptoms",
+              "content": "syphilis_content_3"
+            },
+            {
+              "id": "how_can_you_prevent_it_syphilis",
+              "title": "how_can_you_prevent_it",
+              "content": "syphilis_content_4"
+            },
+            {
+              "id": "how_do_you_treat_it_syphilis",
+              "title": "how_do_you_treat_it",
+              "content": "syphilis_content_5"
+            }
+          ],
+          "source": "center_for_disease_control"
+        },
+        {
+          "id": "trichomoniasis",
+          "icon": "iconTrichomoniasis",
+          "expandable_items": [
+            {
+              "id": "what_is_it_trichomoniasis",
+              "title": "what_is_it",
+              "content": "trichomoniasis_content_1"
+            },
+            {
+              "id": "how_do_you_get_it_trichomoniasis",
+              "title": "how_do_you_get_it",
+              "content": "trichomoniasis_content_2"
+            },
+            {
+              "id": "what_are_the_symptoms_trichomoniasis",
+              "title": "what_are_the_symptoms",
+              "content": "trichomoniasis_content_3"
+            },
+            {
+              "id": "how_can_you_prevent_it_trichomoniasis",
+              "title": "how_can_you_prevent_it",
+              "content": "trichomoniasis_content_4"
+            },
+            {
+              "id": "how_do_you_treat_it_trichomoniasis",
+              "title": "how_do_you_treat_it",
+              "content": "trichomoniasis_content_5"
+            }
+          ],
+          "source": "center_for_disease_control"
+        }
+      ]
+    },
+    {
+      "id": "preventing_sti",
+      "icon": "IconSTIs",
+      "content": "preventing_sti_content",
+      "source": "center_for_disease_control"
+    },
+    {
+      "id": "getting_tested",
+      "icon": "IconSTIs",
+      "content": "getting_tested_content",
+      "links": {
+        "el sitio web de CDC": "https://cdc.gov/std",
+        "CDC website": "https://cdc.gov/std",
+        "Completa este simple test de Planned Parenthood":  "https://tools.plannedparenthood.org/std/intro",
+        "quiz": "https://tools.plannedparenthood.org/std/intro"
+      }
+    },
+    {
+      "id": "talking_to_partner",
+      "icon": "IconSTIs",
+      "content": "talking_to_partner_content",
+      "source": "get_yourself_tested_campaign"
+    },
+    {
+      "id": "stis_faqs",
+      "icon": "IconSTIs",
+      "content": "stis_faqs_content",
+      "expandable_items": [
+        {
+          "id": "stis_faq_question_1",
+          "content": "stis_faq_answer_1"
+        },
+        {
+          "id": "stis_faq_question_2",
+          "content": "stis_faq_answer_2"
+        },
+        {
+          "id": "stis_faq_question_3",
+          "content": "stis_faq_answer_3"
+        },
+        {
+          "id": "stis_faq_question_4",
+          "content": "stis_faq_answer_4"
+        }
+      ]
+    },
+    {
+      "id": "resources",
+      "icon": "IconSTIs",
+      "content": "resources_content",
+      "links": {
+        "Center for Disease Control": "https://www.cdc.gov/std/healthcomm/fact_sheets.htm",
+        "Centers for Disease Control": "https://www.cdc.gov/std/healthcomm/fact_sheets.htm",
+        "Planned Parenthood": "https://www.plannedparenthood.org/learn/stds-hiv-safer-sex",
+        "Get Yourself Tested  campaign": "http://www.itsyoursexlife.com/stds-testing-gyt",
+        "Get Yourself Tested": "http://www.itsyoursexlife.com/stds-testing-gyt",
+        "Before Play": "https://www.beforeplay.org/wp-content/uploads/2012/02/Sample-Conversation-Starters.pdf"
+      }
+    }
+  ]
+}

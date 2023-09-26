@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="title" format="string" localization="suggested" />
+    <attr name="selected" format="boolean" />
+
+    <declare-styleable name="SelectableButton">
+        <attr name="title" />
+        <attr name="singleSelection" format="boolean" />
+        <attr name="imageRes" format="reference" />
+        <attr name="isRadio" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NavBarItem">
+        <attr name="title" />
+        <attr name="selected" />
+        <attr name="centered" format="boolean" />
+        <attr name="imageResNormal" format="reference" />
+        <attr name="imageResSelected" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedItem">
+        <attr name="title" />
+        <attr name="selected" />
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedButton">
+        <attr name="titleLeft" format="string" />
+        <attr name="titleRight" format="string" />
+        <attr name="selectedIndex" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MenuItem">
+        <attr name="title" />
+        <attr name="count" format="integer" />
+    </declare-styleable>
+</resources>

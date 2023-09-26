@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/main_background</color>
+    <color name="colorPrimaryDark">@color/euki_main</color>
+    <color name="colorAccent">@color/euki_main</color>
+
+    <color name="euki_main">#000000</color>
+    <color name="main_background">#F3F6F6</color>
+    <color name="blueberry">#45359d</color>
+    <color name="blueberry_50">#8045359d</color>
+    <color name="deep_lavender">#7971a4</color>
+    <color name="leather">#9f912a</color>
+    <color name="slate_grey">#5a596b</color>
+    <color name="ice_blue">#f3f6f6</color>
+    <color name="white">#ffffff</color>
+    <color name="iris">#614fc2</color>
+    <color name="iris_50">#80614fc2</color>
+    <color name="pale_lavender">#eceaf5</color>
+    <color name="link">#EA7D77</color>
+    <color name="pale_lavender_50">#7eeceaf5</color>
+    <color name="white_50">#7effffff</color>
+    <color name="white_10">#01ffffff</color>
+
+    <color name="bleeding">#c30027</color>
+    <color name="emotions">#f99518</color>
+    <color name="body">#b56d60</color>
+    <color name="sexual_activity">#606060</color>
+    <color name="contraception">#5ed4ff</color>
+    <color name="test">#81caab</color>
+    <color name="appointment">#234ab8</color>
+    <color name="note">#dacb49</color>
+    <color name="light_gray">#a3a3a3</color>
+
+    <color name="pale_lavender_two_50">#80eceaf5</color>
+
+    <color name="primary_lighter">#c7b9ff</color>
+    <color name="light_mint">#b5fabc</color>
+</resources>

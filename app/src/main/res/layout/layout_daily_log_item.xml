@@ -1,0 +1,54 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_x8_10"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dimen_x3_5"
+            android:paddingRight="@dimen/dimen_x3_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/v_circle"
+                android:backgroundTint="@color/bleeding"
+                style="@style/DailyItemCircle"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="@string/bleeding"
+                android:layout_weight="1"
+                style="@style/DailyItemText"/>
+
+            <ImageButton
+                android:id="@+id/ib_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tile_add"
+                android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/iv_move"
+                android:layout_marginLeft="@dimen/dimen_x2_5"
+                android:layout_width="@dimen/dimen_x5_5"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_tile_move" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
