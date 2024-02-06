@@ -19,6 +19,7 @@ public class ContentManagerImpl implements ContentManager {
     private static final String MISCARRIAGE_JSON = "miscarriage";
     private static final String SEX_RELATIONSHIPS_JSON = "sex_relationships";
     private static final String PREGNANCY_OPTIONS = "pregnancy_options";
+    private static final String MENSTRUATION_OPTIONS = "menstruation_options";
 
     private ContentItem mAbortionKnowledge;
     private ContentItem mAbortionWalkthrough;
@@ -27,6 +28,7 @@ public class ContentManagerImpl implements ContentManager {
     private ContentItem mMiscarriage;
     private ContentItem mSexRelationships;
     private ContentItem mPregnancyOptions;
+    private ContentItem mMenstruationOptions;
 
     private AbortionContentManager mAbortionContentManager;
     private PrivacyContentManager mPrivacyContentManager;
@@ -72,6 +74,11 @@ public class ContentManagerImpl implements ContentManager {
     }
 
     @Override
+    public void getMenstruationOptions(EukiCallback<ContentItem> callback) {
+        callback.onSuccess(getMenstruationOptions());
+    }
+
+    @Override
     public ContentItem getContentItem(String id) {
         ContentItem foundContentItem = getContentItem(id, getAbortionKnowledge());
         if (foundContentItem != null) {
@@ -104,6 +111,11 @@ public class ContentManagerImpl implements ContentManager {
         }
 
         foundContentItem = getContentItem(id, getPregnancyOptions());
+        if (foundContentItem != null) {
+            return foundContentItem;
+        }
+
+        foundContentItem = getContentItem(id, getMenstruationOptions());
         if (foundContentItem != null) {
             return foundContentItem;
         }
@@ -211,6 +223,7 @@ public class ContentManagerImpl implements ContentManager {
         items.addAll(searchContentItem(searchText, getMiscarriage()));
         items.addAll(searchContentItem(searchText, getSexRelationships()));
         items.addAll(searchContentItem(searchText, getPregnancyOptions()));
+        items.addAll(searchContentItem(searchText, getMenstruationOptions()));
 
         //Abortion ContentItems
 
@@ -351,5 +364,12 @@ public class ContentManagerImpl implements ContentManager {
             mPregnancyOptions = createContentItem(PREGNANCY_OPTIONS);
         }
         return mPregnancyOptions;
+    }
+
+    public ContentItem getMenstruationOptions() {
+        if (mMenstruationOptions == null) {
+            mMenstruationOptions = createContentItem(MENSTRUATION_OPTIONS);
+        }
+        return mMenstruationOptions;
     }
 }

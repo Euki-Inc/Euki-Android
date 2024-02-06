@@ -202,7 +202,7 @@ public class CycleSummaryAdapter extends RecyclerView.Adapter {
         }
     }
 
-    public class SeePastHolder extends RecyclerView.ViewHolder {
+    public static class SeePastHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.tv_see_past) TextView tvSeePast;
 
         public SeePastHolder(@NonNull View itemView) {

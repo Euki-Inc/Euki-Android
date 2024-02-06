@@ -10,14 +10,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.afollestad.materialdialogs.callbacks.DialogCallbackExtKt;
 import com.kollectivemobile.euki.App;
 import com.kollectivemobile.euki.R;
 import com.kollectivemobile.euki.manager.ContentManager;
@@ -245,6 +243,9 @@ public class HomeFragment extends BaseFragment implements TileHolder.TileListene
                 break;
             case "stis":
                 mContentManager.getSTIs(callback);
+                break;
+            case "menstruation":
+                mContentManager.getMenstruationOptions(callback);
                 break;
         }
     }

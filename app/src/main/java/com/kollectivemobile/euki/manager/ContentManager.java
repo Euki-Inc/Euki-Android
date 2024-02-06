@@ -13,6 +13,7 @@ public interface ContentManager {
     void getMiscarriage(EukiCallback<ContentItem> callback);
     void getSexRelationships(EukiCallback<ContentItem> callback);
     void getPregnancyOptions(EukiCallback<ContentItem> callback);
+    void getMenstruationOptions(EukiCallback<ContentItem> callback);
 
     ContentItem getContentItem(String id);
     ContentItem getContentItem(String id, ContentItem contentItem);

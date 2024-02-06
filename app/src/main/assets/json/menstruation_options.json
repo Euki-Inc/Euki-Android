@@ -1,0 +1,552 @@
+{
+  "id": "menstruation",
+  "icon": "IconMenstruation",
+  "content": "menstruation_content",
+  "selectable_row_items": [
+    {
+      "id": "menstrual_cycle_101",
+      "icon": "IconMenstruation"
+    },
+    {
+      "id": "first_period_to_last_period",
+      "icon": "IconMenstruation",
+      "title": "first_period_to_last_period_title",
+      "content": "first_period_to_last_period_content",
+      "selectable_items": [
+        {
+          "id": "menarche",
+          "content": "menarche_content",
+          "icon": "iconMenstruationMenarche1",
+          "expandable_items": [
+            {
+              "id": "how_to_prepare_menarche",
+              "title": "how_to_prepare",
+              "content": "menarche_content_1"
+            },
+            {
+              "id": "whats_it_mean_menarche",
+              "title": "whats_it_mean",
+              "content": "menarche_content_2"
+            },
+            {
+              "id": "common_misconceptions_menarche",
+              "title": "common_misconceptions",
+              "content": "menarche_content_3"
+            },
+            {
+              "id": "how_to_find_support_menarche",
+              "title": "how_to_find_support",
+              "content": "menarche_content_4"
+            },
+            {
+              "id": "first_period_stories_menarche",
+              "title": "first_period_stories",
+              "content": "menarche_content_5"
+            }
+          ]
+        },
+        {
+          "id": "menopause",
+          "content": "menopause_content",
+          "icon": "icon_menstruation_menopause",
+          "source": "cleveland_clinic",
+          "expandable_items": [
+            {
+              "id": "what_is_it_menopause",
+              "title": "what_is_it",
+              "content": "menopause_content_1"
+            },
+            {
+              "id": "symptoms_menopause",
+              "title": "symptoms",
+              "content": "menopause_content_2"
+            },
+            {
+              "id": "symptom_management_menopause",
+              "title": "symptom_management",
+              "content": "menopause_content_3",
+              "links": {
+                "Empower Work": "https://www.empowerwork.org/"
+              }
+            },
+            {
+              "id": "common_misconceptions_menopause",
+              "title": "common_misconceptions",
+              "content": "menopause_content_4"
+            },
+            {
+              "id": "mental_health_impacts_menopause",
+              "title": "mental_health_impacts",
+              "content": "menopause_content_5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_quiz",
+      "icon": "IconMenstruation"
+    },
+    {
+      "id": "menstrual_products",
+      "title": "menstrual_products",
+      "selectable_items": [
+        {
+          "id": "reusable_pad",
+          "icon": "iconReusablePad",
+          "title": "reusable_pad",
+          "expandable_items": [
+            {
+              "id": "what_is_it_reusable_pad",
+              "title": "what_is_it",
+              "content": "what_is_it_reusable_pad_content_1"
+            },
+            {
+              "id": "how_is_it_used_reusable_pad",
+              "title": "how_is_it_used",
+              "content": "reusable_pad_content_2"
+            },
+            {
+              "id": "when_do_you_change_it_reusable_pad",
+              "title": "when_do_you_change_it",
+              "content": "reusable_pad_content_3"
+            },
+            {
+              "id": "what_do_you_do_after_you_use_it_reusable_pad",
+              "title": "what_do_you_do_after_you_use_it",
+              "content": "reusable_pad_content_4"
+            },
+            {
+              "id": "how_does_it_feel_reusable_pad",
+              "title": "how_does_it_feel",
+              "content": "reusable_pad_content_5"
+            },
+            {
+              "id": "where_can_you_get_it_reusable_pad",
+              "title": "where_can_you_get_it",
+              "content": "reusable_pad_content_6"
+            },
+            {
+              "id": "how_much_does_it_cost_reusable_pad",
+              "title": "how_much_does_it_cost",
+              "content": "reusable_pad_content_7"
+            }
+          ]
+        },
+        {
+          "id": "disposable_pad",
+          "title": "disposable_pad",
+          "icon": "iconDisposablePad",
+          "expandable_items": [
+            {
+              "id": "what_is_it_disposable_pad",
+              "title": "what_is_it",
+              "content": "disposable_pad_content_1"
+            },
+            {
+              "id": "how_is_it_used_disposable_pad",
+              "title": "how_is_it_used",
+              "content": "disposable_pad_content_2"
+            },
+            {
+              "id": "when_do_you_change_it_disposable_pad",
+              "title": "when_do_you_change_it",
+              "content": "disposable_pad_content_3"
+            },
+            {
+              "id": "what_do_you_do_after_you_use_it_disposable_pad",
+              "title": "what_do_you_do_after_you_use_it",
+              "content": "disposable_pad_content_4"
+            },
+            {
+              "id": "how_does_it_feel_disposable_pad",
+              "title": "how_does_it_feel",
+              "content": "disposable_pad_content_5"
+            },
+            {
+              "id": "where_can_you_get_it_disposable_pad",
+              "title": "where_can_you_get_it",
+              "content": "disposable_pad_content_6"
+            },
+            {
+              "id": "how_much_does_it_cost_disposable_pad",
+              "title": "how_much_does_it_cost",
+              "content": "disposable_pad_content_7"
+            }
+          ]
+        },
+        {
+          "id": "tampon",
+          "title": "tampon",
+          "icon": "iconTampon",
+          "expandable_items": [
+            {
+              "id": "what_is_it_tampon",
+              "title": "what_is_it",
+              "content": "tampon_content_1"
+            },
+            {
+              "id": "how_is_it_used_tampon",
+              "title": "how_is_it_used",
+              "content": "tampon_content_2"
+            },
+            {
+              "id": "when_do_you_change_it_tampon",
+              "title": "when_do_you_change_it",
+              "content": "tampon_content_3"
+            },
+            {
+              "id": "what_do_you_do_after_you_use_it_tampon",
+              "title": "what_do_you_do_after_you_use_it",
+              "content": "tampon_content_4"
+            },
+            {
+              "id": "how_does_it_feel_tampon",
+              "title": "how_does_it_feel",
+              "content": "tampon_content_5"
+            },
+            {
+              "id": "where_can_you_get_it_tampon",
+              "title": "where_can_you_get_it",
+              "content": "tampon_content_6"
+            },
+            {
+              "id": "how_much_does_it_cost_tampon",
+              "title": "how_much_does_it_cost",
+              "content": "tampon_content_7"
+            }
+          ]
+        },
+        {
+          "id": "menstrual_cup",
+          "title": "menstrual_cup",
+          "icon": "iconMenstrualCup",
+          "expandable_items": [
+            {
+              "id": "what_is_it_tampon_menstrual_cup",
+              "title": "what_is_it",
+              "content": "menstrual_cup_content_1"
+            },
+            {
+              "id": "how_is_it_used_menstrual_cup",
+              "title": "how_is_it_used",
+              "content": "menstrual_cup_content_2"
+            },
+            {
+              "id": "when_do_you_change_it_menstrual_cup",
+              "title": "when_do_you_change_it",
+              "content": "menstrual_cup_content_3"
+            },
+            {
+              "id": "what_do_you_do_after_you_use_it_menstrual_cup",
+              "title": "what_do_you_do_after_you_use_it",
+              "content": "menstrual_cup_content_4"
+            },
+            {
+              "id": "how_does_it_feel_menstrual_cup",
+              "title": "how_does_it_feel",
+              "content": "menstrual_cup_content_5"
+            },
+            {
+              "id": "where_can_you_get_it_menstrual_cup",
+              "title": "where_can_you_get_it",
+              "content": "menstrual_cup_content_6"
+            },
+            {
+              "id": "how_much_does_it_cost_menstrual_cup",
+              "title": "how_much_does_it_cost",
+              "content": "menstrual_cup_content_7"
+            }
+          ]
+        },
+        {
+          "id": "menstrual_disc",
+          "title": "menstrual_disc",
+          "icon": "iconMenstrualDisc",
+          "expandable_items": [
+            {
+              "id": "what_is_it_tampon_menstrual_disc",
+              "title": "what_is_it",
+              "content": "menstrual_disc_content_1"
+            },
+            {
+              "id": "how_is_it_used_menstrual_disc",
+              "title": "how_is_it_used",
+              "content": "menstrual_disc_content_2"
+            },
+            {
+              "id": "when_do_you_change_it_menstrual_disc",
+              "title": "when_do_you_change_it",
+              "content": "menstrual_disc_content_3"
+            },
+            {
+              "id": "what_do_you_do_after_you_use_it_menstrual_disc",
+              "title": "what_do_you_do_after_you_use_it",
+              "content": "menstrual_disc_content_4"
+            },
+            {
+              "id": "how_does_it_feel_menstrual_disc",
+              "title": "how_does_it_feel",
+              "content": "menstrual_disc_content_5"
+            },
+            {
+              "id": "where_can_you_get_it_menstrual_disc",
+              "title": "where_can_you_get_it",
+              "content": "menstrual_disc_content_6"
+            },
+            {
+              "id": "how_much_does_it_cost_menstrual_disc",
+              "title": "how_much_does_it_cost",
+              "content": "menstrual_disc_content_7"
+            }
+          ]
+        },
+        {
+          "id": "period_underwear",
+          "title": "period_underwear",
+          "icon": "iconPeriodUnderwear",
+          "expandable_items": [
+            {
+              "id": "what_is_it_tampon_period_underwear",
+              "title": "what_is_it",
+              "content": "period_underwear_content_1"
+            },
+            {
+              "id": "how_is_it_used_period_underwear",
+              "title": "how_is_it_used",
+              "content": "period_underwear_content_2"
+            },
+            {
+              "id": "when_do_you_change_it_period_underwear",
+              "title": "when_do_you_change_it",
+              "content": "period_underwear_content_3"
+            },
+            {
+              "id": "what_do_you_do_after_you_use_it_period_underwear",
+              "title": "what_do_you_do_after_you_use_it",
+              "content": "period_underwear_content_4"
+            },
+            {
+              "id": "how_does_it_feel_period_underwear",
+              "title": "how_does_it_feel",
+              "content": "period_underwear_content_5"
+            },
+            {
+              "id": "where_can_you_get_it_period_underwear",
+              "title": "where_can_you_get_it",
+              "content": "period_underwear_content_6"
+            },
+            {
+              "id": "how_much_does_it_cost_period_underwear",
+              "title": "how_much_does_it_cost",
+              "content": "period_underwear_content_7"
+            }
+          ]
+        },
+        {
+          "id": "liner",
+          "title": "liner",
+          "icon": "iconLiner",
+          "expandable_items": [
+            {
+              "id": "what_is_it_tampon_liner",
+              "title": "what_is_it",
+              "content": "liner_content_1"
+            },
+            {
+              "id": "how_is_it_used_liner",
+              "title": "how_is_it_used",
+              "content": "liner_content_2"
+            },
+            {
+              "id": "when_do_you_change_it_liner",
+              "title": "when_do_you_change_it",
+              "content": "liner_content_3"
+            },
+            {
+              "id": "what_do_you_do_after_you_use_it_liner",
+              "title": "what_do_you_do_after_you_use_it",
+              "content": "liner_content_4"
+            },
+            {
+              "id": "how_does_it_feel_liner",
+              "title": "how_does_it_feel",
+              "content": "liner_content_5"
+            },
+            {
+              "id": "where_can_you_get_it_liner",
+              "title": "where_can_you_get_it",
+              "content": "liner_content_6"
+            },
+            {
+              "id": "how_much_does_it_cost_liner",
+              "title": "how_much_does_it_cost",
+              "content": "liner_content_7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symptom_management",
+      "icon": "IconMenstruation",
+      "title": "symptom_management",
+      "content": "symptom_management_content",
+      "expandable_items": [
+        {
+          "id": "bleeding",
+          "title": "bleeding_title",
+          "content": "bleeding_title_content"
+        },
+        {
+          "id": "social_stress",
+          "title": "social_stress_title",
+          "content": "social_stress_content",
+          "links": {
+            "Empower Work": "https://www.empowerwork.org/",
+            "(510)20674-1414": "https://(510)20674-1414/"
+          }
+        },
+        {
+          "id": "cramps",
+          "title": "cramps_title",
+          "content": "cramps_content"
+        },
+        {
+          "id": "other_pain",
+          "title": "other_pain_title",
+          "content": "other_pain_content"
+        },
+        {
+          "id": "nausea_and_fatigue",
+          "title": "nausea_and_fatigue_title",
+          "content": "nausea_and_fatigue_content"
+        },
+        {
+          "id": "mental_health",
+          "title": "mental_health_title",
+          "content": "mental_health_content",
+          "links": {
+            "helplines": "https://app.projecthealthyminds.com/tactics/helplines?gad_source=1"
+          }
+        },
+        {
+          "id": "dysphoria",
+          "title": "dysphoria_title",
+          "content": "dysphoria_content",
+          "links": {
+            "Trans Lifeline": "https://translifeline.org/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "menstruation_related_disorders",
+      "title": "menstruation_related_disorders_title",
+      "content": "menstruation_related_disorders_content",
+      "source": "johns_hopkins_medicine",
+      "icon": "IconMenstruation",
+      "expandable_items": [
+        {
+          "id": "polycystic_ovary_syndrome_pcos",
+          "title": "polycystic_ovary_syndrome_pcos_title",
+          "content": "polycystic_ovary_syndrome_pcos_content",
+          "bold_strings": [
+            "symptoms_bold_1",
+            "diagnosis_bold_2",
+            "treatment_bold_3"
+          ],
+          "links": {
+            "Johns Hopkins Medicine": "https://www.hopkinsmedicine.org/health/conditions-and-diseases/polycystic-ovary-syndrome-pcos"
+          }
+        },
+        {
+          "id": "inherited_bleeding_disorders",
+          "title": "inherited_bleeding_disorders_title",
+          "content": "inherited_bleeding_disorders_content",
+          "bold_strings": [
+            "symptoms_bold_1",
+            "diagnosis_bold_2"
+          ]
+        },
+        {
+          "id": "endometriosis",
+          "title": "endometriosis_title",
+          "content": "endometriosis_content",
+          "bold_strings": [
+            "symptoms_bold_1",
+            "diagnosis_bold_2",
+            "treatment_bold_3"
+          ]
+        },
+        {
+          "id": "pelvic_inflammatory_disease_pid",
+          "title": "pelvic_inflammatory_disease_pid_title",
+          "content": "pelvic_inflammatory_disease_pid_content",
+          "bold_strings": [
+            "symptoms_bold_1",
+            "diagnosis_treatment_bold_3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menstruation_faqs",
+      "icon": "IconMenstruation",
+      "title": "menstruation_faqs_title",
+      "expandable_items": [
+        {
+          "id": "menstruation_faqs_question_1",
+          "content": "menstruation_faqs_answer_1"
+        },
+        {
+          "id": "menstruation_faqs_question_2",
+          "content": "menstruation_faqs_answer_2"
+        },
+        {
+          "id": "menstruation_faqs_question_3",
+          "content": "menstruation_faqs_answer_3"
+        },
+        {
+          "id": "menstruation_faqs_question_4",
+          "content": "menstruation_faqs_answer_4"
+        },
+        {
+          "id": "menstruation_faqs_question_5",
+          "content": "menstruation_faqs_answer_5"
+        },
+        {
+          "id": "menstruation_faqs_question_6",
+          "content": "menstruation_faqs_answer_6"
+        },
+        {
+          "id": "menstruation_faqs_question_7",
+          "title": "menstruation_faqs_question_7",
+          "content": "menstruation_faqs_answer_7",
+          "links": {
+            "here": "https://helloclue.com/articles/cycle-a-z/testosterone-your-cycle#:~:text=One%20trans%20guy%20might%20see,that%20their%20menstruation%20stops%20completely."
+          }
+        },
+        {
+          "id": "menstruation_faqs_question_8",
+          "content": "menstruation_faqs_answer_8"
+        },
+        {
+          "id": "menstruation_faqs_question_9",
+          "content": "menstruation_faqs_answer_9"
+        }
+      ]
+    },
+    {
+      "id": "resources",
+      "content": "menstruation_resources_content",
+      "icon": "IconMenstruation",
+      "links": {
+        "Alliance for Period Supplies": "https://allianceforperiodsupplies.org/allied-programs-2/",
+        "Good Rx": "https://www.goodrx.com/health-topic/womens-health/free-tampons-and-period-menstrual-products",
+        "Planned Parenthood": "https://www.plannedparenthood.org/learn/health-and-wellness/menstruation/how-do-i-use-tampons-pads-and-menstrual-cups#:~:text=Stick%20the%20pad%20in%20your,throw%20them%20in%20the%20trash",
+        "AMAZE": "https://amaze.org/video/puberty-menstruation-what-to-expect/"
+      }
+    }
+  ]
+}

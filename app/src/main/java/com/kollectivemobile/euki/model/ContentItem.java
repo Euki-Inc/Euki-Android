@@ -13,7 +13,6 @@ import com.kollectivemobile.euki.utils.Utils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
