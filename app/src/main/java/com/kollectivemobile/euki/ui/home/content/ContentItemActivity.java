@@ -70,6 +70,7 @@ public class ContentItemActivity extends BaseActivity {
         Fragment fragment = null;
         switch (contentItem.getId()) {
             case "compare_methods":
+            case "product_quiz":
                 break;
             case "medical_abortion":
                 fragment = MedicalAbortionFragment.newInstance();

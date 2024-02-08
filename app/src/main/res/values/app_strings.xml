@@ -1056,4 +1056,36 @@ For tampons without an applicator, you can use your fingers to push the tampon i
     <string name="liner_content_5">Liners are very thin and don\'t feel like much other than some extra cloth in your underwear.</string>
     <string name="liner_content_6">Liners can be purchased at most major grocery stores and pharmacies, as well as online.</string>
     <string name="liner_content_7">A box typically costs about $7 and contains about 36 liners. Most people only use 5-10 per cycle, bringing the cost to $1-2/month.</string>
+    <string name="menstruation_quiz_instructions">Swipe to take a brief quiz that will help you find the period products that might be the best fit for you.</string>
+    <string name="id_prefer_to_get_menstrual_products">I’d prefer to get menstrual products:</string>
+    <string name="at_the_pharmacy">At the pharmacy</string>
+    <string name="at_the_grocery_store">At the grocery store</string>
+    <string name="at_the_gas_station">At the gas station</string>
+    <string name="online">Online</string>
+    <string name="free_at_a_clinic">Free at a clinic</string>
+    <string name="menstruation_1">Reusable pad</string>
+    <string name="menstruation_2">Disposable pad</string>
+    <string name="menstruation_3">Tampon</string>
+    <string name="menstruation_4">Menstrual cup</string>
+    <string name="menstruation_5">Menstrual disc</string>
+    <string name="menstruation_6">Period underwear</string>
+    <string name="menstruation_7">Liner</string>
+    <string name="id_prefer_to_pay">I’d prefer to pay:</string>
+    <string name="about_5_10_per_month">About $5-10 per month</string>
+    <string name="about_15_20_per_month">About $15-20 per month</string>
+    <string name="about_20_50_one_time">About $20-50 one time (products last 5-10 years)</string>
+    <string name="id_like_a_product_i_can_swim_in">I\’d like a product I can swim in, use while wearing a thong or boxers, or use while not wearing underwear.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="i_want_a_product_that_i_only_have_to_change_every">I want a product that I only have to change every:</string>
+    <string name="two_four_hours">2-4 hours</string>
+    <string name="four_eight_hours">4-8 hours</string>
+    <string name="up_to_12_hours">Up to 12 hours</string>
+    <string name="id_prefer_a_product_that_i_can">I’d prefer a product that I can:</string>
+    <string name="wear_outside_of_my_body">Wear outside of my body</string>
+    <string name="insert_into_my_body">Insert into my body</string>
+    <string name="recommended_methods_menstruation">Based on your answers, these products might work for you.\n\n
+        If you answered more than two questions that correspond to a certain method, that method appears below.</string>
+    <string name="no_recommended_methods_menstruation">Please answer at least one question to see which menstrual products might work best for you.</string>
+
 </resources>
