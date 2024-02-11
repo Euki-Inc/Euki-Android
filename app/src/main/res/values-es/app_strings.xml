@@ -885,44 +885,44 @@ Fuente: Johns Hopkins Medicine</string>
     <string name="johns_hopkins_medicine">Johns Hopkins Medicine</string>
     <string name="polycystic_ovary_syndrome_pcos_title">Síndrome de ovario poliquístico (SOP)</string>
     <string name="polycystic_ovary_syndrome_pcos_content">El síndrome de ovario poliquístico, también conocido como SOP, es una afección en la que los ovarios producen demasiada hormona andrógena. Estas hormonas son el resultado de la falta de ovulación, lo que puede crear quistes. El SOP puede estar relacionado con la resistencia a la insulina, la obesidad y la genética.  
-/n
+\n
 Síntomas
 Los síntomas del síndrome de ovario poliquístico incluyen falta de periodos, periodos irregulares o leves, piel grasa/acné, aumento de peso, pérdida de cabello/calvicie, infertilidad, exceso de piel en las axilas o el cuello (acrocordones) y vello corporal grueso/exceso de vello alrededor del área de la mandíbula, la parte superior del labio, la parte inferior de la espalda y la cara interna de los muslos.
-/n
+\n
 Diagnóstico
 Para obtener un diagnóstico, un/a/e proveedor/a/e de atención médica te preguntará acerca de tu historial médico y probablemente te realizará un examen físico. También pueden realizar una ecografía o un análisis de sangre.
-/n
+\n
 Tratamiento
 Dependiendo del resultado deseado, hay varias opciones de tratamiento, que incluyen cambios en la dieta y la actividad, medicamentos para provocar la ovulación, anticonceptivos y medicamentos para la diabetes. Puedes hablar con un/a/e proveedor/a/e de atención médica de confianza si te preocupa tener SOP y buscas opciones de tratamiento.
-/n
+\n
 Para obtener más información, consulta el sitio web de Johns Hopkins Medicine. </string>
     <string name="symptoms_bold_1">Síntomas</string>
     <string name="diagnosis_bold_2">Diagnóstico</string>
     <string name="treatment_bold_3">Tratamiento</string>
     <string name="inherited_bleeding_disorders_title">Trastornos hemorrágicos hereditarios</string>
     <string name="inherited_bleeding_disorders_content">Los trastornos hemorrágicos dificultan que una persona deje de sangrar. En algunas personas, los periodos abundantes pueden ser causados por un trastorno hemorrágico.
-/n
+\n
 Síntomas
 Otros signos o síntomas de un trastorno hemorrágico pueden incluir moretones inusualmente grandes, sangre en las heces o en la orina, sangrado prolongado después de usar hilo dental o de un pequeño corte, y anemia.
-/n
+\n
 Diagnóstico
 Consulta a un/a/e proveedor/a/e de atención médica para obtener un diagnóstico formal de trastorno hemorrágico.</string>
     <string name="endometriosis_title">Endometriosis</string>
     <string name="endometriosis_content">La endometriosis es una afección en la que el tejido que recubre el útero crece fuera del útero. Este tejido no tiene forma de salir del cuerpo, como el tejido uterino habitual, y actúa como lo haría el tejido endometrial: se espesa, se desprende y sangra con cada ciclo menstrual. Esto puede provocar un dolor pélvico agudo, especialmente durante los periodos, que también puede aumentar durante las relaciones sexuales, al defecar o al orinar.
-/n
+\n
 Síntomas
 Otros síntomas son similares a los síntomas normales del periodo, como la distensión abdominal, la fatiga, las náuseas y la diarrea, pero pueden ser más pronunciados. La endometriosis puede parecerse y confundirse con la enfermedad pélvica inflamatoria o los quistes ováricos.
-/n
+\n
 Diagnóstico
 El diagnóstico puede ser difícil debido a las similitudes con la enfermedad pélvica inflamatoria y los quistes ováricos, pero acudir a un/a/e proveedor/a/e de atención médica podría ayudar a aclararlo.
-/n
+\n
 Tratamiento
 Si bien no hay un tratamiento duradero para la endometriosis, existen formas de controlar los síntomas. Lo más común es que las personas tomen medicamentos para el control hormonal, como anticonceptivos o un antagonista o agonista específico de la hormona liberadora de gonadotropina.</string>
     <string name="pelvic_inflammatory_disease_pid_title">Enfermedad pélvica inflamatoria (EPI)</string>
-    <string name="pelvic_inflammatory_disease_pid_content">La enfermedad pélvica inflamatoria (EPI) es una infección de los órganos reproductivos superiores que generalmente es causada por una infección de transmisión sexual (ITS)./n/n
-Síntomas /n
-La EPI a menudo se asocia con dolor abdominal, dolor en las relaciones sexuales y sangrado anormal. También puede estar acompañada de escalofríos, fiebre y flujo vaginal inusual./n/n
-Diagnóstico/tratamiento/n/n
+    <string name="pelvic_inflammatory_disease_pid_content">La enfermedad pélvica inflamatoria (EPI) es una infección de los órganos reproductivos superiores que generalmente es causada por una infección de transmisión sexual (ITS).\n\n
+Síntomas \n
+La EPI a menudo se asocia con dolor abdominal, dolor en las relaciones sexuales y sangrado anormal. También puede estar acompañada de escalofríos, fiebre y flujo vaginal inusual.\n\n
+Diagnóstico/tratamiento\n\n
 La EPI es comúnmente causada por la clamidia y la gonorrea, que pueden diagnosticarse a través de exámenes de detección de ITS de rutina. En una etapa temprana, la EPI, así como la clamidia y la gonorrea, pueden tratarse fácilmente con antibióticos orales.</string>
     <string name="diagnosis_treatment_bold_3">Diagnóstico/tratamiento</string>
     <string name="menstruation_faqs_title">Preguntas frecuentes</string>
@@ -944,26 +944,26 @@ La EPI es comúnmente causada por la clamidia y la gonorrea, que pueden diagnost
     <string name="menstruation_faqs_answer_8">La ovulación ocurre 14 días antes de tu periodo. Si no se toman anticonceptivos, una persona puede quedar embarazada cinco días antes de la ovulación y hasta dos días después. Debido a que el ciclo de muchas personas varía en duración, puede ser difícil predecir exactamente cuándo ocurre la ovulación y, por lo tanto, predecir la ovulación puede ser poco confiable como forma de anticoncepción.</string>
     <string name="menstruation_faqs_question_9">¿Cuándo debo buscar atención medica?</string>
     <string name="menstruation_faqs_answer_9">Podrías considerar la posibilidad de buscar atención médica si no has tenido tu primer periodo para los 15 años, no has tenido un periodo en más de dos meses, experimentas un dolor debilitante en el momento del sangrado o sangras durante más de siete días seguidos y en una cantidad que requiere cambiar un tampón cada hora.</string>
-    <string name="menstruation_resources_content">Encontrar productos para el periodo gratuitos y asequibles:/n
-- Alliance for Period Supplies /n
-- Good Rx /n/n
-Información adicional sobre cómo usar diferentes productos menstruales:/n
-- Planned Parenthood /n/n
-Videos sobre qué esperar en tu periodo:/m
+    <string name="menstruation_resources_content">Encontrar productos para el periodo gratuitos y asequibles:\n
+- Alliance for Period Supplies \n
+- Good Rx \n\n
+Información adicional sobre cómo usar diferentes productos menstruales:\n
+- Planned Parenthood \n\n
+Videos sobre qué esperar en tu periodo:\n
 - AMAZE
 </string>
     <string name="first_period_to_last_period_title">Del primer periodo al último periodo</string>
     <string name="first_period_to_last_period_content">El ciclo de vida menstrual comienza con tu primer periodo y termina con el último. Ambas experiencias son increíblemente comunes y normales, pero pueden ser estresantes y difíciles de experimentar por tu cuenta. ¡Pero no estás sola/o/e! Explora más sobre estas experiencias a continuación.</string>
     <string name="menarche">Menarquia</string>
-    <string name="menarche_content">La mayoría de las personas tienen su primer periodo entre los 12 y los 14 años, aunque puede ocurrir antes o después. El primer periodo se llama “menarquia” y las sensaciones al respecto pueden ser variadas (desde sentir que es algo emocionante hasta algo aterrador o preocupante), pero una preparación adecuada puede ayudar a aliviar el estrés. /n/n
+    <string name="menarche_content">La mayoría de las personas tienen su primer periodo entre los 12 y los 14 años, aunque puede ocurrir antes o después. El primer periodo se llama “menarquia” y las sensaciones al respecto pueden ser variadas (desde sentir que es algo emocionante hasta algo aterrador o preocupante), pero una preparación adecuada puede ayudar a aliviar el estrés. \n\n
 Los siguientes recursos pueden ayudar a prepararte para tu primer periodo, obtener más información al respecto y encontrar el apoyo que necesitas.</string>
     <string name ="how_to_prepare">Cómo prepararte</string>
-    <string name ="menarche_content_1">Puede que algunas/os/es jóvenes hablen con sus padres u otros adultos antes de su primer periodo sobre qué esperar al respecto. Alrededor de los 12 a 14 años, es posible que notes una secreción marrón en la ropa interior que podría indicar un primer periodo. Antes de que tu primer periodo podría ser útil llevar contigo un producto menstrual con el que te sientas a gusto y leer acerca de cómo usar ese producto. Si quieres obtener más información sobre diferentes productos, realiza este cuestionario./n/n
+    <string name ="menarche_content_1">Puede que algunas/os/es jóvenes hablen con sus padres u otros adultos antes de su primer periodo sobre qué esperar al respecto. Alrededor de los 12 a 14 años, es posible que notes una secreción marrón en la ropa interior que podría indicar un primer periodo. Antes de que tu primer periodo podría ser útil llevar contigo un producto menstrual con el que te sientas a gusto y leer acerca de cómo usar ese producto. Si quieres obtener más información sobre diferentes productos, realiza este cuestionario.\n\n
 También puede ser útil encontrar a un adulto de confianza con el que puedas hablar si necesitas ayuda o si tienes dificultades con alguno de los síntomas del periodo.</string>
     <string name ="whats_it_mean">¿Qué significa?</string>
     <string name ="menarche_content_2">Para muchas personas, un periodo puede tener un significado cultural. Desde una perspectiva biológica, un periodo significa que tu cuerpo se preparará para un embarazo ovulando aproximadamente cada mes. Otros cambios que pueden acompañar a tu periodo incluyen el desarrollo del tejido mamario/pecho, el crecimiento de vello en nuevos lugares y cambios de humor. Puedes leer más sobre lo que sucede en tu cuerpo a lo largo de todo tu ciclo menstrual completo aquí.</string>
     <string name ="common_misconceptions">Malentendidos comunes</string>
-    <string name ="menarche_content_3">Puede haber mucha vergüenza y estigma asociados a la menstruación, lo que a menudo llevan a mitos sobre lo que puedes hacer cuando tienes el periodo. Por ejemplo, muchas personas podrían decir que no puedes ir a nadar o tener relaciones sexuales. Puede que algunas personas se sientan incómodas teniendo relaciones sexuales en este momento, mientras que otras sientan disfrute. Sin importar la actividad, hay productos que ayudan a que puedas llevar a cabo tu rutina habitual durante tu periodo./n/n
+    <string name ="menarche_content_3">Puede haber mucha vergüenza y estigma asociados a la menstruación, lo que a menudo llevan a mitos sobre lo que puedes hacer cuando tienes el periodo. Por ejemplo, muchas personas podrían decir que no puedes ir a nadar o tener relaciones sexuales. Puede que algunas personas se sientan incómodas teniendo relaciones sexuales en este momento, mientras que otras sientan disfrute. Sin importar la actividad, hay productos que ayudan a que puedas llevar a cabo tu rutina habitual durante tu periodo.\n\n
 Tu cuerpo es tu cuerpo. Al final del día, tú decides lo que te hace y no te hace sentir a gusto. Los recursos para el control de síntomas pueden ayudar a que sigas sintiéndote capaz de hacer las cosas que te gustan durante tu periodo.</string>
     <string name="how_to_find_support">Cómo encontrar apoyo</string>
     <string name="menarche_content_4">Las personas pueden desear diferentes tipos de apoyo durante su periodo. Es posible que algunas personas solo quieran ayuda para manejar el sangrado, mientras que otras pueden querer a alguien con quien hablar o formas de aliviar sus síntomas. Un adulto, un/a/e hermano/a/e mayor o alguien en quien confíes podría ser una persona adecuada a la cual pedir apoyo. También puedes pedir apoyo a les proveedores de atención médica si te sientes a gusto comunicándote con elles. Puedes encontrar consejos para hablar con un/a/e proveedor/a/e de atención médica aquí.</string>
@@ -971,16 +971,15 @@ Tu cuerpo es tu cuerpo. Al final del día, tú decides lo que te hace y no te ha
     <string name="menarche_content_5">Los primeros periodos pueden ser diferentes para cada persona. A veces, el simple hecho de leer historias de otras personas puede ayudar a que te sientas menos soledad o más preparado/a/e. Puedes ver historias del primer periodo de la comunidad aquí.</string>
 
     <string name="menopause">Menopausia</string>
-    <string name="menopause_content">La menopausia involucra el final de los periodos y la fertilidad. Por lo general, ocurre entre los 45 a 55 años y puede presentarse con síntomas como calores, cambios en el deseo sexual y el humor, y sequedad vaginal./n/n
-Fuente: Cleveland Clinic</string>
+    <string name="menopause_content">La menopausia involucra el final de los periodos y la fertilidad. Por lo general, ocurre entre los 45 a 55 años y puede presentarse con síntomas como calores, cambios en el deseo sexual y el humor, y sequedad vaginal.</string>
     <string name="cleveland_clinic">Cleveland Clinic</string>
-    <string name="menopause_content_1">La menopausia marca el final de la menstruación y ocurre 12 meses después del último periodo. Por lo general, dura siete años, pero puede durar hasta 14 años según la edad, la raza o la etnia, o dependiendo de si la persona tiene antecedentes de tabaquismo. También puede desencadenarse al extirpar el útero o los ovarios. /n/n
+    <string name="menopause_content_1">La menopausia marca el final de la menstruación y ocurre 12 meses después del último periodo. Por lo general, dura siete años, pero puede durar hasta 14 años según la edad, la raza o la etnia, o dependiendo de si la persona tiene antecedentes de tabaquismo. También puede desencadenarse al extirpar el útero o los ovarios. \n\n
 La menopausia tiene tres etapas. La “premenopausia” se refiere al periodo alrededor de los 40 años. Esto ocurre antes de que comience la menopausia, y pueden presentarse síntomas leves. La “perimenopausia” es cuando no ha habido la menstruación durante un año y los síntomas están en pleno apogeo. Finalmente, la “posmenopausia” se refiere al periodo en el que la mayoría de los síntomas de la menopausia han terminado.</string>
     <string name="symptoms">Síntomas</string>
     <string name="menopause_content_2">Doce meses después del último periodo, es posible que notes algunos síntomas de la menopausia, como calores, sequedad vaginal, ganas de orinar frecuente o incontrolable, dificultad para dormir y cambios de humor.</string>
-    <string name="menopause_content_3">Se puede controlar los síntomas con varios métodos. Para las dificultades para los cambios de humor, recursos como la meditación, el ejercicio, la terapia y hablar con amigues pueden ayudar. Hacer ejercicios de Kegel, hidratarse y evitar las bebidas con cafeína pueden ayudar con la incontinencia urinaria. Para los sudores nocturnos, dormir con ropa ligera con una bolsa de hielo debajo de la almohada y tener agua fría junto a la cama puede ayudarte a mantenerte fresco/a/e. Acostarse a una hora constante, relajarse antes de acostarse y evitar la cafeína y el alcohol al final del día pueden hacer que sea más fácil conciliar el sueño. Para las molestias durante las relaciones sexuales, el uso de lubricantes y humectantes vaginales, y la estimulación sexual regular pueden ayudar.  /n/n
-Hay varios tratamientos disponibles para ayudar a controlar los síntomas de la menopausia, incluida la terapia hormonal, los antidepresivos, la gabapentina y la clonidina. Si los síntomas son graves, puedes buscar atención médica para hablar acerca de recibir uno de estos tratamientos. /n/n
-Controlar los síntomas en tu trabajo puede causar estrés adicional. Si necesitas a alguien con quien hablar sobre el manejo de conversaciones en el trabajo o la solicitud de adaptaciones, comunícate con la línea de texto de Empower Work al (510) 674-1414.</string>
+    <string name="menopause_content_3">Se puede controlar los síntomas con varios métodos. Para las dificultades para los cambios de humor, recursos como la meditación, el ejercicio, la terapia y hablar con amigues pueden ayudar. Hacer ejercicios de Kegel, hidratarse y evitar las bebidas con cafeína pueden ayudar con la incontinencia urinaria. Para los sudores nocturnos, dormir con ropa ligera con una bolsa de hielo debajo de la almohada y tener agua fría junto a la cama puede ayudarte a mantenerte fresco/a/e. Acostarse a una hora constante, relajarse antes de acostarse y evitar la cafeína y el alcohol al final del día pueden hacer que sea más fácil conciliar el sueño. Para las molestias durante las relaciones sexuales, el uso de lubricantes y humectantes vaginales, y la estimulación sexual regular pueden ayudar.  \n\n
+Hay varios tratamientos disponibles para ayudar a controlar los síntomas de la menopausia, incluida la terapia hormonal, los antidepresivos, la gabapentina y la clonidina. Si los síntomas son graves, puedes buscar atención médica para hablar acerca de recibir uno de estos tratamientos. \n\n
+Controlar los síntomas en tu trabajo puede causar estrés adicional. Si necesitas a alguien con quien hablar sobre el manejo de conversaciones en el trabajo o la solicitud de adaptaciones, comunícate con la línea de texto de Empower Work al (510) 674-1414.</string>
     <string name="menopause_content_4">Un mito común es que las personas no pueden quedar embarazadas durante la menopausia, pero una persona puede quedar embarazada hasta que hayan pasado 12 meses completos sin tener un periodo. Para algunas personas, la menopausia se corresponde con una disminución del deseo sexual, pero para otras sucede lo contrario.</string>
     <string name="mental_health_impacts">Impactos en la salud mental</string>
     <string name="menopause_content_5">Además de los cambios de humor asociados con la menopausia, algunas personas pueden tener problemas con la pérdida de la fertilidad y la asociación de la menopausia con la vejez. Para otras, esto podría sentirse simplemente como otro cambio en el cuerpo.</string>
@@ -1013,7 +1012,7 @@ Controlar los síntomas en tu trabajo puede causar estrés adicional. Si necesit
     <string name="disposable_pad_content_6">Se puede comprar las toallas higiénicas en la mayoría de los supermercados y farmacias, y  por internet. También se puede conseguirlas de forma gratuita en las clínicas.</string>
     <string name="disposable_pad_content_7">Cuestan alrededor de $7 a $10 por caja de 36. Esto genera un costo mensual de alrededor de $5 por mes.</string>
     <string name="tampon_content_1">Un tampón es una pieza de algodón de tejido grueso que se inserta en la vagina para absorber la sangre y evitar que salga. Hay varios tipos de tampones que vienen en una variedad de tamaños para satisfacer las diferentes necesidades del flujo menstrual.</string>
-    <string name="tampon_content_2">Para usar un tampón, retira el envoltorio de plástico o papel. Si tiene un aplicador (el plástico o cartón que rodea el algodón), es posible que debas sacar el aplicador hasta que haga clic y, luego, insertar el extremo con la abertura en forma de estrella en la vagina hasta que toda la mitad superior del aplicador quede dentro de ti. Luego, empuja la mitad inferior del aplicador hacia tu cuerpo para insertar el tampón más adentro de tu vagina. El tampón debe permanecer allí hasta que sea necesario retirarlo./n/n
+    <string name="tampon_content_2">Para usar un tampón, retira el envoltorio de plástico o papel. Si tiene un aplicador (el plástico o cartón que rodea el algodón), es posible que debas sacar el aplicador hasta que haga clic y, luego, insertar el extremo con la abertura en forma de estrella en la vagina hasta que toda la mitad superior del aplicador quede dentro de ti. Luego, empuja la mitad inferior del aplicador hacia tu cuerpo para insertar el tampón más adentro de tu vagina. El tampón debe permanecer allí hasta que sea necesario retirarlo.\n\n
 Para tampones sin aplicador, puedes usar tus dedos para empujar el tampón dentro de tu vagina hasta que esté en su lugar. Para todos los tampones, un hilo debe colgar fuera de la vagina para ayudar a retirarlos. </string>
     <string name="tampon_content_3">Los tampones deben cambiarse cada pocas horas o cuando empieces a tener fugas. Tira del hilo que está fuera de la vagina para retirar el tampón.</string>
     <string name="tampon_content_4">Los tampones deben desecharse en la papelera de un cubículo del baño o en un cesto de basura. No deben tirarse por el inodoro, ya que esto puede causar obstrucciones. Si aún tienes sangrado, reemplaza el tampón con uno nuevo y limpio.</string>
