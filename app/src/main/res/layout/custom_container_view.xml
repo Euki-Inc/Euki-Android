@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- custom_container_view.xml -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.viewpager.widget.ViewPager
+    <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
 
     <!-- Dots representing pages -->
     <LinearLayout
         android:id="@+id/dotsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="@dimen/dimen_x1_6"
+        android:layout_marginBottom="@dimen/dimen_x1_6"
         android:gravity="center"
         android:orientation="horizontal" />
 
-</RelativeLayout>
+</LinearLayout>

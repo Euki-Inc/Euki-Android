@@ -7,50 +7,48 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.viewpager.widget.PagerAdapter;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.kollectivemobile.euki.R;
 import com.kollectivemobile.euki.model.SwipeableItem;
+import com.kollectivemobile.euki.utils.Utils;
 
 import java.util.List;
 
-public class SwipeableAdapter extends PagerAdapter {
+public class SwipeableAdapter extends RecyclerView.Adapter<SwipeableAdapter.ViewHolder> {
     private final List<SwipeableItem> items;
 
     public SwipeableAdapter(List<SwipeableItem> items) {
         this.items = items;
     }
 
+    @NonNull
     @Override
-    public int getCount() {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false);
+        return new ViewHolder(itemView);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        SwipeableItem currentItem = items.get(position);
+        holder.textView.setText(Utils.getLocalized(currentItem.getContent()));
+        holder.imageView.setImageResource(Utils.getImageId(currentItem.getImageResId()));
+    }
+
+    @Override
+    public int getItemCount() {
         return items.size();
     }
 
-    @Override
-    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return view == object;
-    }
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        TextView textView;
+        ImageView imageView;
 
-    @NonNull
-    @Override
-    public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        LayoutInflater inflater = LayoutInflater.from(container.getContext());
-        View itemView = inflater.inflate(R.layout.item_layout, container, false);
-
-       TextView textView = itemView.findViewById(R.id.textView);
-        ImageView imageView = itemView.findViewById(R.id.imageView);
-
-        //Set data to the views based on the SwipeableItem at the current position
-        SwipeableItem currentItem = items.get(position);
-        textView.setText(currentItem.getContent());
-        imageView.setImageResource(currentItem.getImageResId());
-
-        container.addView(itemView);
-        return itemView;
-    }
-
-    @Override
-    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        container.removeView((View) object);
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            textView = itemView.findViewById(R.id.contentText);
+            imageView = itemView.findViewById(R.id.imageView);
+        }
     }
 }

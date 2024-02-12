@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import androidx.core.content.ContextCompat;
-import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.kollectivemobile.euki.R;
 import com.kollectivemobile.euki.model.SwipeableItem;
@@ -15,7 +15,7 @@ import com.kollectivemobile.euki.model.SwipeableItem;
 import java.util.List;
 
 public class CustomContainerView extends RelativeLayout {
-    private ViewPager viewPager;
+    private ViewPager2 viewPager;
     private LinearLayout dotsLayout;
 
     public CustomContainerView(Context context) {
@@ -33,26 +33,20 @@ public class CustomContainerView extends RelativeLayout {
         viewPager = findViewById(R.id.viewPager);
         dotsLayout = findViewById(R.id.dotsLayout);
 
-        // Set up ViewPager listener for page changes
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                // Unused
-            }
-
+        // Set up ViewPager2 listener for page changes
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
                 updateDots(position);
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-                // Unused
             }
         });
     }
 
     public void setItems(List<SwipeableItem> items) {
+        // Clear the existing items in the adapter
+        viewPager.setAdapter(null);
+
+        // Create a new adapter with the updated items
         SwipeableAdapter adapter = new SwipeableAdapter(items);
         viewPager.setAdapter(adapter);
 
@@ -64,6 +58,9 @@ public class CustomContainerView extends RelativeLayout {
     }
 
     private void addDots(int count) {
+        // Clear existing dots
+        dotsLayout.removeAllViews();
+
         for (int i = 0; i < count; i++) {
             ImageView dot = new ImageView(getContext());
             dot.setImageDrawable(ContextCompat.getDrawable(getContext(), R.drawable.dot_selector));

@@ -13,21 +13,21 @@
           "title": "ovulation",
           "content": "ovulation_content",
           "source": "american_college_of_obstetricians_and_gynecologists",
-          "swipe_pager": [
+          "swipe_pager_item": [
             {
               "id": "whole_body_look",
               "content": "whole_body_look",
-              "icon": "body_whole_look"
+              "icon": "bodyWholeLook"
             },
             {
               "id": "closer_body_look",
               "content": "closer_body_look",
-              "icon": "body_closer_look"
+              "icon": "bodyCloserLook"
             },
             {
               "id": "outside_body_look",
               "content": "outside_body_look",
-              "icon": "body_outside_look"
+              "icon": "bodyOutsideLook"
             }
           ],
           "links": {

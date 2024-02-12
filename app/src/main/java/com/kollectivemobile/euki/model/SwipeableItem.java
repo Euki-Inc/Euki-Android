@@ -3,14 +3,17 @@ package com.kollectivemobile.euki.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.kollectivemobile.euki.utils.Utils;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class SwipeableItem implements Parcelable {
-    private int id;
+    private String id;
     private String content;
-    private int imageResId;
+    private String imageResId;
 
-    public SwipeableItem(int id, String text, int imageResId) {
+    public SwipeableItem(String id, String text, String imageResId) {
         this.id = id;
         this.content = text;
         this.imageResId = imageResId;
@@ -20,29 +23,33 @@ public class SwipeableItem implements Parcelable {
     public SwipeableItem(JSONObject json) {
         if (json != null) {
             // Parse the JSON object and initialize the fields
-            if (json.has("id")) {
-                this.id = json.optInt("id");
-            }
+          if (json.has("id")) {
+                this.id = json.optString("id");
+          }
             if (json.has("content")) {
                 this.content = json.optString("content");
             }
             if (json.has("icon")) {
-                this.imageResId = json.optInt("icon");
+                try {
+                    this.imageResId = Utils.decamelcase(json.getString("icon"));
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
             }
         }
     }
 
     protected SwipeableItem(Parcel in) {
-        id = in.readInt();
+        id = in.readString();
         content = in.readString();
-        imageResId = in.readInt();
+        imageResId = in.readString();
     }
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(id);
+        dest.writeString(id);
         dest.writeString(content);
-        dest.writeInt(imageResId);
+        dest.writeString(imageResId);
     }
 
     @Override
@@ -62,7 +69,7 @@ public class SwipeableItem implements Parcelable {
         }
     };
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -70,7 +77,7 @@ public class SwipeableItem implements Parcelable {
         return content;
     }
 
-    public int getImageResId() {
+    public String getImageResId() {
         return imageResId;
     }
 }
