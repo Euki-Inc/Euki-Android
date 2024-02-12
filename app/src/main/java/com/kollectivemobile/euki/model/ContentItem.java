@@ -31,6 +31,8 @@ public class ContentItem implements Parcelable {
     private List<ContentItem> mExpandableItems;
     private List<ContentItem> mSelectableItems;
     private List<ContentItem> mSelectableRowItems;
+
+   private List<SwipeableItem> mSwiperItems;
     private String mSource;
     private Map<String, String> mLinks;
     private List<String> mBoldStrings;
@@ -42,6 +44,7 @@ public class ContentItem implements Parcelable {
         this.mSelectableItems = new ArrayList<>();
         this.mSelectableRowItems = new ArrayList<>();
         this.mBoldStrings = new ArrayList<>();
+        this.mSwiperItems = new ArrayList<>();
         this.mLinks = new HashMap<>();
     }
 
@@ -134,6 +137,15 @@ public class ContentItem implements Parcelable {
                 }
             }
 
+         /*   if (json.has("swipe_pager")) {
+                JSONArray swiperItems = json.getJSONArray("swipe_pager");
+                for (int i = 0; i < swiperItems.length(); i++) {
+                    JSONObject itemJson = swiperItems.getJSONObject(i);
+                    this.mSwiperItems.add(new SwipeableItem(itemJson));
+                }
+            }*/
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -155,6 +167,8 @@ public class ContentItem implements Parcelable {
         mSelectableRowItems = in.createTypedArrayList(ContentItem.CREATOR);
         mSource = in.readString();
         mBoldStrings = in.createStringArrayList();
+        mSwiperItems = in.createTypedArrayList(SwipeableItem.CREATOR);
+
         byte tmpMIsAbottionItem = in.readByte();
         mIsAbottionItem = tmpMIsAbottionItem == 0 ? null : tmpMIsAbottionItem == 1;
         mLinks = new Gson().fromJson(in.readString(), new TypeToken<Map<String, String>>(){}.getType());
@@ -171,6 +185,7 @@ public class ContentItem implements Parcelable {
         dest.writeParcelable(mParent, flags);
         dest.writeTypedList(mContentItems);
         dest.writeTypedList(mExpandableItems);
+        dest.writeTypedList(mSwiperItems);
         dest.writeTypedList(mSelectableItems);
         dest.writeTypedList(mSelectableRowItems);
         dest.writeString(mSource);
@@ -279,6 +294,14 @@ public class ContentItem implements Parcelable {
 
     public void setExpandableItems(List<ContentItem> expandableItems) {
         mExpandableItems = expandableItems;
+    }
+
+    public List<SwipeableItem> getSwiperItems() {
+        return mSwiperItems;
+    }
+
+    public void setSwiperItems(List<SwipeableItem> expandableWithSwiperItems) {
+        mSwiperItems = expandableWithSwiperItems;
     }
 
     public List<ContentItem> getSelectableItems() {

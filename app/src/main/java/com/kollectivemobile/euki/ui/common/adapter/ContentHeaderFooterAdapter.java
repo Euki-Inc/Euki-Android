@@ -3,7 +3,9 @@ package com.kollectivemobile.euki.ui.common.adapter;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,9 +25,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class ContentHeaderFooterAdapter extends AbstractHeaderFooterWrapperAdapter<ContentHeaderFooterAdapter.HeaderViewHolder, ContentHeaderFooterAdapter.FooterViewHolder> {
-    private ContentItem mContentItem;
-    private LinkListener mLinkListener;
-    private HeightListener mHeightListener;
+    private final ContentItem mContentItem;
+    private final LinkListener mLinkListener;
+    private final HeightListener mHeightListener;
 
     public ContentHeaderFooterAdapter(RecyclerView.Adapter adapter, ContentItem contentItem, LinkListener linkListener, HeightListener heightListener) {
         mContentItem = contentItem;
@@ -127,9 +129,12 @@ public class ContentHeaderFooterAdapter extends AbstractHeaderFooterWrapperAdapt
     }
 
     static class HeaderViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.tv_title) TextView tvTitle;
-        @BindView(R.id.iv_icon) ImageView ivIcon;
-        @BindView(R.id.tv_content) TextView tvContent;
+        @BindView(R.id.tv_title)
+        TextView tvTitle;
+        @BindView(R.id.iv_icon)
+        ImageView ivIcon;
+        @BindView(R.id.tv_content)
+        TextView tvContent;
 
         public HeaderViewHolder(View itemView) {
             super(itemView);

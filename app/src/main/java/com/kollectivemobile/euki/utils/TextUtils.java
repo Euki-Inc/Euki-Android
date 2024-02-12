@@ -74,7 +74,7 @@ public class TextUtils {
     }
 
     static public List<Integer> indexes(String text, String searchedString) {
-        List<Integer> indexes = new ArrayList<Integer>();
+        List<Integer> indexes = new ArrayList<>();
         String lowerCaseTextString = text.toLowerCase();
         String lowerCaseWord = searchedString.toLowerCase();
 

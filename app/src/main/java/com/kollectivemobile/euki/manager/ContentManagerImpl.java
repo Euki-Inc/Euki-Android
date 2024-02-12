@@ -209,6 +209,16 @@ public class ContentManagerImpl implements ContentManager {
             }
         }
 
+
+      /*  if (contentItem.getExpandableWithSwiperItems() != null) {
+            for (ContentItem childItem : contentItem.getExpandableWithSwiperItems()) {
+                ContentItem foundItem = getContentItem(id, childItem);
+                if (foundItem != null) {
+                    return foundItem;
+                }
+            }
+        }*/
+
         return null;
     }
 

@@ -1,28 +1,26 @@
 package com.kollectivemobile.euki.ui.common.adapter;
 
 import android.content.Context;
-import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import android.text.Spannable;
-import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
-import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.kollectivemobile.euki.App;
+import androidx.annotation.NonNull;
+
 import com.kollectivemobile.euki.R;
 import com.kollectivemobile.euki.listeners.LinkListener;
 import com.kollectivemobile.euki.manager.BookmarkManager;
 import com.kollectivemobile.euki.model.ContentItem;
+import com.kollectivemobile.euki.model.SwipeableItem;
 import com.kollectivemobile.euki.utils.TextUtils;
-import com.kollectivemobile.euki.utils.Utils;
 import com.kollectivemobile.euki.utils.advrecyclerview.expandable.ExpandableItemState;
 import com.kollectivemobile.euki.utils.advrecyclerview.utils.AbstractExpandableItemAdapter;
 import com.kollectivemobile.euki.utils.advrecyclerview.utils.AbstractExpandableItemViewHolder;
+import com.kollectivemobile.euki.utils.siwperview.CustomContainerView;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -34,10 +32,15 @@ import butterknife.OnClick;
 
 public class ContentRowExpandableAdapter extends AbstractExpandableItemAdapter<ContentRowExpandableAdapter.TitleHolder, ContentRowExpandableAdapter.TextHolder> {
     private List<ContentItem> mContentItems;
+
     private ContentRowExpandableListener mListener;
     private LinkListener mLinkListener;
     private WeakReference<Context> mContext;
     private BookmarkManager mBookmarkManager;
+
+    // Inside ContentItem class
+    private List<SwipeableItem> mSwiperItems;
+
 
     public ContentRowExpandableAdapter(Context context, List<ContentItem> items, ContentRowExpandableListener listener, LinkListener linkListener, BookmarkManager bookmarkManager) {
         mContentItems = new ArrayList<>();
@@ -122,18 +125,23 @@ public class ContentRowExpandableAdapter extends AbstractExpandableItemAdapter<C
 
         int resId = mBookmarkManager.isBookmark(contentItem.getId()) ? R.drawable.ic_bookmark_on : R.drawable.ic_bookmark_off;
         holder.ivBookmark.setImageResource(resId);
-        holder.ivBookmark.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mBookmarkManager.isBookmark(contentItem.getId())) {
-                    mBookmarkManager.removeBookmark(contentItem.getId());
-                    holder.ivBookmark.setImageResource(R.drawable.ic_bookmark_off);
-                } else {
-                    mBookmarkManager.addBookmark(contentItem.getId());
-                    holder.ivBookmark.setImageResource(R.drawable.ic_bookmark_on);
-                }
+        holder.ivBookmark.setOnClickListener(view -> {
+            if (mBookmarkManager.isBookmark(contentItem.getId())) {
+                mBookmarkManager.removeBookmark(contentItem.getId());
+                holder.ivBookmark.setImageResource(R.drawable.ic_bookmark_off);
+            } else {
+                mBookmarkManager.addBookmark(contentItem.getId());
+                holder.ivBookmark.setImageResource(R.drawable.ic_bookmark_on);
             }
         });
+
+        // Check if the contentItem has swipe_pager items
+        if (contentItem.getSwiperItems() != null && !contentItem.getSwiperItems().isEmpty()) {
+            holder.swiperView.setItems(contentItem.getSwiperItems());
+            holder.swiperView.setVisibility(View.VISIBLE);
+        } else {
+            holder.swiperView.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -166,6 +174,9 @@ public class ContentRowExpandableAdapter extends AbstractExpandableItemAdapter<C
         @BindView(R.id.tv_title) TextView tvTitle;
         @BindView(R.id.v_separator_bottom) View vSeparatorBottom;
         @BindView(R.id.iv_bookmark) ImageView ivBookmark;
+
+        @BindView(R.id.swiper_view)
+        CustomContainerView swiperView;
 
         public TextHolder(View itemView) {
             super(itemView);

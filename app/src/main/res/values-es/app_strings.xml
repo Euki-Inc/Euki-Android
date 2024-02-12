@@ -843,7 +843,6 @@
     <string name="menstruation_content">La menstruación, conocida por muchas personas como “periodo”, es el sangrado vaginal que ocurre aproximadamente cada mes. La menstruación a menudo comienza entre los 12 y los 14 años y puede durar hasta entre los 45 y 55 años. La menstruación puede estar acompañada de diversos síntomas, efectos secundarios y experiencias.
 La siguiente información te ayudará a comprender las diferentes formas en que las personas manejan sus periodos y cómo transitar tu propia experiencia.</string>
     <string name="menstruation">Menstruación</string>
-    <string name="menstrual_cycle_101">Conceptos básicos del ciclo menstrual</string>
     <string name="first_period_to_last_period">Del primer periodo al último periodo</string>
     <string name="product_quiz">Encuesta de productos</string>
     <string name="menstrual_products">Productos menstruales</string>
@@ -1083,4 +1082,15 @@ Para tampones sin aplicador, puedes usar tus dedos para empujar el tampón dentr
     <string name="recommended_methods_menstruation">Según tus respuestas, estos productos podrían servirte.\n\n
        Si respondiste a más de dos preguntas que correspondan a un método específico, este método aparecerá abajo.</string>
     <string name="no_recommended_methods_menstruation">Responde al menos una pregunta para ver los productos menstruales que puedan ser mejor para ti.</string>
+    <string name="menstrual_cycle_101_content">Mientras que las palabras “menstruación” y “periodo” describen el sangrado que ocurre aproximadamente cada mes, un ciclo menstrual se refiere a la gama completa de procesos corporales que ocurren entre periodos.</string>
+    <string name="menstrual_cycle_101">Conceptos básicos del ciclo menstrual</string>
+    <string name="ovulation">Ovulación</string>
+    <string name="ovulation_content">La ovulación ocurre cuando el ovario libera un óvulo que puede sobrevivir por entre 12 y 24 horas, a la espera de la fertilización. La ovulación ocurre 14 días antes del periodo y es cuando es más probable que una persona pueda quedar embarazada. Los espermatozoides pueden vivir dentro del cuerpo hasta por cinco días, por lo que el embarazo también puede ocurrir a partir del sexo con penetración del pene en la vagina que ocurre en los cinco días anteriores a la ovulación.\n\n
+
+Durante la ovulación pueden ocurrir: cambios en el flujo vaginal a una textura de clara de huevo, una ligera caída en la temperatura corporal, manchado, cólicos o sensibilidad en el tejido del pecho.\n\n
+
+Puedes encontrar más información sobre cómo una persona puede quedar embarazada aquí. (Este sitio utiliza lenguaje con distinciones de género.)\n\n
+
+Trans Fertility Co ofrece recursos específicos para personas transgénero y no binarias.</string>
+    <string name="american_college_of_obstetricians_and_gynecologists">American College of Obstetricians and Gynecologists</string>
 </resources>

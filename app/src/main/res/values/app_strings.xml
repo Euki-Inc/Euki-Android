@@ -842,7 +842,6 @@
     <string name="menstruation_content">Menstruation, known to many as a "period," is vaginal bleeding that occurs every month or so. Menstruation often starts between 12-14 years old and can last until 45-55. Menstruation can come with a range of feelings, side effects, and experiences.
         \n\n Information below will help you understand different ways people manage their periods and how to navigate your own unique experience.</string>
     <string name="menstruation">Menstruation</string>
-    <string name="menstrual_cycle_101">Menstrual cycle 101</string>
     <string name="first_period_to_last_period">First period to last period</string>
     <string name="product_quiz">Product quiz</string>
     <string name="menstrual_products">Menstrual products</string>
@@ -1087,5 +1086,18 @@ For tampons without an applicator, you can use your fingers to push the tampon i
     <string name="recommended_methods_menstruation">Based on your answers, these products might work for you.\n\n
         If you answered more than two questions that correspond to a certain method, that method appears below.</string>
     <string name="no_recommended_methods_menstruation">Please answer at least one question to see which menstrual products might work best for you.</string>
+    <string name="menstrual_cycle_101_content">While the words “menstruation” and “period” describe the bleeding that occurs every month or so, a “menstrual cycle” refers to the full range of bodily processes that happens between periods.</string>
+    <string name="menstrual_cycle_101">Menstrual cycle 101</string>
+    <string name="ovulation">Ovulation</string>
+    <string name="ovulation_content">Ovulation occurs when the ovary releases an egg that can survive for about 12-24 hours, waiting for fertilization. Ovulation takes place 14 days before the period and is the most likely time that someone can get pregnant. Sperm can live inside the body for up to five days, so pregnancy can also occur from penis-in-vagina sex that happens in the five days before ovulation.\n\n
 
+Ovulation is often accompanied by a change in vaginal discharge to an egg-white texture, a slight drop in body temperature, and for some spotting, cramps, and tender chest tissue.\n\n
+
+You can find more information on getting pregnant here. (This site uses gendered language.)\n\n
+
+Trans Fertility Co offers resources specifically for transgender and non-binary people.</string>
+    <string name="american_college_of_obstetricians_and_gynecologists">American College of Obstetricians and Gynecologists</string>
+    <string name="whole_body_look">This image shows where the reproductive organs lie relative to the rest of the body. These organs play a role in menstruation and pregnancy.</string>
+    <string name="closer_body_look">Let\'s take a closer look. Knowing these parts of your body will help you better understand what happens during menstruation, as well as how to navigate conversations with your medical provider.</string>
+    <string name="outside_body_look">Here\'s a look from the outside. Getting comfortable and familiar with your body can help you advocate for your own health. Remember: every body is different. You might see a lot of variation in size, hair, shape, etc.</string>
 </resources>
