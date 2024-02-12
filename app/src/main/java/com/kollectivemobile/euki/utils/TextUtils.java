@@ -13,15 +13,20 @@ import com.kollectivemobile.euki.R;
 import com.kollectivemobile.euki.listeners.LinkListener;
 import com.kollectivemobile.euki.utils.strings.StringUtils;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import timber.log.Timber;
 
 public class TextUtils {
     static public Spannable getSpannable(String text, Map<String, String> links, final LinkListener linkListener, List<String> boldStrings) {
         Spannable spannable = StringUtils.processString(text);
         String newText = spannable.toString();
 
+        try {
         if (links != null) {
             for (String link : links.keySet()) {
                 final String url = links.get(link);
@@ -71,6 +76,14 @@ public class TextUtils {
         }
 
         return spannable;
+        } catch (Exception e){
+            final StringWriter sw = new StringWriter();
+            final PrintWriter pw = new PrintWriter(sw, true);
+            e.printStackTrace(pw);
+            Timber.d("**** %s", sw.getBuffer().toString());
+        } finally {
+            return spannable;
+        }
     }
 
     static public List<Integer> indexes(String text, String searchedString) {
