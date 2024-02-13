@@ -82,17 +82,27 @@
             {
               "id": "how_to_prepare_menarche",
               "title": "how_to_prepare",
-              "content": "menarche_content_1"
+              "content": "menarche_content_1",
+              "links": {
+                "quiz": "product_quiz",
+                "symptoms": "symptom_management"
+              }
             },
             {
               "id": "whats_it_mean_menarche",
               "title": "whats_it_mean",
-              "content": "menarche_content_2"
+              "content": "menarche_content_2",
+              "links": {
+                "here": "menstrual_cycle_101"
+              }
             },
             {
               "id": "common_misconceptions_menarche",
               "title": "common_misconceptions",
-              "content": "menarche_content_3"
+              "content": "menarche_content_3",
+              "links": {
+                "Symptoms management resources": "symptom_management"
+              }
             },
             {
               "id": "how_to_find_support_menarche",
@@ -102,7 +112,10 @@
             {
               "id": "first_period_stories_menarche",
               "title": "first_period_stories",
-              "content": "menarche_content_5"
+              "content": "menarche_content_5",
+              "links": {
+                "here": "https://storymaps.arcgis.com/stories/4f8da19484ea46e0abaacee95312f26c"
+              }
             }
           ]
         },
@@ -570,7 +583,10 @@
         },
         {
           "id": "menstruation_faqs_question_4",
-          "content": "menstruation_faqs_answer_4"
+          "content": "menstruation_faqs_answer_4",
+          "links": {
+            "Contraception": "contraception"
+          }
         },
         {
           "id": "menstruation_faqs_question_5",
