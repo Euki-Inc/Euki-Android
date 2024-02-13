@@ -1093,4 +1093,21 @@ Puedes encontrar más información sobre cómo una persona puede quedar embaraza
 
 Trans Fertility Co ofrece recursos específicos para personas transgénero y no binarias.</string>
     <string name="american_college_of_obstetricians_and_gynecologists">American College of Obstetricians and Gynecologists</string>
+    <string name="whole_body_look">Esta imagen muestra dónde se encuentran los órganos reproductivos en relación con el resto del cuerpo. Estos órganos desempeñan un rol en la menstruación y el embarazo.</string>
+    <string name="closer_body_look">Miremos más de cerca. Conocer estas partes de tu cuerpo te ayudará a comprender mejor lo que sucede durante la menstruación, así como también a entablar conversaciones en una cita médica.</string>
+    <string name="outside_body_look">Aquí vemos una mirada desde fuera. Sentir comodidad y familiarizarte con tu cuerpo puede ayudarte a defender tu propia salud. Recuerda: cada cuerpo es diferente. Es posible que veas mucha variación en tamaño, cabello, vello, etc.</string>
+    <string name="know_your_body">Conoce tu cuerpo</string>
+    <string name="know_your_body_content">Desliza estas imágenes para conocer más sobre los órganos reproductivos de las personas a las que se les asignó sexo femenino al nacer.\n\n
+
+Euki utiliza el lenguaje más utilizado por proveedores de atención médica, pero hay muchas formas de referirse a estas partes del cuerpo. Es importante que les proveedores utilicen un lenguaje inclusivo y centrado en la persona cuando hablan sobre sus cuerpos.</string>
+    <string name="menstruation_period">Menstruación</string>
+    <string name="menstruation_period_content">La menstruación o periodo es el desprendimiento del revestimiento uterino después de que no haya ocurrido un embarazo. El cuerpo hace esto a fin de poder preparar un nuevo revestimiento para el próximo óvulo.</string>
+    <string name="how_does_birth_control_affect_my_cycle">¿Cómo afectan los anticonceptivos a mi ciclo?</string>
+    <string name="how_does_birth_control_affect_my_cycle_content">Los distintos tipos de anticonceptivos pueden tener diferentes efectos en tu ciclo. Por ejemplo, el DIU hormonal actúa espesando la mucosidad del cuello uterino, reduciendo el revestimiento uterino e inhibiendo parcialmente la ovulación, una combinación que puede detener el sangrado menstrual en muchas personas. El DIU de cobre no afecta el ciclo, sino que hace que el útero sea inhabitable para los óvulos y los espermatozoides. Esto significa que el periodo de algunas personas sigue siendo el mismo o aumenta. Puedes encontrar información más específica sobre cómo cada tipo de método anticonceptivo afecta a la menstruación aquí. </string>
+    <string name="what_is_a_regular_period">¿Qué es un ciclo regular?</string>
+    <string name="what_is_a_regular_period_content">Un ciclo “regular” suele durar entre 21 y 45 días. Esto significa que los periodos comenzarán con una diferencia de 21 a 35 días y durarán entre 2 y 7 días. Un periodo puede verse alterado por factores como tomar anticonceptivos, un embarazo, usar testosterona y experimentar cambios en la dieta y el ejercicio. Podrías considerar buscar atención médica si experimentas un sangrado más frecuente o han pasado más de dos meses sin un periodo.</string>
+    <string name="what_happens_during_a_period">¿Qué sucede durante un periodo?</string>
+    <string name="what_happens_during_a_period_content">El primer día de un periodo a menudo comienza con un ligero manchado que suele ser espeso y de color marrón. Luego, la sangre del periodo cambia a un rojo más oscuro.</string>
+    <string name="mental_and_emotional_health">Salud mental y emocional</string>
+    <string name="mental_and_emotional_health_content">Muchas personas experimentan cambios de humor que se corresponden con su ciclo menstrual. Pueden experimentar irritabilidad, fatiga y pensamiento negativo unos días antes de su periodo como parte del síndrome premenstrual (SPM) o del trastorno disfórico premenstrual (TDPM). Para algunas personas, estos efectos negativos en la salud emocional podrían durar todo el periodo.</string>
 </resources>
