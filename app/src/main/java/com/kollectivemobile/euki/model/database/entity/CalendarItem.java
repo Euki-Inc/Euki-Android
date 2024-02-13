@@ -64,7 +64,7 @@ public class CalendarItem {
 
     public CalendarItem() {
         this.mDate = new Date();
-        this.mBleedingProductsCounter = new ArrayList<>(Collections.nCopies(5, 0));
+        this.mBleedingProductsCounter = new ArrayList<>(Collections.nCopies(7, 0));
         this.mBleedingClotsCounter = new ArrayList<>(Collections.nCopies(2, 0));
         this.mEmotions = new ArrayList<>();
         this.mBody = new ArrayList<>();
@@ -206,7 +206,7 @@ public class CalendarItem {
 
     public List<Integer> getBleedingProductsCounter() {
         if (mBleedingProductsCounter == null) {
-            return new ArrayList<>(Collections.nCopies(5, 0));
+            return new ArrayList<>(Collections.nCopies(7, 0));
         }
         return mBleedingProductsCounter;
     }

@@ -1,6 +1,7 @@
 package com.kollectivemobile.euki.ui.common.holder;
 
 import androidx.annotation.NonNull;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,16 +24,19 @@ import butterknife.OnClick;
 
 public class DailyLogBleedingHolder extends BaseDailyLogHolder implements View.OnClickListener {
     public @BindViews({R.id.sb_bleeding_size_1, R.id.sb_bleeding_size_2, R.id.sb_bleeding_size_3,
-                       R.id.sb_bleeding_size_4}) List<SelectableButton> sbBleedingSizes;
+            R.id.sb_bleeding_size_4}) List<SelectableButton> sbBleedingSizes;
     public @BindViews({R.id.sb_bleeding_product_1, R.id.sb_bleeding_product_2,
-                       R.id.sb_bleeding_product_3, R.id.sb_bleeding_product_4,
-                       R.id.sb_bleeding_product_5}) List<SelectableButton> sbBleedingProducts;
+            R.id.sb_bleeding_product_3, R.id.sb_bleeding_product_4,
+            R.id.sb_bleeding_product_5, R.id.sb_bleeding_product_6, R.id.sb_bleeding_product_7}) List<SelectableButton> sbBleedingProducts;
 
     public @BindViews({R.id.sb_clot_1, R.id.sb_clot_2}) List<SelectableButton> sbBleedingClots;
 
-    @BindView(R.id.tv_info) ImageView ivInfo;
-    @BindView(R.id.ll_include_cycle) LinearLayout llIncludeCycle;
-    @BindView(R.id.iv_include_cycle) ImageView ivIncludeCycle;
+    @BindView(R.id.tv_info)
+    ImageView ivInfo;
+    @BindView(R.id.ll_include_cycle)
+    LinearLayout llIncludeCycle;
+    @BindView(R.id.iv_include_cycle)
+    ImageView ivIncludeCycle;
 
     private boolean mBleedingTrackingEnabled;
 
@@ -76,11 +80,11 @@ public class DailyLogBleedingHolder extends BaseDailyLogHolder implements View.O
         if (calendarItem.getBleedingSize() != null) {
             sbBleedingSizes.get(calendarItem.getBleedingSize().ordinal()).changeSelected(true);
         }
-        for (int i=0; i<sbBleedingProducts.size(); i++) {
+        for (int i = 0; i < sbBleedingProducts.size(); i++) {
             SelectableButton selectableButton = sbBleedingProducts.get(i);
             selectableButton.setCounter(mCalendarItem.getBleedingProductsCounter().get(i));
         }
-        for (int i=0; i<sbBleedingClots.size(); i++) {
+        for (int i = 0; i < sbBleedingClots.size(); i++) {
             SelectableButton selectableButton = sbBleedingClots.get(i);
             selectableButton.setCounter(mCalendarItem.getBleedingClotsCounter().get(i));
         }
@@ -119,8 +123,8 @@ public class DailyLogBleedingHolder extends BaseDailyLogHolder implements View.O
     @Override
     public void onClick(View view) {
         if (view instanceof SelectableButton && view.getTag() instanceof String) {
-            SelectableButton selectableButton = (SelectableButton)view;
-            Integer index = Integer.parseInt((String)view.getTag());
+            SelectableButton selectableButton = (SelectableButton) view;
+            Integer index = Integer.parseInt((String) view.getTag());
 
             if (sbBleedingSizes.contains(selectableButton)) {
                 mCalendarItem.setBleedingSize(selectableButton.getSelected() ? Constants.BleedingSize.values()[index - 1] : null);

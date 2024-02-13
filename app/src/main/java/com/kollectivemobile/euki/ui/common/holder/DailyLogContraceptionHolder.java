@@ -35,6 +35,7 @@ public class DailyLogContraceptionHolder extends BaseDailyLogHolder implements V
     public @BindViews({R.id.sb_implant_1, R.id.sb_implant_2}) List<SelectableButton> sbImplant;
     public @BindViews({R.id.sb_patch_1, R.id.sb_patch_2}) List<SelectableButton> sbPatch;
     public @BindViews({R.id.sb_ring_1, R.id.sb_ring_2}) List<SelectableButton> sbRing;
+    public @BindViews({R.id.sb_shot_1}) List<SelectableButton> sbShot;
 
     public DailyLogContraceptionHolder(@NonNull View itemView, DailyLogViewListener listener) {
         super(itemView, listener);
@@ -56,6 +57,10 @@ public class DailyLogContraceptionHolder extends BaseDailyLogHolder implements V
             selectableButton.setOnClickListener(this);
         }
         for (SelectableButton selectableButton : sbRing) {
+            selectableButton.setOnClickListener(this);
+        }
+
+        for (SelectableButton selectableButton : sbShot) {
             selectableButton.setOnClickListener(this);
         }
     }
@@ -125,6 +130,8 @@ public class DailyLogContraceptionHolder extends BaseDailyLogHolder implements V
             } else if (sbPatch.contains(selectableButton)) {
                 mCalendarItem.setContraceptionPatch(selectableButton.getSelected() ? Constants.ContraceptionPatch.values()[index - 1] : null);
             } else if (sbRing.contains(selectableButton)) {
+                mCalendarItem.setContraceptionRing(selectableButton.getSelected() ? Constants.ContraceptionRing.values()[index - 1] : null);
+            }else if (sbShot.contains(selectableButton)) {
                 mCalendarItem.setContraceptionRing(selectableButton.getSelected() ? Constants.ContraceptionRing.values()[index - 1] : null);
             }
 

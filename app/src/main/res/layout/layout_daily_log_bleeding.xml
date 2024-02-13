@@ -127,41 +127,57 @@
             <com.kollectivemobile.euki.ui.common.views.SelectableButton
                 android:id="@+id/sb_bleeding_product_1"
                 android:tag="1"
-                app:title="@string/bleeding_produc_1"
+                app:title="@string/menstruation_1"
                 app:singleSelection="false"
-                app:imageRes="@drawable/icon_bleeding_product_1"
+                app:imageRes="@drawable/icon_menstruation_1"
                 style="@style/SelectableButton"/>
 
             <com.kollectivemobile.euki.ui.common.views.SelectableButton
                 android:id="@+id/sb_bleeding_product_2"
                 android:tag="2"
-                app:title="@string/bleeding_produc_2"
+                app:title="@string/menstruation_2"
                 app:singleSelection="false"
-                app:imageRes="@drawable/icon_bleeding_product_2"
+                app:imageRes="@drawable/icon_menstruation_2"
                 style="@style/SelectableButton"/>
 
             <com.kollectivemobile.euki.ui.common.views.SelectableButton
                 android:id="@+id/sb_bleeding_product_3"
                 android:tag="3"
-                app:title="@string/bleeding_produc_3"
+                app:title="@string/menstruation_3"
                 app:singleSelection="false"
-                app:imageRes="@drawable/icon_bleeding_product_3"
+                app:imageRes="@drawable/icon_menstruation_3"
                 style="@style/SelectableButton"/>
 
             <com.kollectivemobile.euki.ui.common.views.SelectableButton
                 android:id="@+id/sb_bleeding_product_4"
                 android:tag="4"
-                app:title="@string/bleeding_produc_4"
+                app:title="@string/menstruation_4"
                 app:singleSelection="false"
-                app:imageRes="@drawable/icon_bleeding_product_4"
+                app:imageRes="@drawable/icon_menstruation_4"
                 style="@style/SelectableButton"/>
 
             <com.kollectivemobile.euki.ui.common.views.SelectableButton
                 android:id="@+id/sb_bleeding_product_5"
                 android:tag="5"
-                app:title="@string/bleeding_produc_5"
+                app:title="@string/menstruation_5"
                 app:singleSelection="false"
-                app:imageRes="@drawable/icon_bleeding_product_5"
+                app:imageRes="@drawable/icon_menstruation_5"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_bleeding_product_6"
+                android:tag="5"
+                app:title="@string/menstruation_5"
+                app:singleSelection="false"
+                app:imageRes="@drawable/icon_menstruation_6"
+                style="@style/SelectableButton"/>
+
+            <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                android:id="@+id/sb_bleeding_product_7"
+                android:tag="5"
+                app:title="@string/menstruation_7"
+                app:singleSelection="false"
+                app:imageRes="@drawable/icon_menstruation_7"
                 style="@style/SelectableButton"/>
 
         </androidx.gridlayout.widget.GridLayout>
