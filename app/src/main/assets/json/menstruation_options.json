@@ -9,10 +9,9 @@
       "content": "menstrual_cycle_101_content",
       "expandable_items": [
         {
-          "id": "ovulation",
-          "title": "ovulation",
-          "content": "ovulation_content",
-          "source": "american_college_of_obstetricians_and_gynecologists",
+          "id": "know_your_body",
+          "title": "know_your_body",
+          "content": "know_your_body_content",
           "swipe_pager_item": [
             {
               "id": "whole_body_look",
@@ -29,39 +28,43 @@
               "content": "outside_body_look",
               "icon": "bodyOutsideLook"
             }
-          ],
+          ]
+        },
+        {
+          "id": "ovulation",
+          "title": "ovulation",
+          "content": "ovulation_content",
+          "source": "american_college_of_obstetricians_and_gynecologists",
           "links": {
             "here": "https://www.womenshealth.gov/pregnancy/you-get-pregnant/trying-conceive",
             "Trans Fertility Co": "https://transfertility.co/"
           }
         },
         {
-          "id": "inherited_bleeding_disorders",
-          "title": "inherited_bleeding_disorders_title",
-          "content": "inherited_bleeding_disorders_content",
-          "bold_strings": [
-            "symptoms_bold_1",
-            "diagnosis_bold_2"
-          ]
+          "id": "how_does_birth_control_affect_my_cycle",
+          "title": "how_does_birth_control_affect_my_cycle",
+          "content": "how_does_birth_control_affect_my_cycle_content",
+          "links": {
+            "here": ""
+          }
         },
         {
-          "id": "endometriosis",
-          "title": "endometriosis_title",
-          "content": "endometriosis_content",
-          "bold_strings": [
-            "symptoms_bold_1",
-            "diagnosis_bold_2",
-            "treatment_bold_3"
-          ]
+          "id": "what_is_a_regular_period",
+          "title": "what_is_a_regular_period",
+          "content": "what_is_a_regular_period_content"
         },
         {
-          "id": "pelvic_inflammatory_disease_pid",
-          "title": "pelvic_inflammatory_disease_pid_title",
-          "content": "pelvic_inflammatory_disease_pid_content",
-          "bold_strings": [
-            "symptoms_bold_1",
-            "diagnosis_treatment_bold_3"
-          ]
+          "id": "what_happens_during_a_period",
+          "title": "what_happens_during_a_period",
+          "content": "what_happens_during_a_period_content"
+        },
+        {
+          "id": "mental_and_emotional_health",
+          "title": "mental_and_emotional_health",
+          "content": "mental_and_emotional_health_content",
+          "links": {
+            "(PMDD)": ""
+          }
         }
       ]
     },

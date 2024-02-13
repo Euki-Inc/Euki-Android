@@ -9,7 +9,9 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_x3_5"
+        />
 
     <!-- Dots representing pages -->
     <LinearLayout

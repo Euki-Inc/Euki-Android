@@ -26,6 +26,10 @@ public class SwipeableAdapter extends RecyclerView.Adapter<SwipeableAdapter.View
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false);
+        // Adjust margins
+        ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams) itemView.getLayoutParams();
+        layoutParams.setMargins(0, 0, 0, 0); // Adjust as needed
+
         return new ViewHolder(itemView);
     }
 

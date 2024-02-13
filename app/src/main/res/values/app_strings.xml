@@ -1100,4 +1100,18 @@ Trans Fertility Co offers resources specifically for transgender and non-binary 
     <string name="whole_body_look">This image shows where the reproductive organs lie relative to the rest of the body. These organs play a role in menstruation and pregnancy.</string>
     <string name="closer_body_look">Let\'s take a closer look. Knowing these parts of your body will help you better understand what happens during menstruation, as well as how to navigate conversations with your medical provider.</string>
     <string name="outside_body_look">Here\'s a look from the outside. Getting comfortable and familiar with your body can help you advocate for your own health. Remember: every body is different. You might see a lot of variation in size, hair, shape, etc.</string>
+    <string name="know_your_body">Know your body</string>
+    <string name="know_your_body_content">Swipe through these images to learn more about the reproductive organs of people assigned female at birth.\n\n
+
+Euki uses the language most commonly used by medical providers, but there are many ways to refer to these body parts. It is important for providers to use inclusive, person-centered language when talking about people\'s bodies.</string>
+    <string name="menstruation_period">Menstruation (period)</string>
+    <string name="menstruation_period_content">Menstruation or a “period” is the shedding of the uterine lining after a pregnancy has not occurred. The body does this so it can prepare a new lining for the next egg.</string>
+    <string name="how_does_birth_control_affect_my_cycle">How does birth control affect my cycle?</string>
+    <string name="how_does_birth_control_affect_my_cycle_content">Different forms of birth control can have different effects on your cycle. For example, the hormonal IUD works by thickening the mucus in the cervix, thinning the uterine lining, and partially suppressing ovulation, a combination which can stop monthly bleeding in many people. A copper IUD does not affect the cycle but instead makes the uterus uninhabitable for eggs and sperm. This means that some people\'s period remains the same or gets heavier. You can find more specific information on how each type of contraception affects menstruation here.</string>
+    <string name="what_is_a_regular_period">What is a regular period?</string>
+    <string name="what_is_a_regular_period_content">A "regular" period usually lasts between 21 and 45 days. This means that periods will start 21-35 days apart and last between 2-7 days. A period can be altered by things like taking contraception, pregnancy, using testosterone, and changes in diet and exercise. One might consider consulting a medical provider if they\'re experiencing more frequent bleeding or have gone over two months without a period.</string>
+    <string name="what_happens_during_a_period">What happens during a period?</string>
+    <string name="what_happens_during_a_period_content">The first day of a period often begins with light spotting that is usually thick and brownish. Then the period blood changes to a darker red.</string>
+    <string name="mental_and_emotional_health">Mental and emotional health</string>
+    <string name="mental_and_emotional_health_content">Many people experience mood swings that correspond with their menstrual cycle. They can experience increased irritability, fatigue, and negative thought patterns a few days before their period as a part of pre-menstrual syndrome (PMS) or premenstrual dysphoric disorder (PMDD). For some, these negative effects on emotional health could last through their period.</string>
 </resources>
