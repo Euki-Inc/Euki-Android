@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/body_whole_look" />
 

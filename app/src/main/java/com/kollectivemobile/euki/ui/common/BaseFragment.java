@@ -141,7 +141,9 @@ public abstract class BaseFragment extends Fragment implements LinkListener {
             return;
         }
         if (link.equals("resources") || link.equals("sexuality_resources") || link.equals("method_information")
-                || link.equals("symptom_management") || link.equals("menstrual_cycle_101") || link.equals("contraception")) {
+                || link.equals("symptom_management") || link.equals("menstrual_cycle_101") || link.equals("contraception") ||
+                link.equals("menstruation_faqs")
+        ) {
             ContentItem contentItem = mContentManager.getContentItem(link);
             if (contentItem != null) {
                 Intent intent = ContentItemActivity.makeIntent(getActivity(), contentItem);
@@ -151,7 +153,7 @@ public abstract class BaseFragment extends Fragment implements LinkListener {
         }
 
 
-        if (link.equals("product_quiz")){
+        if (link.equals("product_quiz")) {
             ContentItem contentItem = mContentManager.getContentItem(link);
             if (contentItem != null) {
                 Intent intent = QuizActivity.makeIntent(getActivity(), QuizType.MENSTRUATION);

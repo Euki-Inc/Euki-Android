@@ -170,12 +170,7 @@ public class ContentItemFragment extends BaseFragment implements ContentGridSele
 
                 final int indexFinal = index;
                 final Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        rvMain.smoothScrollToPosition(indexFinal + 1);
-                    }
-                }, 250);
+                handler.postDelayed(() -> rvMain.smoothScrollToPosition(indexFinal + 1), 250);
                 rvMain.scrollToPosition(mContentItem.getExpandableItems().size() - 1);
             }
         }

@@ -36,6 +36,7 @@
           "content": "ovulation_content",
           "source": "american_college_of_obstetricians_and_gynecologists",
           "links": {
+            "aquí": "https://www.womenshealth.gov/pregnancy/you-get-pregnant/trying-conceive",
             "here": "https://www.womenshealth.gov/pregnancy/you-get-pregnant/trying-conceive",
             "Trans Fertility Co": "https://transfertility.co/"
           }
@@ -45,7 +46,8 @@
           "title": "how_does_birth_control_affect_my_cycle",
           "content": "how_does_birth_control_affect_my_cycle_content",
           "links": {
-            "here": ""
+            "here": "method_information",
+            "aquí":"method_information"
           }
         },
         {
@@ -61,10 +63,7 @@
         {
           "id": "mental_and_emotional_health",
           "title": "mental_and_emotional_health",
-          "content": "mental_and_emotional_health_content",
-          "links": {
-            "(PMDD)": ""
-          }
+          "content": "mental_and_emotional_health_content"
         }
       ]
     },
@@ -84,8 +83,10 @@
               "title": "how_to_prepare",
               "content": "menarche_content_1",
               "links": {
+                "cuestionario": "product_quiz",
                 "quiz": "product_quiz",
-                "symptoms": "symptom_management"
+                "symptoms": "symptom_management",
+                "síntomas": "symptom_management"
               }
             },
             {
@@ -93,7 +94,8 @@
               "title": "whats_it_mean",
               "content": "menarche_content_2",
               "links": {
-                "here": "menstrual_cycle_101"
+                "here": "menstrual_cycle_101",
+                "aquí": "menstrual_cycle_101"
               }
             },
             {
@@ -101,20 +103,26 @@
               "title": "common_misconceptions",
               "content": "menarche_content_3",
               "links": {
-                "Symptoms management resources": "symptom_management"
+                "Symptoms management resources": "symptom_management",
+                "Los recursos para el control de síntomas": "symptom_management"
               }
             },
             {
               "id": "how_to_find_support_menarche",
               "title": "how_to_find_support",
-              "content": "menarche_content_4"
+              "content": "menarche_content_4",
+              "links": {
+                "here": "menstruation_faqs",
+                "aquí": "menstruation_faqs"
+              }
             },
             {
               "id": "first_period_stories_menarche",
               "title": "first_period_stories",
               "content": "menarche_content_5",
               "links": {
-                "here": "https://storymaps.arcgis.com/stories/4f8da19484ea46e0abaacee95312f26c"
+                "here": "https://storymaps.arcgis.com/stories/4f8da19484ea46e0abaacee95312f26c",
+                "aquí": "https://storymaps.arcgis.com/stories/4f8da19484ea46e0abaacee95312f26c"
               }
             }
           ]
@@ -501,6 +509,7 @@
           "title": "mental_health_title",
           "content": "mental_health_content",
           "links": {
+            "líneas de ayuda anónimas": "https://app.projecthealthyminds.com/tactics/helplines?gad_source=1",
             "helplines": "https://app.projecthealthyminds.com/tactics/helplines?gad_source=1"
           }
         },
@@ -585,7 +594,8 @@
           "id": "menstruation_faqs_question_4",
           "content": "menstruation_faqs_answer_4",
           "links": {
-            "Contraception": "contraception"
+            "Contraception": "contraception",
+            "sección Anticonceptivos" : "contraception"
           }
         },
         {

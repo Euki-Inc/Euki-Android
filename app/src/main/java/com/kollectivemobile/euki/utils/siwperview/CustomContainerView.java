@@ -41,11 +41,6 @@ public class CustomContainerView extends RelativeLayout {
             }
         });
 
-        // Assuming you have a ViewPager2 instance named viewPager
-        int marginPixels = getResources().getDimensionPixelSize(R.dimen.dimen_x2_5); // Define your desired margin dimension
-        viewPager.setPadding(0,0,0,0);
-
-
     }
 
     public void setItems(List<SwipeableItem> items) {
