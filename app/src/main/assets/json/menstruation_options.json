@@ -42,12 +42,17 @@
           }
         },
         {
+          "id": "menstruation_period",
+          "title": "menstruation_period",
+          "content": "menstruation_period_content"
+        },
+        {
           "id": "how_does_birth_control_affect_my_cycle",
           "title": "how_does_birth_control_affect_my_cycle",
           "content": "how_does_birth_control_affect_my_cycle_content",
           "links": {
             "here": "method_information",
-            "aquí":"method_information"
+            "aquí": "method_information"
           }
         },
         {
@@ -505,6 +510,11 @@
           "content": "nausea_and_fatigue_content"
         },
         {
+          "id": "bloating_and_other_gi_effects",
+          "title": "bloating_and_other_gi_effects_title",
+          "content": "bloating_and_other_gi_effects_content"
+        },
+        {
           "id": "mental_health",
           "title": "mental_health_title",
           "content": "mental_health_content",
@@ -595,7 +605,7 @@
           "content": "menstruation_faqs_answer_4",
           "links": {
             "Contraception": "contraception",
-            "sección Anticonceptivos" : "contraception"
+            "sección Anticonceptivos": "contraception"
           }
         },
         {
