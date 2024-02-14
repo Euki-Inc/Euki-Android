@@ -167,7 +167,7 @@
             <com.kollectivemobile.euki.ui.common.views.SelectableButton
                 android:id="@+id/sb_bleeding_product_6"
                 android:tag="5"
-                app:title="@string/menstruation_5"
+                app:title="@string/menstruation_6"
                 app:singleSelection="false"
                 app:imageRes="@drawable/icon_menstruation_6"
                 style="@style/SelectableButton"/>
