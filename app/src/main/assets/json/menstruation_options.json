@@ -505,14 +505,14 @@
           "content": "other_pain_content"
         },
         {
-          "id": "nausea_and_fatigue",
-          "title": "nausea_and_fatigue_title",
-          "content": "nausea_and_fatigue_content"
-        },
-        {
           "id": "bloating_and_other_gi_effects",
           "title": "bloating_and_other_gi_effects_title",
           "content": "bloating_and_other_gi_effects_content"
+        },
+        {
+          "id": "nausea_and_fatigue",
+          "title": "nausea_and_fatigue_title",
+          "content": "nausea_and_fatigue_content"
         },
         {
           "id": "mental_health",
