@@ -839,7 +839,7 @@
     <string name="done_tracking">Done Tracking (%d)</string>
 
     <!-- Menstruation -->
-    <string name="menstruation_content">Menstruation, known to many as a "period," is vaginal bleeding that occurs every month or so. Menstruation often starts between 12-14 years old and can last until 45-55. Menstruation can come with a range of feelings, side effects, and experiences.\n\nInformation below will help you understand different ways people manage their periods and how to navigate your own unique experience.</string>
+    <string name="menstruation_content">Menstruation, known to many as a \"period\", is vaginal bleeding that occurs every month or so. Menstruation often starts between 12-14 years old and can last until 45-55. Menstruation can come with a range of feelings, side effects, and experiences.\n\nInformation below will help you understand different ways people manage their periods and how to navigate your own unique experience.</string>
     <string name="menstruation">Menstruation</string>
     <string name="first_period_to_last_period">First period to last period</string>
     <string name="product_quiz">Product quiz</string>
@@ -851,7 +851,7 @@
     <string name="bleeding_title">Bleeding</string>
     <string name="bleeding_title_content">Having your period means there is blood, and sometimes a lot of it! Learning how to manage bleeding with different menstrual products can be a learning curve that many of us go through. But this process is totally normal!\n\nIt\'s not uncommon to bleed through products onto clothes or bedsheets overnight. Still, it can be stressful, especially when in public settings. If this happens, blood can be washed out of clothing and fabrics using cold water.</string>
     <string name="social_stress_title">Social stress</string>
-    <string name="social_stress_content">A huge stress factor for many people can be managing period symptoms while carrying on with their day-to-day life. Many workplaces and schools do not offer time off, even though period symptoms can be unbearable for some folks.\n\nIt can help to identify a trusted person at work or school who you feel comfortable talking to if you need someone to support you. For example, if you would like to request time off or if you want to advocate for free menstrual products inbathrooms, you can do so with a trusted person. If you cannot find a person in the workplace, you can contact the Empower Work text line for support (510) 674-1414.</string>
+    <string name="social_stress_content">A huge stress factor for many people can be managing period symptoms while carrying on with their day-to-day life. Many workplaces and schools do not offer time off, even though period symptoms can be unbearable for some folks.\n\nIt can help to identify a trusted person at work or school who you feel comfortable talking to if you need someone to support you. For example, if you would like to request time off or if you want to advocate for free menstrual products in bathrooms, you can do so with a trusted person. If you cannot find a person in the workplace, you can contact the Empower Work text line for support (510) 674-1414.</string>
     <string name="other_pain_title">Other pain</string>
     <string name="other_pain_content">Many people experience pain that extends beyond the pelvic area, including joint pain, sore chest or breast tissue, back pain, and migraines.\n\nThese kinds of pain can be managed with over-the-counter pain killers, heating pads, and rest.</string>
     <string name="cramps_title">Cramps</string>
@@ -902,7 +902,7 @@
     <string name="first_period_to_last_period_title">First period to last period</string>
     <string name="first_period_to_last_period_content">The menstrual life cycle begins with your first period and ends with your last. Both experiences are incredibly common and normal, yet can be stressful and hard to experience alone. But you are not alone! Explore more about these experiences below.</string>
     <string name="menarche">Menarche</string>
-    <string name="menarche_content">Most people get their first menstruation or period between 12-14 years old, though it can be earlier or later. The first period is called "menarche" and can feel anything from exciting to scary to concerning, but proper preparation can help to ease the stress.\n\nThe resources below can help you prepare for your first period, learn more about what it\'s like, and find the support you need.</string>
+    <string name="menarche_content">Most people get their first menstruation or period between 12-14 years old, though it can be earlier or later. The first period is called \"menarche\" and can feel anything from exciting to scary to concerning, but proper preparation can help to ease the stress.\n\nThe resources below can help you prepare for your first period, learn more about what it\'s like, and find the support you need.</string>
     <string name="how_to_prepare">How to prepare?</string>
     <string name="menarche_content_1">Some parents or other adults will talk with young people before their first period so they know what to expect. Others might not have this experience. Around 12-14 years old, you may notice some brown discharge on your underwear which could signify a first period. Before it starts, it\'s helpful to carry a menstrual product you feel comfortable using and read about how to use that product. If you want to learn more about different products, take Euki\'s product quiz.\n\nIt can also be helpful to identify a trusted adult you can talk to if you need help or are having a hard time with any period symptoms.</string>
     <string name="whats_it_mean">What’s it mean?</string>
@@ -924,7 +924,7 @@
     <string name="mental_health_impacts">Mental health impacts</string>
     <string name="menopause_content_5">In addition to the mood changes associated with menopause, some may struggle with the loss of fertility and the association of menopause with old age. For others, this could feel like just another change in the body. </string>
     <string name="reusable_pad">Reusable pad</string>
-    <string name="disposable_pad">Disposable Pad</string>
+    <string name="disposable_pad">Disposable pad</string>
     <string name="tampon">Tampon</string>
     <string name="menstrual_cup">Menstrual cup</string>
     <string name="menstrual_disc">Menstrual disc</string>
@@ -981,7 +981,7 @@
     <string name="liner_content_1">A liner is similar to a disposable pad in that it sticks to the inside of your underwear to collect your blood. Unlike disposable pads, liners don\'t usually have wings and are less heavy duty. They are often used as backup for another menstrual product that is inserted—like a tampon or cup—or on days when you\'re spotting or when bleeding is very light.</string>
     <string name="liner_content_2">Similar to a disposable pad, you remove the adhesive on the back and stick it along the inside of your underwear.</string>
     <string name="liner_content_3">A liner should be changed every few hours, when it becomes full to the point of leaking, or when you can see the whole white part covered in blood.</string>
-    <string name="liner_content_4">After using a liner, you should remove it from your underwear and dispose of it in the bin of a bathroom stall or in a trash can.If you are still bleeding, you should replace it with a new liner.</string>
+    <string name="liner_content_4">After using a liner, you should remove it from your underwear and dispose of it in the bin of a bathroom stall or in a trash can. If you are still bleeding, you should replace it with a new liner.</string>
     <string name="liner_content_5">Liners are very thin and don\'t feel like much other than some extra cloth in your underwear.</string>
     <string name="liner_content_6">Liners can be purchased at most major grocery stores and pharmacies, as well as online.</string>
     <string name="liner_content_7">A box typically costs about $7 and contains about 36 liners. Most people only use 5-10 per cycle, bringing the cost to $1-2/month.</string>
