@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kollectivemobile.euki">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".App"
@@ -17,32 +16,98 @@
 
         <activity
             android:name=".ui.SplashActivity"
-            android:theme="@style/AppTheme.Splash"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.main.MainActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.onboarding.OnboardingActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.home.content.ContentItemActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.home.abortion.MainAbortionActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.home.search.SearchActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label="" android:windowSoftInputMode = "stateVisible" />
-        <activity android:name=".ui.quiz.QuizActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.calendar.filter.FilterActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.calendar.reminders.RemindersActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.privacy.PrivacyPinSetupActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.pin.CheckPinActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.calendar.appointments.AppointmentsActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.calendar.appointments.FutureAppointmentActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.browser.BrowserActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.track.TrackActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.bookmarks.BookmarksActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
-        <activity android:name=".ui.cycle.settings.SettingsActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait" android:label=""/>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.onboarding.OnboardingActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.home.content.ContentItemActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.home.abortion.MainAbortionActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.home.search.SearchActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".ui.quiz.QuizActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.calendar.filter.FilterActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.calendar.reminders.RemindersActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.privacy.PrivacyPinSetupActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.pin.CheckPinActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.calendar.appointments.AppointmentsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.calendar.appointments.FutureAppointmentActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.browser.BrowserActivity"
+            android:hardwareAccelerated="false"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.track.TrackActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.bookmarks.BookmarksActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".ui.cycle.settings.SettingsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
 
-        <receiver android:name=".alarm.AlarmReceiver"/>
+        <receiver android:name=".alarm.AlarmReceiver" />
     </application>
 
 </manifest>
