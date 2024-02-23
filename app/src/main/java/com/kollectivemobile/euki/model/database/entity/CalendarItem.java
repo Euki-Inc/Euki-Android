@@ -47,6 +47,8 @@ public class CalendarItem {
     private ContraceptionPatch mContraceptionPatch;
     @ColumnInfo(name = "contraception_ring")
     private ContraceptionRing mContraceptionRing;
+    @ColumnInfo(name = "contraception_shot")
+    private ContraceptionShot mContraceptionShot;
     @ColumnInfo(name = "contraception_long_term_others")
     private List<ContraceptionLongTermOther> mContraceptionLongTermOthers;
     @ColumnInfo(name = "tests_sti")
@@ -157,7 +159,7 @@ public class CalendarItem {
     public boolean hasContraception() {
         return this.mContraceptionPills != null || (this.mContraceptionDailyOther != null && this.mContraceptionDailyOther.size() > 0) ||
                 this.mContraceptionIUD != null || this.mContraceptionImplant != null || this.mContraceptionPatch != null ||
-                this.mContraceptionRing != null;
+                this.mContraceptionRing != null || this.mContraceptionShot != null;
     }
 
     public boolean hasTest() {
@@ -391,6 +393,7 @@ public class CalendarItem {
         calendarItem.mContraceptionImplant = mContraceptionImplant;
         calendarItem.mContraceptionPatch = mContraceptionPatch;
         calendarItem.mContraceptionRing = mContraceptionRing;
+        calendarItem.mContraceptionShot = mContraceptionShot;
         calendarItem.mContraceptionLongTermOthers = new ArrayList<>(mContraceptionLongTermOthers);
         calendarItem.mTestSTI = mTestSTI;
         calendarItem.mTestPregnancy = mTestPregnancy;
@@ -464,6 +467,9 @@ public class CalendarItem {
         if (mContraceptionRing != null) {
             count++;
         }
+        if (mContraceptionShot != null) {
+            count++;
+        }
         if (!mContraceptionLongTermOthers.isEmpty()) {
             count++;
         }
@@ -493,5 +499,13 @@ public class CalendarItem {
                 testCount() +
                 (hasAppointment() ? 1 : 0) +
                 (hasNote() ? 1 : 0);
+    }
+
+    public ContraceptionShot getContraceptionShot() {
+        return mContraceptionShot;
+    }
+
+    public void setContraceptionShot(ContraceptionShot mContraceptionSot) {
+        this.mContraceptionShot = mContraceptionSot;
     }
 }

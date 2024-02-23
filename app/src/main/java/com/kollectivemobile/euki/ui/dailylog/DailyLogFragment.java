@@ -165,22 +165,17 @@ public class DailyLogFragment extends BaseFragment implements DailyLogAdapter.Da
             }
         });
 
-        tvDone.setOnClickListener(new View.OnClickListener() {
+        tvDone.setOnClickListener(view -> save(new EukiCallback<Boolean>() {
             @Override
-            public void onClick(View view) {
-                save(new EukiCallback<Boolean>() {
-                    @Override
-                    public void onSuccess(Boolean aBoolean) {
-                        getActivity().finish();
-                    }
-
-                    @Override
-                    public void onError(ServerError serverError) {
-                        getActivity().finish();
-                    }
-                });
+            public void onSuccess(Boolean aBoolean) {
+                getActivity().finish();
             }
-        });
+
+            @Override
+            public void onError(ServerError serverError) {
+                getActivity().finish();
+            }
+        }));
     }
 
     private void updateAdapter() {

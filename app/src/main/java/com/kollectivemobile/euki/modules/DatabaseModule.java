@@ -1,5 +1,6 @@
 package com.kollectivemobile.euki.modules;
 
+import androidx.annotation.NonNull;
 import androidx.room.Room;
 import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
@@ -22,7 +23,7 @@ public class DatabaseModule {
         @Override
         public void migrate(SupportSQLiteDatabase database) {
             database.execSQL("ALTER TABLE AppSettings "
-                    +"ADD COLUMN should_show_pin_update Integer");
+                    + "ADD COLUMN should_show_pin_update Integer");
         }
     };
 
@@ -30,21 +31,30 @@ public class DatabaseModule {
         @Override
         public void migrate(SupportSQLiteDatabase database) {
             database.execSQL("ALTER TABLE AppSettings "
-                    +"ADD COLUMN latest_bleeding_tracking Integer");
+                    + "ADD COLUMN latest_bleeding_tracking Integer");
             database.execSQL("ALTER TABLE AppSettings "
-                    +"ADD COLUMN filter_items TEXT");
+                    + "ADD COLUMN filter_items TEXT");
             database.execSQL("ALTER TABLE AppSettings "
-                    +"ADD COLUMN hidden_cycle_periods TEXT");
+                    + "ADD COLUMN hidden_cycle_periods TEXT");
             database.execSQL("ALTER TABLE AppSettings "
-                    +"ADD COLUMN track_period_enabled Integer");
+                    + "ADD COLUMN track_period_enabled Integer");
             database.execSQL("ALTER TABLE AppSettings "
-                    +"ADD COLUMN period_prediction_enabled Integer");
+                    + "ADD COLUMN period_prediction_enabled Integer");
             database.execSQL("ALTER TABLE AppSettings "
-                    +"ADD COLUMN show_cycle_summary_tutorial Integer");
+                    + "ADD COLUMN show_cycle_summary_tutorial Integer");
             database.execSQL("ALTER TABLE CalendarItem "
-                    +"ADD COLUMN include_cycle_summary Integer");
+                    + "ADD COLUMN include_cycle_summary Integer");
             database.execSQL("ALTER TABLE CalendarItem "
-                    +"ADD COLUMN bleeding_clots_counter TEXT");
+                    + "ADD COLUMN bleeding_clots_counter TEXT");
+        }
+    };
+
+    static final Migration MIGRATION_3_4 = new Migration(3, 4) {
+        @Override
+        public void migrate(@NonNull SupportSQLiteDatabase database) {
+
+            database.execSQL("ALTER TABLE CalendarItem "
+                    + "ADD COLUMN contraception_shot TEXT");
         }
     };
 
@@ -52,7 +62,7 @@ public class DatabaseModule {
     @Provides
     AppDatabase providesAppDatabase() {
 //        return Room.databaseBuilder(App.getContext(), AppDatabase.class, "euki").build();
-        return Room.databaseBuilder(App.getContext(), AppDatabase.class, "euki").allowMainThreadQueries().addMigrations(MIGRATION_1_2, MIGRATION_2_3).build();
+        return Room.databaseBuilder(App.getContext(), AppDatabase.class, "euki").allowMainThreadQueries().addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4).build();
     }
 
     @Provides

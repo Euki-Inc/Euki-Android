@@ -16,7 +16,7 @@ import com.kollectivemobile.euki.model.database.entity.ReminderItem;
 
 @Database(
         entities = {CalendarItem.class, ReminderItem.class, AppSettings.class},
-        version = 3,
+        version = 4,
         exportSchema = false
 )
 

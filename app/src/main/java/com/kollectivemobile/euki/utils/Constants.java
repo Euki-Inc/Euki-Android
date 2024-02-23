@@ -217,6 +217,19 @@ public class Constants {
         }
     }
 
+    public enum ContraceptionShot {
+        SHOT;
+        public static final ContraceptionShot values[] = values();
+
+        public String getText() {
+            return "shot";
+        }
+
+        public String getImageName() {
+            return "icon_contraception_shot_1";
+        }
+    }
+
     public enum TestSTI {
         POSITIVE, NEGATIVE;
         public static final TestSTI values[] = values();

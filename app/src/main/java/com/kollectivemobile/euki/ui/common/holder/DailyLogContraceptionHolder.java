@@ -132,7 +132,7 @@ public class DailyLogContraceptionHolder extends BaseDailyLogHolder implements V
             } else if (sbRing.contains(selectableButton)) {
                 mCalendarItem.setContraceptionRing(selectableButton.getSelected() ? Constants.ContraceptionRing.values()[index - 1] : null);
             }else if (sbShot.contains(selectableButton)) {
-                mCalendarItem.setContraceptionRing(selectableButton.getSelected() ? Constants.ContraceptionRing.values()[index - 1] : null);
+                mCalendarItem.setContraceptionShot(selectableButton.getSelected() ? Constants.ContraceptionShot.values()[index - 1] : null);
             }
 
             updateTitle();

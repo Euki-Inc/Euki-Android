@@ -114,19 +114,9 @@ public class DaysFragment extends BaseFragment implements DaysFragmentListener {
         rvMain.setListener(this);
         ivRight.setVisibility(View.GONE);
 
-        ivLeft.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                rvMain.smoothScrollToPosition(rvMain.getCurrentIndex() - 1);
-            }
-        });
+        ivLeft.setOnClickListener(view -> rvMain.smoothScrollToPosition(rvMain.getCurrentIndex() - 1));
 
-        ivRight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                rvMain.smoothScrollToPosition(rvMain.getCurrentIndex() + 3);
-            }
-        });
+        ivRight.setOnClickListener(view -> rvMain.smoothScrollToPosition(rvMain.getCurrentIndex() + 3));
     }
 
     @Override

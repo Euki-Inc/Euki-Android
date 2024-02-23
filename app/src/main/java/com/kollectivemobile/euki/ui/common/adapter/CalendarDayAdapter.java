@@ -182,6 +182,10 @@ public class CalendarDayAdapter extends RecyclerView.Adapter {
             if (calendarItem.getContraceptionRing() != null) {
                 objects.add(new SelectableValue(calendarItem.getContraceptionRing().getImageName(), calendarItem.getContraceptionRing().getText() + "_list", 0));
             }
+
+            if (calendarItem.getContraceptionShot() != null) {
+                objects.add(new SelectableValue(calendarItem.getContraceptionShot().getImageName(), calendarItem.getContraceptionShot().getText(), 0));
+            }
             for (ContraceptionLongTermOther contraceptionLongTermOther : calendarItem.getContraceptionLongTermOthers()) {
                 objects.add(new SelectableValue(contraceptionLongTermOther.getImageName(), contraceptionLongTermOther.getText(), 0));
             }
