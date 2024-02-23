@@ -90,21 +90,13 @@ public class DailyLogBleedingHolder extends BaseDailyLogHolder implements View.O
         }
 
         ivInfo.setVisibility(selected ? View.VISIBLE : View.GONE);
-        ivInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mListener.infoAction();
-            }
-        });
+        ivInfo.setOnClickListener(view -> mListener.infoAction());
 
         updateIncludeCycle();
-        ivIncludeCycle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mBleedingTrackingEnabled) {
-                    mCalendarItem.setIncludeCycleSummary(!mCalendarItem.getIncludeCycleSummary());
-                    updateIncludeCycle();
-                }
+        ivIncludeCycle.setOnClickListener(view -> {
+            if (mBleedingTrackingEnabled) {
+                mCalendarItem.setIncludeCycleSummary(!mCalendarItem.getIncludeCycleSummary());
+                updateIncludeCycle();
             }
         });
         llIncludeCycle.setAlpha(mBleedingTrackingEnabled ? 1.0f : 0.5f);

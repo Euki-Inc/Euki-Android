@@ -2,8 +2,10 @@ package com.kollectivemobile.euki.ui.common.adapter;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
+
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,7 @@ import com.kollectivemobile.euki.utils.DateUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import com.kollectivemobile.euki.utils.Constants.*;
 import com.kollectivemobile.euki.utils.Utils;
 
@@ -60,16 +63,16 @@ public class CalendarDayAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof CalendarHeaderHolder) {
-            FilterItem filterItem = (FilterItem)mObjects.get(position);
-            CalendarHeaderHolder headerHolder = (CalendarHeaderHolder)holder;
+            FilterItem filterItem = (FilterItem) mObjects.get(position);
+            CalendarHeaderHolder headerHolder = (CalendarHeaderHolder) holder;
             headerHolder.vCircle.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(mContext, filterItem.getColor())));
             headerHolder.tvTitle.setText(Utils.getLocalized(filterItem.getTitle()));
             return;
         }
 
         if (holder instanceof CalendarValueHolder) {
-            SelectableValue selectableValue = (SelectableValue)mObjects.get(position);
-            CalendarValueHolder valueHolder = (CalendarValueHolder)holder;
+            SelectableValue selectableValue = (SelectableValue) mObjects.get(position);
+            CalendarValueHolder valueHolder = (CalendarValueHolder) holder;
             valueHolder.sbValue.setCounter(selectableValue.getCounter());
             valueHolder.sbValue.setTitle(selectableValue.getTitle());
             valueHolder.sbValue.setImageRes(Utils.getImageId(selectableValue.getIconName()));
@@ -77,8 +80,8 @@ public class CalendarDayAdapter extends RecyclerView.Adapter {
         }
 
         if (holder instanceof CalendarTextHolder) {
-            String text = (String)mObjects.get(position);
-            CalendarTextHolder calendarTextHolder = (CalendarTextHolder)holder;
+            String text = (String) mObjects.get(position);
+            CalendarTextHolder calendarTextHolder = (CalendarTextHolder) holder;
             calendarTextHolder.tvText.setText(text);
         }
     }
@@ -120,7 +123,7 @@ public class CalendarDayAdapter extends RecyclerView.Adapter {
                 }
             }
 
-            for (int index = 0; index<calendarItem.getBleedingProductsCounter().size(); index++) {
+            for (int index = 0; index < calendarItem.getBleedingProductsCounter().size(); index++) {
                 int counter = calendarItem.getBleedingProductsCounter().get(index);
                 if (counter > 0) {
                     BleedingProducts bleedingProducts = BleedingProducts.values[index];
@@ -232,8 +235,10 @@ public class CalendarDayAdapter extends RecyclerView.Adapter {
     }
 
     public class CalendarHeaderHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.v_circle) View vCircle;
-        @BindView(R.id.tv_title) TextView tvTitle;
+        @BindView(R.id.v_circle)
+        View vCircle;
+        @BindView(R.id.tv_title)
+        TextView tvTitle;
 
         public CalendarHeaderHolder(View itemView) {
             super(itemView);
@@ -242,7 +247,8 @@ public class CalendarDayAdapter extends RecyclerView.Adapter {
     }
 
     public class CalendarValueHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.sb_value) SelectableButton sbValue;
+        @BindView(R.id.sb_value)
+        SelectableButton sbValue;
 
         public CalendarValueHolder(View itemView) {
             super(itemView);
