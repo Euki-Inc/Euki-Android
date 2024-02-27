@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "549610089810",
+    "project_id": "euki-82ab0",
+    "storage_bucket": "euki-82ab0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549610089810:android:5cb98c80ada2448ce75e8b",
+        "android_client_info": {
+          "package_name": "com.kollectivemobile.euki"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeqdpZmNtCIk6k8SD4VLQFBa8xqs1PjVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

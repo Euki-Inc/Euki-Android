@@ -1,5 +1,9 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
 //apply plugin: 'org.jetbrains.kotlin.android'
+
 
 android {
     namespace "com.kollectivemobile.euki"
@@ -9,8 +13,8 @@ android {
         applicationId "com.kollectivemobile.euki"
         minSdkVersion 24
         targetSdk 33
-        versionCode 11
-        versionName "1.1.5"
+        versionCode 12
+        versionName "1.1.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -42,6 +46,7 @@ dependencies {
             strictly '1.7.20'
         }
     }
+    implementation platform('com.google.firebase:firebase-bom:32.7.2')
 
     implementation 'com.jakewharton:butterknife:10.2.3'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'

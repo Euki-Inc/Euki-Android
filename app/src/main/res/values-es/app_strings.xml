@@ -840,93 +840,50 @@
 
 
     <!-- Menstruation -->
-    <string name="menstruation_content">La menstruación, conocida por muchas personas como “periodo”, es el sangrado vaginal que ocurre aproximadamente cada mes. La menstruación a menudo comienza entre los 12 y los 14 años y puede durar hasta entre los 45 y 55 años. La menstruación puede estar acompañada de diversos síntomas, efectos secundarios y experiencias.
+    <string name="menstruation_content">La menstruación, conocida por muchas personas como “periodo,” es el sangrado vaginal que ocurre aproximadamente cada mes. La menstruación a menudo comienza entre los 12 y los 14 años y puede durar hasta entre los 45 y 55 años. La menstruación puede estar acompañada de diversos síntomas, efectos secundarios y experiencias.
 La siguiente información te ayudará a comprender las diferentes formas en que las personas manejan sus periodos y cómo transitar tu propia experiencia.</string>
     <string name="menstruation">Menstruación</string>
     <string name="first_period_to_last_period">Del primer periodo al último periodo</string>
-    <string name="product_quiz">Encuesta de productos</string>
+    <string name="product_quiz">Encuesta sobre productos</string>
     <string name="menstrual_products">Productos menstruales</string>
     <string name="symptom_management">Control de síntomas</string>
     <string name="menstruation_related_disorders">Trastornos relacionados con la menstruación</string>
     <string name="menstruation_faqs">Preguntas frecuentes</string>
     <string name="symptom_management_content">Los periodos pueden conllevar diversos síntomas y niveles de incomodidad. Hay muchas maneras de controlar los síntomas del periodo.</string>
     <string name="bleeding_title">Sangrado</string>
-    <string name="bleeding_title_content">Tener el periodo significa que hay sangre, ¡y a veces mucha! Aprender a manejar el sangrado con diferentes productos menstruales puede ser una curva de aprendizaje que muches de nosotres atravesamos. ¡Pero este proceso es totalmente normal!
-\n\n No es raro sangrar a través de los productos sobre la ropa o las sábanas durante la noche. Si bien esto es común, puede ser estresante, especialmente en lugares públicos. Si esto sucede, se puede lavar la sangre de la ropa y las telas con agua fría.</string>
+    <string name="bleeding_title_content">Tener el periodo significa que hay sangre, ¡y a veces mucha! Aprender a manejar el sangrado con diferentes productos menstruales puede ser una curva de aprendizaje que muches de nosotres atravesamos. ¡Pero este proceso es totalmente normal!\n\nNo es raro sangrar a través de los productos sobre la ropa o las sábanas durante la noche. Si bien esto es común, puede ser estresante, especialmente en lugares públicos. Si esto sucede, se puede lavar la sangre de la ropa y las telas con agua fría.</string>
     <string name="social_stress_title">Estrés social</string>
-    <string name="social_stress_content">Un gran factor de estrés para muchas personas puede ser controlar los síntomas del periodo mientras continúan con su vida cotidiana. Muchos lugares de trabajo y escuelas no ofrecen permisos de ausencia, aunque los síntomas del periodo pueden ser insoportables para algunas personas.
-        \n\nPuede ser útil identificar a una persona de confianza en el trabajo o la escuela con la que te sientas a gusto hablando si necesitas que alguien te apoye. Por ejemplo, si deseas solicitar un permiso de ausencia o si deseas abogar para que haya productos menstruales gratuitos en los baños, puedes hacerlo con una persona de confianza. Si no puedes encontrar a una persona en tu trabajo, puedes comunicarte con la línea de texto de Empower Work para recibir apoyo: (510) 674-1414.</string>
+    <string name="social_stress_content">Un gran factor de estrés para muchas personas puede ser controlar los síntomas del periodo mientras continúan con su vida cotidiana. Muchos lugares de trabajo y escuelas no ofrecen permisos de ausencia, aunque los síntomas del periodo pueden ser insoportables para algunas personas.\n\nPuede ser útil identificar a una persona de confianza en el trabajo o la escuela con la que te sientas a gusto hablando si necesitas que alguien te apoye. Por ejemplo, si deseas solicitar un permiso de ausencia o si deseas abogar para que haya productos menstruales gratuitos en los baños, puedes hacerlo con una persona de confianza. Si no puedes encontrar a una persona en tu trabajo, puedes comunicarte con la línea de texto de Empower Work para recibir apoyo: (510) 674-1414.</string>
     <string name="other_pain_title">Otros dolores</string>
-    <string name="other_pain_content">Muchas personas experimentan un dolor que se extiende más allá del área pélvica, incluido dolor en las articulaciones, dolor en el pecho o en el tejido mamario, dolor de espalda y migrañas.
-\n\n Estos tipos de dolores pueden controlarse con analgésicos de venta libre, almohadillas térmicas y reposo.</string>
+    <string name="other_pain_content">Muchas personas experimentan un dolor que se extiende más allá del área pélvica, incluido dolor en las articulaciones, dolor en el pecho o en el tejido mamario, dolor de espalda y migrañas.\n\nEstos tipos de dolores pueden controlarse con analgésicos de venta libre, almohadillas térmicas y reposo.</string>
     <string name="cramps_title">Cólicos</string>
-    <string name="cramps_content">Los calambres son una sensación incómoda en la parte baja del abdomen y el área pélvica.\n\n
-Los calambres pueden controlarse con diversas herramientas, desde tomar analgésicos como ibuprofeno hasta usar almohadillas térmicas, hacer ejercicio y masajear el área abdominal.\n\n
-Para algunas personas, los calambres pueden ser debilitantes. Si experimentas calambres severos, está bien pedir ayuda o, si puedes, tomarte un descanso.</string>
+    <string name="cramps_content">Los calambres son una sensación incómoda en la parte baja del abdomen y el área pélvica.\n\nLos calambres pueden controlarse con diversas herramientas, desde tomar analgésicos como ibuprofeno hasta usar almohadillas térmicas, hacer ejercicio y masajear el área abdominal.\n\nPara algunas personas, los calambres pueden ser debilitantes. Si experimentas calambres severos, está bien pedir ayuda o, si puedes, tomarte un descanso.</string>
     <string name="bloating_and_other_gi_effects_title">Distensión abdominal y otros malestares gastrointestinales</string>
-    <string name="bloating_and_other_gi_effects_content">Muchas personas experimentan distensión abdominal o se sienten hinchadas y con gases durante sus periodos. Algunas personas también pueden experimentar otros malestares gastrointestinales, incluida la diarrea.\n\n
-        La distensión abdominal y otros efectos gastrointestinales pueden reducirse haciendo ejercicio, bebiendo mucha agua y teniendo cuidado con la ingesta de sodio y azúcar.</string>
+    <string name="bloating_and_other_gi_effects_content">Muchas personas experimentan distensión abdominal o se sienten hinchadas y con gases durante sus periodos. Algunas personas también pueden experimentar otros malestares gastrointestinales, incluida la diarrea.\n\nLa distensión abdominal y otros efectos gastrointestinales pueden reducirse haciendo ejercicio, bebiendo mucha agua y teniendo cuidado con la ingesta de sodio y azúcar.</string>
     <string name="nausea_and_fatigue_title">Náuseas y fatiga</string>
-    <string name="nausea_and_fatigue_content">Las náuseas y la fatiga son síntomas comunes del periodo que pueden hacer que sea difícil querer levantarse y hacer cosas. \n\n
-        Beber té tibio de jengibre, limón y miel puede ayudar con las náuseas. El descanso puede ayudar con la fatiga. ¡Está bien tomar las cosas con calma si no te sientes bien!</string>
+    <string name="nausea_and_fatigue_content">Las náuseas y la fatiga son síntomas comunes del periodo que pueden hacer que sea difícil querer levantarse y hacer cosas.\n\nBeber té tibio de jengibre, limón y miel puede ayudar con las náuseas. El descanso puede ayudar con la fatiga. ¡Está bien tomar las cosas con calma si no te sientes bien!</string>
     <string name="mental_health_title">Salud mental</string>
-    <string name="mental_health_content">Muchas personas experimentan cambios de humor, patrones de pensamientos negativos y depresión y ansiedad exacerbadas durante sus periodos.  \n\n
-Cada persona es diferente y puede descubrir que ciertas cosas ayudan cuando lucha contra los pensamientos negativos y los cambios de humor. Algunas actividades útiles pueden ser hablar con amigues, escribir en tu diario, salir a caminar y tomar las cosas con calma.  \n\n
-Si tu salud mental empeora durante este tiempo, recuerda que siempre puedes pedir ayuda. Si no hay nadie en tu vida con quien te sientas a gusto hablando, puedes comunicarte con líneas de ayuda anónimas. \n\n
-Puede ser aterrador hablar abiertamente sobre los problemas de salud mental, pero hay personas que te escucharán. Puedes comenzar simplemente mencionando que estás pasando por un momento difícil y compartir solo aquello que te sientas a gusto compartiendo.</string>
+    <string name="mental_health_content">Muchas personas experimentan cambios de humor, patrones de pensamientos negativos y depresión y ansiedad exacerbadas durante sus periodos.\n\nCada persona es diferente y puede descubrir que ciertas cosas ayudan cuando lucha contra los pensamientos negativos y los cambios de humor. Algunas actividades útiles pueden ser hablar con amigues, escribir en tu diario, salir a caminar y tomar las cosas con calma.\n\nSi tu salud mental empeora durante este tiempo, recuerda que siempre puedes pedir ayuda. Si no hay nadie en tu vida con quien te sientas a gusto hablando, puedes comunicarte con líneas de ayuda anónimas. \n\nPuede ser aterrador hablar abiertamente sobre los problemas de salud mental, pero hay personas que te escucharán. Puedes comenzar simplemente mencionando que estás pasando por un momento difícil y compartir solo aquello que te sientas a gusto compartiendo.</string>
     <string name="dysphoria_title">Disforia</string>
-    <string name="dysphoria_content">Algunas personas pueden experimentar disforia, que es la incomodidad en torno a la desalineación de su identidad de género y la forma en que son percibidas o la forma en que experimentan su propio género. Los periodos pueden aumentar la disforia porque a menudo se asocian con ser mujer.\n\n
-La experiencia de la disforia es completamente personal, y diferentes personas pueden descubrir que necesitan diferentes tipos de apoyo. Un buen lugar para comenzar es buscar amigues que te apoyen y que escuchen tus inquietudes y validen tu experiencia. Existen medicamentos hormonales, como algunos métodos anticonceptivos (incluidos los métodos que no contienen estrógeno) y la testosterona, que pueden ayudar a detener tu periodo. Considera la posibilidad de hablar con un/a/e proveedor/a/e de atención médica sobre cómo puedes detener tu periodo si experimentas disforia.\n\n
-Puede dar miedo hablar sobre la disforia por varias razones, como no haber salido del closet todavía o preocuparte por que te malinterpreten o desestimen tu planteo. Primero, debes saber que la disforia es una experiencia común entre las personas transgénero y no binarias, y puede variar en gravedad. Las personas pueden sentirse nerviosas acerca de cómo serán recibidas, pero pueden comenzar hablando con alguien que cuente con capacitación para hablar con personas trans y no binarias. Un gran recurso es Trans Lifeline.</string>
+    <string name="dysphoria_content">Algunas personas pueden experimentar disforia, que es la incomodidad en torno a la desalineación de su identidad de género y la forma en que son percibidas o la forma en que experimentan su propio género. Los periodos pueden aumentar la disforia porque a menudo se asocian con ser mujer.\n\nLa experiencia de la disforia es completamente personal, y diferentes personas pueden descubrir que necesitan diferentes tipos de apoyo. Un buen lugar para comenzar es buscar amigues que te apoyen y que escuchen tus inquietudes y validen tu experiencia. Existen medicamentos hormonales, como algunos métodos anticonceptivos (incluidos los métodos que no contienen estrógeno) y la testosterona, que pueden ayudar a detener tu periodo. Considera la posibilidad de hablar con un/a/e proveedor/a/e de atención médica sobre cómo puedes detener tu periodo si experimentas disforia.\n\nPuede dar miedo hablar sobre la disforia por varias razones, como no haber salido del closet todavía o preocuparte por que te malinterpreten o desestimen tu planteo. Primero, debes saber que la disforia es una experiencia común entre las personas transgénero y no binarias, y puede variar en gravedad. Las personas pueden sentirse nerviosas acerca de cómo serán recibidas, pero pueden comenzar hablando con alguien que cuente con capacitación para hablar con personas trans y no binarias. Un gran recurso es Trans Lifeline.</string>
     <string name="menstruation_related_disorders_title">Trastornos relacionados con la menstruación</string>
-    <string name="menstruation_related_disorders_content">Algunos trastornos pueden alterar e intensificar los síntomas y el sangrado de un periodo, y contribuir a otras consecuencias de salud graves, ¡lo que puede ser algo aterrador de manejar si no se tiene apoyo! El racismo sistémico puede dificultar que las personas de color comuniquen sus inquietudes a les proveedores de atención médica y que estas inquietudes sean tomadas en serio. La siguiente información a continuación puede ayudarte a comprender lo que sucede en tu cuerpo y buscar el apoyo que necesitas.\n\n
-Fuente: Johns Hopkins Medicine</string>
+    <string name="menstruation_related_disorders_content">Algunos trastornos pueden alterar e intensificar los síntomas y el sangrado de un periodo, y contribuir a otras consecuencias de salud graves, ¡lo que puede ser algo aterrador de manejar si no se tiene apoyo! El racismo sistémico puede dificultar que las personas de color comuniquen sus inquietudes a les proveedores de atención médica y que estas inquietudes sean tomadas en serio. La siguiente información a continuación puede ayudarte a comprender lo que sucede en tu cuerpo y buscar el apoyo que necesitas.</string>
     <string name="johns_hopkins_medicine">Johns Hopkins Medicine</string>
     <string name="polycystic_ovary_syndrome_pcos_title">Síndrome de ovario poliquístico (SOP)</string>
-    <string name="polycystic_ovary_syndrome_pcos_content">El síndrome de ovario poliquístico, también conocido como SOP, es una afección en la que los ovarios producen demasiada hormona andrógena. Estas hormonas son el resultado de la falta de ovulación, lo que puede crear quistes. El SOP puede estar relacionado con la resistencia a la insulina, la obesidad y la genética.  
-\n
-Síntomas
-Los síntomas del síndrome de ovario poliquístico incluyen falta de periodos, periodos irregulares o leves, piel grasa/acné, aumento de peso, pérdida de cabello/calvicie, infertilidad, exceso de piel en las axilas o el cuello (acrocordones) y vello corporal grueso/exceso de vello alrededor del área de la mandíbula, la parte superior del labio, la parte inferior de la espalda y la cara interna de los muslos.
-\n
-Diagnóstico
-Para obtener un diagnóstico, un/a/e proveedor/a/e de atención médica te preguntará acerca de tu historial médico y probablemente te realizará un examen físico. También pueden realizar una ecografía o un análisis de sangre.
-\n
-Tratamiento
-Dependiendo del resultado deseado, hay varias opciones de tratamiento, que incluyen cambios en la dieta y la actividad, medicamentos para provocar la ovulación, anticonceptivos y medicamentos para la diabetes. Puedes hablar con un/a/e proveedor/a/e de atención médica de confianza si te preocupa tener SOP y buscas opciones de tratamiento.
-\n
-Para obtener más información, consulta el sitio web de Johns Hopkins Medicine. </string>
+    <string name="polycystic_ovary_syndrome_pcos_content">El síndrome de ovario poliquístico, también conocido como SOP, es una afección en la que los ovarios producen demasiada hormona andrógena. Estas hormonas son el resultado de la falta de ovulación, lo que puede crear quistes. El SOP puede estar relacionado con la resistencia a la insulina, la obesidad y la genética.\n\nSíntomas\nLos síntomas del síndrome de ovario poliquístico incluyen falta de periodos, periodos irregulares o leves, piel grasa/acné, aumento de peso, pérdida de cabello/calvicie, infertilidad, exceso de piel en las axilas o el cuello (acrocordones) y vello corporal grueso/exceso de vello alrededor del área de la mandíbula, la parte superior del labio, la parte inferior de la espalda y la cara interna de los muslos.\n\nDiagnóstico\nPara obtener un diagnóstico, un/a/e proveedor/a/e de atención médica te preguntará acerca de tu historial médico y probablemente te realizará un examen físico. También pueden realizar una ecografía o un análisis de sangre.\n\nTratamiento\nDependiendo del resultado deseado, hay varias opciones de tratamiento, que incluyen cambios en la dieta y la actividad, medicamentos para provocar la ovulación, anticonceptivos y medicamentos para la diabetes. Puedes hablar con un/a/e proveedor/a/e de atención médica de confianza si te preocupa tener SOP y buscas opciones de tratamiento.\n\nPara obtener más información, consulta el sitio web de Johns Hopkins Medicine. </string>
     <string name="symptoms_bold_1">Síntomas</string>
     <string name="diagnosis_bold_2">Diagnóstico</string>
     <string name="treatment_bold_3">Tratamiento</string>
     <string name="inherited_bleeding_disorders_title">Trastornos hemorrágicos hereditarios</string>
-    <string name="inherited_bleeding_disorders_content">Los trastornos hemorrágicos dificultan que una persona deje de sangrar. En algunas personas, los periodos abundantes pueden ser causados por un trastorno hemorrágico.
-\n
-Síntomas
-Otros signos o síntomas de un trastorno hemorrágico pueden incluir moretones inusualmente grandes, sangre en las heces o en la orina, sangrado prolongado después de usar hilo dental o de un pequeño corte, y anemia.
-\n
-Diagnóstico
-Consulta a un/a/e proveedor/a/e de atención médica para obtener un diagnóstico formal de trastorno hemorrágico.</string>
+    <string name="inherited_bleeding_disorders_content">Los trastornos hemorrágicos dificultan que una persona deje de sangrar. En algunas personas, los periodos abundantes pueden ser causados por un trastorno hemorrágico.\n\nSíntomas\nOtros signos o síntomas de un trastorno hemorrágico pueden incluir moretones inusualmente grandes, sangre en las heces o en la orina, sangrado prolongado después de usar hilo dental o de un pequeño corte, y anemia.\n\nDiagnóstico\nConsulta a un/a/e proveedor/a/e de atención médica para obtener un diagnóstico formal de trastorno hemorrágico.</string>
     <string name="endometriosis_title">Endometriosis</string>
-    <string name="endometriosis_content">La endometriosis es una afección en la que el tejido que recubre el útero crece fuera del útero. Este tejido no tiene forma de salir del cuerpo, como el tejido uterino habitual, y actúa como lo haría el tejido endometrial: se espesa, se desprende y sangra con cada ciclo menstrual. Esto puede provocar un dolor pélvico agudo, especialmente durante los periodos, que también puede aumentar durante las relaciones sexuales, al defecar o al orinar.
-\n
-Síntomas
-Otros síntomas son similares a los síntomas normales del periodo, como la distensión abdominal, la fatiga, las náuseas y la diarrea, pero pueden ser más pronunciados. La endometriosis puede parecerse y confundirse con la enfermedad pélvica inflamatoria o los quistes ováricos.
-\n
-Diagnóstico
-El diagnóstico puede ser difícil debido a las similitudes con la enfermedad pélvica inflamatoria y los quistes ováricos, pero acudir a un/a/e proveedor/a/e de atención médica podría ayudar a aclararlo.
-\n
-Tratamiento
-Si bien no hay un tratamiento duradero para la endometriosis, existen formas de controlar los síntomas. Lo más común es que las personas tomen medicamentos para el control hormonal, como anticonceptivos o un antagonista o agonista específico de la hormona liberadora de gonadotropina.</string>
+    <string name="endometriosis_content">La endometriosis es una afección en la que el tejido que recubre el útero crece fuera del útero. Este tejido no tiene forma de salir del cuerpo, como el tejido uterino habitual, y actúa como lo haría el tejido endometrial: se espesa, se desprende y sangra con cada ciclo menstrual. Esto puede provocar un dolor pélvico agudo, especialmente durante los periodos, que también puede aumentar durante las relaciones sexuales, al defecar o al orinar.\n\nSíntomas\nOtros síntomas son similares a los síntomas normales del periodo, como la distensión abdominal, la fatiga, las náuseas y la diarrea, pero pueden ser más pronunciados. La endometriosis puede parecerse y confundirse con la enfermedad pélvica inflamatoria o los quistes ováricos.\n\nDiagnóstico\nEl diagnóstico puede ser difícil debido a las similitudes con la enfermedad pélvica inflamatoria y los quistes ováricos, pero acudir a un/a/e proveedor/a/e de atención médica podría ayudar a aclararlo.\n\nTratamiento\nSi bien no hay un tratamiento duradero para la endometriosis, existen formas de controlar los síntomas. Lo más común es que las personas tomen medicamentos para el control hormonal, como anticonceptivos o un antagonista o agonista específico de la hormona liberadora de gonadotropina.</string>
     <string name="pelvic_inflammatory_disease_pid_title">Enfermedad pélvica inflamatoria (EPI)</string>
-    <string name="pelvic_inflammatory_disease_pid_content">La enfermedad pélvica inflamatoria (EPI) es una infección de los órganos reproductivos superiores que generalmente es causada por una infección de transmisión sexual (ITS).\n\n
-Síntomas \n
-La EPI a menudo se asocia con dolor abdominal, dolor en las relaciones sexuales y sangrado anormal. También puede estar acompañada de escalofríos, fiebre y flujo vaginal inusual.\n\n
-Diagnóstico/tratamiento\n\n
-La EPI es comúnmente causada por la clamidia y la gonorrea, que pueden diagnosticarse a través de exámenes de detección de ITS de rutina. En una etapa temprana, la EPI, así como la clamidia y la gonorrea, pueden tratarse fácilmente con antibióticos orales.</string>
+    <string name="pelvic_inflammatory_disease_pid_content">La enfermedad pélvica inflamatoria (EPI) es una infección de los órganos reproductivos superiores que generalmente es causada por una infección de transmisión sexual (ITS).\n\nSíntomas\nLa EPI a menudo se asocia con dolor abdominal, dolor en las relaciones sexuales y sangrado anormal. También puede estar acompañada de escalofríos, fiebre y flujo vaginal inusual.\n\nDiagnóstico/tratamiento\nLa EPI es comúnmente causada por la clamidia y la gonorrea, que pueden diagnosticarse a través de exámenes de detección de ITS de rutina. En una etapa temprana, la EPI, así como la clamidia y la gonorrea, pueden tratarse fácilmente con antibióticos orales.</string>
     <string name="diagnosis_treatment_bold_3">Diagnóstico/tratamiento</string>
     <string name="menstruation_faqs_title">Preguntas frecuentes</string>
     <string name="menstruation_faqs_question_1">¿Quién tiene el periodo y qué es?</string>
-    <string name="menstruation_faqs_answer_1">Las personas que tienen útero y no han hecho nada para inhibir sus periodos suelen tener sus periodos entre los 12 y los 55 años. Los periodos generalmente ocurren cada 21 a 45 días y duran entre 2 y 7 días. Durante este tiempo, el cuerpo se deshace del revestimiento del útero al sangrar por la vagina..</string>
+    <string name="menstruation_faqs_answer_1">Las personas que tienen útero y no han hecho nada para inhibir sus periodos suelen tener sus periodos entre los 12 y los 55 años. Los periodos generalmente ocurren cada 21 a 45 días y duran entre 2 y 7 días. Durante este tiempo, el cuerpo se deshace del revestimiento del útero al sangrar por la vagina..</string>
     <string name="menstruation_faqs_question_2">¿Qué es el sangrado? ¿Puedo sangrar cuando no tengo mi periodo?</string>
     <string name="menstruation_faqs_answer_2">El sangrado ocurre cuando sale sangre de color rojo o marrón oscuro de la vagina. El sangrado asociado con el periodo es el desprendimiento del revestimiento uterino, pero el sangrado también puede ocurrir debido a una abrasión, una infección de transmisión sexual, un aborto espontáneo u otras complicaciones de salud. Puedes buscar atención médica si estás experimentando sangrado fuera de tu periodo.</string>
     <string name="menstruation_faqs_question_3">¿Cuáles son las formas de manejar mi sangrado?</string>
@@ -939,12 +896,11 @@ La EPI es comúnmente causada por la clamidia y la gonorrea, que pueden diagnost
     <string name="menstruation_faqs_answer_6">Si experimentas una mayor cantidad de sangrado o no tienes tu periodo a un ritmo regular, y esto no se relaciona con el uso de anticonceptivos, puedes acudir a atención médica para averiguar el motivo.</string>
     <string name="menstruation_faqs_question_7">¿Qué pasará con mi periodo si tomo testosterona?</string>
     <string name="menstruation_faqs_answer_7">La testosterona alterará el ciclo menstrual y lo terminará por completo para muchas personas. Puedes leer más sobre los efectos de la testosterona en los periodos aquí.</string>
-    <string name="menstruation_faqs_question_8">¿Cuándo ocurre la ovulación/cuándo una persona puede quedar embarazada??</string>
+    <string name="menstruation_faqs_question_8">¿Cuándo ocurre la ovulación/cuándo una persona puede quedar embarazada?</string>
     <string name="menstruation_faqs_answer_8">La ovulación ocurre 14 días antes de tu periodo. Si no se toman anticonceptivos, una persona puede quedar embarazada cinco días antes de la ovulación y hasta dos días después. Debido a que el ciclo de muchas personas varía en duración, puede ser difícil predecir exactamente cuándo ocurre la ovulación y, por lo tanto, predecir la ovulación puede ser poco confiable como forma de anticoncepción.</string>
     <string name="menstruation_faqs_question_9">¿Cuándo debo buscar atención medica?</string>
     <string name="menstruation_faqs_answer_9">Podrías considerar la posibilidad de buscar atención médica si no has tenido tu primer periodo para los 15 años, no has tenido un periodo en más de dos meses, experimentas un dolor debilitante en el momento del sangrado o sangras durante más de siete días seguidos y en una cantidad que requiere cambiar un tampón cada hora.</string>
-    <string name="menstruation_resources_content">Encontrar productos para el periodo gratuitos y asequibles:\n- Alliance for Period Supplies \n- Good Rx \n\nInformación adicional sobre cómo usar diferentes productos menstruales:\n- Planned Parenthood \n\nVideos sobre qué esperar en tu periodo:\n\n- AMAZE
-</string>
+    <string name="menstruation_resources_content">Encontrar productos para el periodo gratuitos y asequibles:\n- Alliance for Period Supplies \n- Good Rx \n\nInformación adicional sobre cómo usar diferentes productos menstruales:\n- Planned Parenthood \n\nVideos sobre qué esperar en tu periodo:\n\n- AMAZE</string>
     <string name="first_period_to_last_period_title">Del primer periodo al último periodo</string>
     <string name="first_period_to_last_period_content">El ciclo de vida menstrual comienza con tu primer periodo y termina con el último. Ambas experiencias son increíblemente comunes y normales, pero pueden ser estresantes y difíciles de experimentar por tu cuenta. ¡Pero no estás sola/o/e! Explora más sobre estas experiencias a continuación.</string>
     <string name="menarche">Menarquia</string>
@@ -978,16 +934,28 @@ La EPI es comúnmente causada por la clamidia y la gonorrea, que pueden diagnost
     <string name="liner">Protectores diarios</string>
     <string name="what_is_it_reusable_pad_content_1">Una toalla higiénica reutilizable suele ser un producto de tela que atrapa la sangre menstrual en el interior de la ropa interior.</string>
     <string name="how_is_it_used">¿Cómo se usan?</string>
+    <string name="how_is_it_used_p">¿Cómo se usa?</string>
     <string name="reusable_pad_content_2">Al igual que las toallas higiénicas desechables, las toallas higiénicas reutilizables se colocan en el interior de la ropa interior para atrapar el sangrado. Una diferencia es que, en lugar de tener un adhesivo para adherirse a la ropa interior, las toallas higiénicas reutilizables suelen tener un broche para mantenerlas adheridas al interior de la ropa interior. </string>
     <string name="when_do_you_change_it">¿Cuándo se las debe cambiar?</string>
+    <string name="when_do_you_change_it_p">¿Cuándo se lo debe cambiar?</string>
+    <string name="when_do_you_change_it_p1">¿Cuándo se la debe cambiar?</string>
+    <string name="when_do_you_change_it_p2">¿Cuándo se los debe cambiar?</string>
     <string name="reusable_pad_content_3">Las toallas higiénicas reutilizables deben cambiarse cada pocas horas o cuando la toalla higiénica empiece a llenarse. Una toalla higiénica está llena si tiene fugas o se siente pesada.</string>
     <string name="what_do_you_do_after_you_use_it">¿Qué debes hacer después de usarlas?</string>
+    <string name="what_do_you_do_after_you_use_it_p">¿Qué debes hacer después de usarlo?</string>
+    <string name="what_do_you_do_after_you_use_it_p1">¿Qué debes hacer después de usarla?</string>
+    <string name="what_do_you_do_after_you_use_it_p2">¿Qué debes hacer después de usarlos?</string>
     <string name="reusable_pad_content_4">Las toallas higiénicas reutilizables deben lavarse. Puedes enjuagarlas con agua fría y ponerlas en la lavadora con otras prendas. Si aún tienes sangrado, debes usar una toalla higiénica limpia y guardar la usada hasta que puedas lavarla.</string>
     <string name="how_does_it_feel">¿Cómo se sienten?</string>
+    <string name="how_does_it_feel_p">¿Cómo se siente?</string>
     <string name="reusable_pad_content_5">Una toalla higiénica reutilizable debe sentirse como una capa extra de tela dentro de tu ropa interior.</string>
     <string name="where_can_you_get_it">¿Dónde puedes conseguirlas?</string>
+    <string name="where_can_you_get_it_p">¿Dónde puedes conseguirlo?</string>
+    <string name="where_can_you_get_it_p1">¿Dónde puedes conseguirla?</string>
+    <string name="where_can_you_get_it_p2">¿Dónde puedes conseguirlos?</string>
     <string name="reusable_pad_content_6">Se pueden comprar por internet y en algunas tiendas.</string>
     <string name="how_much_does_it_cost">¿Cuánto cuestan?</string>
+    <string name="how_much_does_it_cost_p">¿Cuánto cuesta?</string>
     <string name="reusable_pad_content_7">Los costos pueden oscilar entre $20 y $50 por un paquete de 3 a 5 toallas higiénicas. Si se las cuidan adecuadamente, las toallas higiénicas reutilizables pueden durar hasta cinco años. Esto genera un costo mensual de menos de un dólar.</string>
 
     <string name="disposable_pad_content_1">Una toalla higiénica desechable suele ser un producto a base de algodón que se adhiere al interior de la ropa interior y absorbe la sangre del periodo. Vienen en una variedad de tamaños y marcas para satisfacer las necesidades cambiantes de un flujo menstrual.</string>
@@ -1045,7 +1013,7 @@ La EPI es comúnmente causada por la clamidia y la gonorrea, que pueden diagnost
     <string name="free_at_a_clinic">Gratis en una clínica</string>
     <string name="menstruation_1">Toallas higiénicas reutilizables</string>
     <string name="menstruation_2">Toallas higiénicas desechables</string>
-    <string name="menstruation_3">Tampones</string>
+    <string name="menstruation_3">Tampón</string>
     <string name="menstruation_4">Copa menstrual</string>
     <string name="menstruation_5">Disco menstrual</string>
     <string name="menstruation_6">Ropa interior para el periodo</string>
@@ -1081,9 +1049,10 @@ La EPI es comúnmente causada por la clamidia y la gonorrea, que pueden diagnost
     <string name="how_does_birth_control_affect_my_cycle">¿Cómo afectan los anticonceptivos a mi ciclo?</string>
     <string name="how_does_birth_control_affect_my_cycle_content">Los distintos tipos de anticonceptivos pueden tener diferentes efectos en tu ciclo. Por ejemplo, el DIU hormonal actúa espesando la mucosidad del cuello uterino, reduciendo el revestimiento uterino e inhibiendo parcialmente la ovulación, una combinación que puede detener el sangrado menstrual en muchas personas. El DIU de cobre no afecta el ciclo, sino que hace que el útero sea inhabitable para los óvulos y los espermatozoides. Esto significa que el periodo de algunas personas sigue siendo el mismo o aumenta. Puedes encontrar información más específica sobre cómo cada tipo de método anticonceptivo afecta a la menstruación aquí. </string>
     <string name="what_is_a_regular_period">¿Qué es un ciclo regular?</string>
-    <string name="what_is_a_regular_period_content">Un ciclo \“regular\” suele durar entre 21 y 45 días. Esto significa que los periodos comenzarán con una diferencia de 21 a 35días y durarán entre 2 y 7días. Un periodo puede verse alterado por factores como tomar anticonceptivos, un embarazo, usar testosterona y experimentar cambios en la dieta y el ejercicio. Podrías considerar buscar atención médica si experimentas un sangrado más frecuente o han pasado más de dos meses sin un periodo.</string>
+    <string name="what_is_a_regular_period_content">Un ciclo \“regular\” suele durar entre 21 y 45 días. Esto significa que los periodos comenzarán con una diferencia de 21 a 35 días y durarán entre 2 y 7 días. Un periodo puede verse alterado por factores como tomar anticonceptivos, un embarazo, usar testosterona y experimentar cambios en la dieta y el ejercicio. Podrías considerar buscar atención médica si experimentas un sangrado más frecuente o han pasado más de dos meses sin un periodo.</string>
     <string name="what_happens_during_a_period">¿Qué sucede durante un periodo?</string>
     <string name="what_happens_during_a_period_content">El primer día de un periodo a menudo comienza con un ligero manchado que suele ser espeso y de color marrón. Luego, la sangre del periodo cambia a un rojo más oscuro.</string>
     <string name="mental_and_emotional_health">Salud mental y emocional</string>
     <string name="mental_and_emotional_health_content">Muchas personas experimentan cambios de humor que se corresponden con su ciclo menstrual. Pueden experimentar irritabilidad, fatiga y pensamiento negativo unos días antes de su periodo como parte del síndrome premenstrual (SPM) o del trastorno disfórico premenstrual (TDPM). Para algunas personas, estos efectos negativos en la salud emocional podrían durar todo el periodo.</string>
+    <string name="what_is_it_p">¿Qué son?</string>
 </resources>

@@ -839,7 +839,7 @@
     <string name="done_tracking">Done Tracking (%d)</string>
 
     <!-- Menstruation -->
-    <string name="menstruation_content">Menstruation, known to many as a \"period\", is vaginal bleeding that occurs every month or so. Menstruation often starts between 12-14 years old and can last until 45-55. Menstruation can come with a range of feelings, side effects, and experiences.\n\nInformation below will help you understand different ways people manage their periods and how to navigate your own unique experience.</string>
+    <string name="menstruation_content">Menstruation, known to many as a \"period,\" is vaginal bleeding that occurs every month or so. Menstruation often starts between 12-14 years old and can last until 45-55. Menstruation can come with a range of feelings, side effects, and experiences.\n\nInformation below will help you understand different ways people manage their periods and how to navigate your own unique experience.</string>
     <string name="menstruation">Menstruation</string>
     <string name="first_period_to_last_period">First period to last period</string>
     <string name="product_quiz">Product quiz</string>
@@ -932,16 +932,28 @@
     <string name="liner">Liner</string>
     <string name="what_is_it_reusable_pad_content_1">A reusable pad is usually a cloth-based product that catches period blood on the inside of your underwear.</string>
     <string name="how_is_it_used">How is it used?</string>
+    <string name="how_is_it_used_p">How is it used?</string>
     <string name="reusable_pad_content_2">Just like disposable pads, reusable pads are placed on the inside of underwear to catch the bleeding. One difference is that instead of adhesive to stick to underwear, reusable pads typically have a snap to keep them attached to the inside of underwear. </string>
     <string name="when_do_you_change_it">When do you change it?</string>
+    <string name="when_do_you_change_it_p">When do you change it?</string>
+    <string name="when_do_you_change_it_p1">When do you change it?</string>
+    <string name="when_do_you_change_it_p2">When do you change it?</string>
     <string name="reusable_pad_content_3">Reusable pads should be changed every few hours or when the pad starts to get full. A pad is full if it is leaking or feels heavy.</string>
     <string name="what_do_you_do_after_you_use_it">What do you do after you use it?</string>
+    <string name="what_do_you_do_after_you_use_it_p">What do you do after you use it?</string>
+    <string name="what_do_you_do_after_you_use_it_p1">What do you do after you use it?</string>
+    <string name="what_do_you_do_after_you_use_it_p2">What do you do after you use it?</string>
     <string name="reusable_pad_content_4">Reusable pads should be washed. You can rinse them with cold water and throw them in the laundry with other clothes. If you are still bleeding, a clean pad should be used and the used one should be stored away until you are able to wash it.</string>
     <string name="how_does_it_feel">How does it feel?</string>
+    <string name="how_does_it_feel_p">How does it feel?</string>
     <string name="reusable_pad_content_5">A reusable pad should just feel like an extra layer of cloth inside your underwear.</string>
     <string name="where_can_you_get_it">Where can you get it?</string>
+    <string name="where_can_you_get_it_p">Where can you get it?</string>
+    <string name="where_can_you_get_it_p1">Where can you get it?</string>
+    <string name="where_can_you_get_it_p2">Where can you get it?</string>
     <string name="reusable_pad_content_6">Reusable pads can be bought online and in some stores.</string>
     <string name="how_much_does_it_cost">How much does it cost?</string>
+    <string name="how_much_does_it_cost_p">How much does it cost?</string>
     <string name="reusable_pad_content_7">Costs can range from $20-50 for a package of 3-5 pads. If properly cared for, reusable pads can last up to five years. This brings the monthly cost to less than a dollar a month.</string>
     <string name="disposable_pad_content_1">A disposable pad is usually a cotton-based product that sticks to the inside of your underwear and absorbs period blood. Pads come in a variety of sizes and brands to meet the changing needs of a menstrual flow.</string>
     <string name="disposable_pad_content_2">You use a pad by removing the wax paper stuck to the sticky part and placing the sticky part on the inside of the underwear. You wrap the sticky wings around the outside of the underwear, along where the blood would go.</string>
@@ -1036,4 +1048,6 @@
     <string name="what_happens_during_a_period_content">The first day of a period often begins with light spotting that is usually thick and brownish. Then the period blood changes to a darker red.</string>
     <string name="mental_and_emotional_health">Mental and emotional health</string>
     <string name="mental_and_emotional_health_content">Many people experience mood swings that correspond with their menstrual cycle. They can experience increased irritability, fatigue, and negative thought patterns a few days before their period as a part of pre-menstrual syndrome (PMS) or premenstrual dysphoric disorder (PMDD). For some, these negative effects on emotional health could last through their period.</string>
+    <string name="what_is_it_p">What is it?</string>
+
 </resources>
