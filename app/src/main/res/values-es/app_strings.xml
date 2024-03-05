@@ -160,6 +160,8 @@
     <string name="contraception_patch_2_list">Parche retirado</string>
     <string name="contraception_ring_1_list">Nuevo anillo</string>
     <string name="contraception_ring_2_list">Anillo retirado</string>
+    <string name="shot_list">Inyección</string>
+
     <string name="icon_contraception_injection">Inyección</string>
     <string name="test">Prueba</string>
     <string name="test_sti">Prueba de infecciones de transmisión sexual</string>
@@ -842,8 +844,7 @@
 
 
     <!-- Menstruation -->
-    <string name="menstruation_content">La menstruación, conocida por muchas personas como “periodo,” es el sangrado vaginal que ocurre aproximadamente cada mes. La menstruación a menudo comienza entre los 12 y los 14 años y puede durar hasta entre los 45 y 55 años. La menstruación puede estar acompañada de diversos síntomas, efectos secundarios y experiencias.
-La siguiente información te ayudará a comprender las diferentes formas en que las personas manejan sus periodos y cómo transitar tu propia experiencia.</string>
+    <string name="menstruation_content">La menstruación, conocida por muchas personas como “periodo,” es el sangrado vaginal que ocurre aproximadamente cada mes. La menstruación a menudo comienza entre los 12 y los 14 años y puede durar hasta entre los 45 y 55 años. La menstruación puede estar acompañada de diversos síntomas, efectos secundarios y experiencias.\n\nLa siguiente información te ayudará a comprender las diferentes formas en que las personas manejan sus periodos y cómo transitar tu propia experiencia.</string>
     <string name="menstruation">Menstruación</string>
     <string name="first_period_to_last_period">Del primer periodo al último periodo</string>
     <string name="product_quiz">Encuesta sobre productos</string>

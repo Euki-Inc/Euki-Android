@@ -10,6 +10,7 @@ import com.kollectivemobile.euki.networking.EukiCallback;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -176,40 +177,46 @@ public class QuizManagerImpl implements QuizManager {
 
     @Override
     public Pair<String, List<Integer>> getResultMenstruation(Quiz quiz) {
-        Boolean hasAnswer = false;
+        boolean hasAnswer = false;
         Map<Integer, Integer> menstruationCounts = new HashMap<>();
+
         for (int i = 1; i <= 7; i++) {
             menstruationCounts.put(i, 0);
         }
 
+        // Rule #1: User must answer at least one question
         for (Question question : quiz.getQuestions()) {
             Integer answerIndex = question.getAnswerIndex();
-            if (answerIndex == null) {
-                continue;
-            }
-
-            for (Integer menstruationIndex : question.getOptions().get(answerIndex).second) {
-                Integer value = menstruationCounts.get(menstruationIndex);
-                menstruationCounts.put(menstruationIndex, value + 1);
+            if (answerIndex != null) {
                 hasAnswer = true;
+                for (Integer menstruationIndex : question.getOptions().get(answerIndex).second) {
+                    Integer value = menstruationCounts.get(menstruationIndex);
+                    menstruationCounts.put(menstruationIndex, value + 1);
+                }
             }
+        }
+
+        // Rule #2: If user does not select any answers during the quiz
+        if (!hasAnswer) {
+            return new Pair<>("no_recommended_methods_menstruation", Collections.emptyList());
         }
 
         List<Integer> resultIndexes = new ArrayList<>();
 
-        if (hasAnswer) {
-            while (resultIndexes.size() < 3) {
-                Integer currentMax = menstruationCounts.get(1);
-                Integer maxKey = 1;
+        // Rule #4: Display up to the three most selected contraceptive methods
+        while (resultIndexes.size() < 3) {
+            Integer currentMax = 0;
+            Integer maxKey = -1;
 
-                for (Integer key : menstruationCounts.keySet()) {
-                    Integer value = menstruationCounts.get(key);
-                    if (currentMax < value) {
-                        currentMax = value;
-                        maxKey = key;
-                    }
+            for (Integer key : menstruationCounts.keySet()) {
+                Integer value = menstruationCounts.get(key);
+                if (value > currentMax) {
+                    currentMax = value;
+                    maxKey = key;
                 }
+            }
 
+            if (maxKey != -1) {
                 if (currentMax > 3) {
                     for (Integer currentKey : menstruationCounts.keySet()) {
                         Integer value = menstruationCounts.get(currentKey);
@@ -222,10 +229,28 @@ public class QuizManagerImpl implements QuizManager {
                     menstruationCounts.put(maxKey, -1);
                     resultIndexes.add(maxKey);
                 }
+            } else {
+                break; // No keys present in menstruationCounts
             }
         }
 
-        String result = hasAnswer ? "recommended_methods_menstruation" : "no_recommended_methods_menstruation";
+        String result = "no_recommended_methods_menstruation";
+
+        // Rule #5: Display 1 method if user only answers questions that recommend 1 method
+        // Rule #6: Display 2 methods if user only answers questions that recommend 2 methods
+        // Exception: Same 4 methods that were selected five times —> Display 4 methods
+        if (resultIndexes.size() == 1 || resultIndexes.size() == 2 || (resultIndexes.size() == 4 && menstruationCounts.get(resultIndexes.get(0)) == 5)) {
+            result = "recommended_methods_menstruation";
+        }
+
+        // Only display the first three methods
+        if (resultIndexes.size() > 3) {
+            resultIndexes = resultIndexes.subList(0, 3);
+        }
+
         return new Pair<>(result, resultIndexes);
     }
+
 }
+
+

@@ -160,6 +160,7 @@
     <string name="contraception_patch_2_list">Patch Removed</string>
     <string name="contraception_ring_1_list">Ring New</string>
     <string name="contraception_ring_2_list">Ring Removed</string>
+    <string name="shot_list">Shot</string>
     <string name="icon_contraception_injection">Injection</string>
     <string name="test">Test</string>
     <string name="test_sti">STI test</string>
@@ -1053,5 +1054,4 @@
     <string name="mental_and_emotional_health">Mental and emotional health</string>
     <string name="mental_and_emotional_health_content">Many people experience mood swings that correspond with their menstrual cycle. They can experience increased irritability, fatigue, and negative thought patterns a few days before their period as a part of pre-menstrual syndrome (PMS) or premenstrual dysphoric disorder (PMDD). For some, these negative effects on emotional health could last through their period.</string>
     <string name="what_is_it_p">What is it?</string>
-
 </resources>

@@ -135,7 +135,7 @@
         {
           "id": "menopause",
           "content": "menopause_content",
-          "icon": "icon_menstruation_menopause",
+          "icon": "iconMenstruationMenopause",
           "source": "cleveland_clinic",
           "expandable_items": [
             {
@@ -185,7 +185,7 @@
           "expandable_items": [
             {
               "id": "what_is_it_reusable_pad",
-              "title": "what_is_it",
+              "title": "what_is_it_p",
               "content": "what_is_it_reusable_pad_content_1"
             },
             {
@@ -227,7 +227,7 @@
           "expandable_items": [
             {
               "id": "what_is_it_disposable_pad",
-              "title": "what_is_it",
+              "title": "what_is_it_p",
               "content": "disposable_pad_content_1"
             },
             {
@@ -274,32 +274,32 @@
             },
             {
               "id": "how_is_it_used_tampon",
-              "title": "how_is_it_used",
+              "title": "how_is_it_used_p",
               "content": "tampon_content_2"
             },
             {
               "id": "when_do_you_change_it_tampon",
-              "title": "when_do_you_change_it",
+              "title": "when_do_you_change_it_p",
               "content": "tampon_content_3"
             },
             {
               "id": "what_do_you_do_after_you_use_it_tampon",
-              "title": "what_do_you_do_after_you_use_it",
+              "title": "what_do_you_do_after_you_use_it_p",
               "content": "tampon_content_4"
             },
             {
               "id": "how_does_it_feel_tampon",
-              "title": "how_does_it_feel",
+              "title": "how_does_it_feel_p",
               "content": "tampon_content_5"
             },
             {
               "id": "where_can_you_get_it_tampon",
-              "title": "where_can_you_get_it",
+              "title": "where_can_you_get_it_p",
               "content": "tampon_content_6"
             },
             {
               "id": "how_much_does_it_cost_tampon",
-              "title": "how_much_does_it_cost",
+              "title": "how_much_does_it_cost_p",
               "content": "tampon_content_7"
             }
           ]
@@ -316,32 +316,32 @@
             },
             {
               "id": "how_is_it_used_menstrual_cup",
-              "title": "how_is_it_used",
+              "title": "how_is_it_used_p",
               "content": "menstrual_cup_content_2"
             },
             {
               "id": "when_do_you_change_it_menstrual_cup",
-              "title": "when_do_you_change_it",
+              "title": "when_do_you_change_it_p1",
               "content": "menstrual_cup_content_3"
             },
             {
               "id": "what_do_you_do_after_you_use_it_menstrual_cup",
-              "title": "what_do_you_do_after_you_use_it",
+              "title": "what_do_you_do_after_you_use_it_p1",
               "content": "menstrual_cup_content_4"
             },
             {
               "id": "how_does_it_feel_menstrual_cup",
-              "title": "how_does_it_feel",
+              "title": "how_does_it_feel_p",
               "content": "menstrual_cup_content_5"
             },
             {
               "id": "where_can_you_get_it_menstrual_cup",
-              "title": "where_can_you_get_it",
+              "title": "where_can_you_get_it_p1",
               "content": "menstrual_cup_content_6"
             },
             {
               "id": "how_much_does_it_cost_menstrual_cup",
-              "title": "how_much_does_it_cost",
+              "title": "how_much_does_it_cost_p",
               "content": "menstrual_cup_content_7"
             }
           ]
@@ -358,32 +358,32 @@
             },
             {
               "id": "how_is_it_used_menstrual_disc",
-              "title": "how_is_it_used",
+              "title": "how_is_it_used_p",
               "content": "menstrual_disc_content_2"
             },
             {
               "id": "when_do_you_change_it_menstrual_disc",
-              "title": "when_do_you_change_it",
+              "title": "when_do_you_change_it_p",
               "content": "menstrual_disc_content_3"
             },
             {
               "id": "what_do_you_do_after_you_use_it_menstrual_disc",
-              "title": "what_do_you_do_after_you_use_it",
+              "title": "what_do_you_do_after_you_use_it_p",
               "content": "menstrual_disc_content_4"
             },
             {
               "id": "how_does_it_feel_menstrual_disc",
-              "title": "how_does_it_feel",
+              "title": "how_does_it_feel_p",
               "content": "menstrual_disc_content_5"
             },
             {
               "id": "where_can_you_get_it_menstrual_disc",
-              "title": "where_can_you_get_it",
+              "title": "where_can_you_get_it_p",
               "content": "menstrual_disc_content_6"
             },
             {
               "id": "how_much_does_it_cost_menstrual_disc",
-              "title": "how_much_does_it_cost",
+              "title": "how_much_does_it_cost_p",
               "content": "menstrual_disc_content_7"
             }
           ]
@@ -437,7 +437,7 @@
           "expandable_items": [
             {
               "id": "what_is_it_tampon_liner",
-              "title": "what_is_it",
+              "title": "what_is_it_p",
               "content": "liner_content_1"
             },
             {
@@ -447,12 +447,12 @@
             },
             {
               "id": "when_do_you_change_it_liner",
-              "title": "when_do_you_change_it",
+              "title": "when_do_you_change_it_p2",
               "content": "liner_content_3"
             },
             {
               "id": "what_do_you_do_after_you_use_it_liner",
-              "title": "what_do_you_do_after_you_use_it",
+              "title": "what_do_you_do_after_you_use_it_p2",
               "content": "liner_content_4"
             },
             {
@@ -462,7 +462,7 @@
             },
             {
               "id": "where_can_you_get_it_liner",
-              "title": "where_can_you_get_it",
+              "title": "where_can_you_get_it_p2",
               "content": "liner_content_6"
             },
             {

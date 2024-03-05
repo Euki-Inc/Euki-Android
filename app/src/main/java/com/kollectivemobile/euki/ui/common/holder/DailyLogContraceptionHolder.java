@@ -1,6 +1,7 @@
 package com.kollectivemobile.euki.ui.common.holder;
 
 import androidx.annotation.NonNull;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,11 +27,11 @@ public class DailyLogContraceptionHolder extends BaseDailyLogHolder implements V
     public @BindView(R.id.ll_longer_term_methods_container) LinearLayout llLongTermContainer;
 
     public @BindViews({R.id.sb_contraception_pill_1, R.id.sb_contraception_pill_2,
-                       R.id.sb_contraception_pill_3}) List<SelectableButton> sbPills;
+            R.id.sb_contraception_pill_3}) List<SelectableButton> sbPills;
     public @BindViews({R.id.sb_contraception_other_1, R.id.sb_contraception_other_2,
-                       R.id.sb_contraception_other_3, R.id.sb_contraception_other_4,
-                       R.id.sb_contraception_other_5, R.id.sb_contraception_other_6,
-                       R.id.sb_contraception_other_7}) List<SelectableButton> sbOther;
+            R.id.sb_contraception_other_3, R.id.sb_contraception_other_4,
+            R.id.sb_contraception_other_5, R.id.sb_contraception_other_6,
+            R.id.sb_contraception_other_7}) List<SelectableButton> sbOther;
     public @BindViews({R.id.sb_uid_1, R.id.sb_uid_2, R.id.sb_uid_3}) List<SelectableButton> sbIUD;
     public @BindViews({R.id.sb_implant_1, R.id.sb_implant_2}) List<SelectableButton> sbImplant;
     public @BindViews({R.id.sb_patch_1, R.id.sb_patch_2}) List<SelectableButton> sbPatch;
@@ -103,6 +104,9 @@ public class DailyLogContraceptionHolder extends BaseDailyLogHolder implements V
         if (mCalendarItem.getContraceptionRing() != null) {
             sbRing.get(mCalendarItem.getContraceptionRing().ordinal()).changeSelected(true);
         }
+        if (mCalendarItem.getContraceptionShot() != null) {
+            sbShot.get(mCalendarItem.getContraceptionShot().ordinal()).changeSelected(true);
+        }
 
         llDailyContainer.setVisibility(View.GONE);
         llLongTermContainer.setVisibility(View.GONE);
@@ -111,11 +115,11 @@ public class DailyLogContraceptionHolder extends BaseDailyLogHolder implements V
     @Override
     public void onClick(View view) {
         if (view instanceof SelectableButton && view.getTag() instanceof String) {
-            SelectableButton selectableButton = (SelectableButton)view;
-            Integer index = Integer.parseInt((String)view.getTag());
+            SelectableButton selectableButton = (SelectableButton) view;
+            Integer index = Integer.parseInt((String) view.getTag());
 
             if (sbPills.contains(selectableButton)) {
-                mCalendarItem.setContraceptionPills(selectableButton.getSelected() ? Constants.ContraceptionPills.values()[index-1] : null);
+                mCalendarItem.setContraceptionPills(selectableButton.getSelected() ? Constants.ContraceptionPills.values()[index - 1] : null);
             } else if (sbOther.contains(selectableButton)) {
                 Constants.ContraceptionDailyOther other = Constants.ContraceptionDailyOther.values()[index - 1];
                 if (mCalendarItem.getContraceptionDailyOther().contains(other)) {
@@ -131,7 +135,7 @@ public class DailyLogContraceptionHolder extends BaseDailyLogHolder implements V
                 mCalendarItem.setContraceptionPatch(selectableButton.getSelected() ? Constants.ContraceptionPatch.values()[index - 1] : null);
             } else if (sbRing.contains(selectableButton)) {
                 mCalendarItem.setContraceptionRing(selectableButton.getSelected() ? Constants.ContraceptionRing.values()[index - 1] : null);
-            }else if (sbShot.contains(selectableButton)) {
+            } else if (sbShot.contains(selectableButton)) {
                 mCalendarItem.setContraceptionShot(selectableButton.getSelected() ? Constants.ContraceptionShot.values()[index - 1] : null);
             }
 
