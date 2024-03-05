@@ -55,19 +55,12 @@ public class BrowserFragment extends BaseFragment {
         webSettings.setUserAgentString("android-leavesCZY");
         webSettings.setJavaScriptEnabled(true);
         webSettings.setUseWideViewPort(true);
-        webSettings.setLoadWithOverviewMode(true);
         webSettings.setAllowContentAccess(true);
-        webSettings.setLoadsImagesAutomatically(true);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            webSettings.setSafeBrowsingEnabled(false);
-        }
         webSettings.setDomStorageEnabled(true);
-        webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
+        webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
-        wvMain.setSoundEffectsEnabled(true);
         wvMain.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-        wvMain.setWebContentsDebuggingEnabled(true);
 
 
         // Check the API level before setting WebViewClient
