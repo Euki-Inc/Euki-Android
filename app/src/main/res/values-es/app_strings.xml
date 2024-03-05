@@ -78,11 +78,13 @@
     <string name="bleeding_size_4">Flujo severo</string>
     <string name="bleeding_clots_1">Coágulos pequeños</string>
     <string name="bleeding_clots_2">Coágulos grandes</string>
-    <string name="bleeding_produc_1">Toallitas higiénicas</string>
-    <string name="bleeding_produc_2">Protector de ropa interior</string>
+    <string name="bleeding_produc_1">Toallas higiénicas reutilizables</string>
+    <string name="bleeding_produc_2">Toallas higiénicas desechables</string>
     <string name="bleeding_produc_3">Tampón</string>
     <string name="bleeding_produc_4">Copa menstrual</string>
-    <string name="bleeding_produc_5">Ropa interior para menstruación</string>
+    <string name="bleeding_produc_5">Disco menstrual</string>
+    <string name="bleeding_produc_6">Ropa interior para el periodo</string>
+    <string name="bleeding_produc_7">Protectores diarios</string>
     <string name="emotions">Emociones</string>
     <string name="emotions_1">Calma</string>
     <string name="emotions_2">Estrés</string>

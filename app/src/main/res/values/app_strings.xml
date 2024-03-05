@@ -78,11 +78,13 @@
     <string name="bleeding_size_4">Heavy flow</string>
     <string name="bleeding_clots_1">Small clots</string>
     <string name="bleeding_clots_2">Big clots</string>
-    <string name="bleeding_produc_1">Pad</string>
-    <string name="bleeding_produc_2">Liner</string>
+    <string name="bleeding_produc_1">Reusable pad</string>
+    <string name="bleeding_produc_2">Disposable pad</string>
     <string name="bleeding_produc_3">Tampon</string>
     <string name="bleeding_produc_4">Menstrual cup</string>
-    <string name="bleeding_produc_5">Menstrual underwear</string>
+    <string name="bleeding_produc_5">Menstrual disc</string>
+    <string name="bleeding_produc_6">Period underwear</string>
+    <string name="bleeding_produc_7">Liner</string>
     <string name="emotions">Emotions</string>
     <string name="emotions_1">Calm</string>
     <string name="emotions_2">Stressed</string>
@@ -872,6 +874,8 @@
     <string name="symptoms_bold_1">Symptoms</string>
     <string name="diagnosis_bold_2">Diagnosis</string>
     <string name="treatment_bold_3">Treatment</string>
+
+
     <string name="inherited_bleeding_disorders_title">Inherited bleeding disorders</string>
     <string name="inherited_bleeding_disorders_content">Bleeding disorders make it difficult for a person to stop bleeding. For some, heavy periods may be caused by a bleeding disorder.\n\nSymptoms\nOther signs or symptoms of a bleeding disorder can include unusually large bruises, blood in stool or urine, bleeding for a long time after things like flossing or a small cut, and anemia.\n\nDiagnosis\nSee a medical provider for a formal bleeding disorder diagnosis.</string>
     <string name="endometriosis_title">Endometriosis</string>
