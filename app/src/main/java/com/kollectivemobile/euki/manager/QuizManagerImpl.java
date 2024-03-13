@@ -14,6 +14,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class QuizManagerImpl implements QuizManager {
     @Override
@@ -190,7 +191,7 @@ public class QuizManagerImpl implements QuizManager {
             if (answerIndex != null) {
                 hasAnswer = true;
                 for (Integer menstruationIndex : question.getOptions().get(answerIndex).second) {
-                    Integer value = menstruationCounts.get(menstruationIndex);
+                    int value = menstruationCounts.get(menstruationIndex);
                     menstruationCounts.put(menstruationIndex, value + 1);
                 }
             }
@@ -201,52 +202,38 @@ public class QuizManagerImpl implements QuizManager {
             return new Pair<>("no_recommended_methods_menstruation", Collections.emptyList());
         }
 
+        // Find max recommendations
+        int maxValue = 1; // it has to be at least 1
+        for (int index : menstruationCounts.keySet()) {
+            if (menstruationCounts.get(index) > maxValue) {
+                maxValue = menstruationCounts.get(index);
+            }
+        }
+
+        // We are displaying all with the max recommendations
+        String result = "recommended_methods_menstruation";
         List<Integer> resultIndexes = new ArrayList<>();
 
-        // Rule #4: Display up to the three most selected contraceptive methods
-        while (resultIndexes.size() < 3) {
-            Integer currentMax = 0;
-            Integer maxKey = -1;
-
-            for (Integer key : menstruationCounts.keySet()) {
-                Integer value = menstruationCounts.get(key);
-                if (value > currentMax) {
-                    currentMax = value;
-                    maxKey = key;
-                }
+        for (int index : menstruationCounts.keySet()) {
+            if (menstruationCounts.get(index) == maxValue) {
+                resultIndexes.add(index);
             }
+        }
 
-            if (maxKey != -1) {
-                if (currentMax >= 4) {
-                    for (Integer currentKey : menstruationCounts.keySet()) {
-                        Integer value = menstruationCounts.get(currentKey);
-                        if (value == currentMax) {
-                            menstruationCounts.put(currentKey, -1);
-                            resultIndexes.add(currentKey);
-                        }
+        // If number of recommended methods is less than 3, add up to a 3 (if possible)
+        if (resultIndexes.size() < 3) {
+            maxValue = maxValue - 1;
+
+            while (maxValue > 0) {
+                for (int index : menstruationCounts.keySet()) {
+                    if (Objects.equals(menstruationCounts.get(index), maxValue)) {
+                        resultIndexes.add(index);
                     }
-                } else {
-                    menstruationCounts.put(maxKey, -1);
-                    resultIndexes.add(maxKey);
+                    if (resultIndexes.size() == 3) break;
                 }
-            } else {
-                break; // No keys present in menstruationCounts
+                if (resultIndexes.size() == 3) break;
+                maxValue = maxValue - 1;
             }
-        }
-
-        String result = "no_recommended_methods_menstruation";
-
-        // Rule #5: Display 1 method if user only answers questions that recommend 1 method
-        // Rule #6: Display 2 methods if user only answers questions that recommend 2 methods
-        // Exception: Same 4 methods that were selected five times —> Display 4 methods
-        if (resultIndexes.size() == 1 || resultIndexes.size() == 2 || (resultIndexes.size() == 4 && menstruationCounts.get(resultIndexes.get(0)) == 5)) {
-            result = "recommended_methods_menstruation";
-        }
-
-        // Only display the first three methods
-        if (resultIndexes.size() > 3) {
-            result = "recommended_methods_menstruation";
-            resultIndexes = resultIndexes.subList(0, 3);
         }
 
         return new Pair<>(result, resultIndexes);
