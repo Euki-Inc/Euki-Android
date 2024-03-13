@@ -217,7 +217,7 @@ public class QuizManagerImpl implements QuizManager {
             }
 
             if (maxKey != -1) {
-                if (currentMax > 3) {
+                if (currentMax >= 4) {
                     for (Integer currentKey : menstruationCounts.keySet()) {
                         Integer value = menstruationCounts.get(currentKey);
                         if (value == currentMax) {
@@ -245,6 +245,7 @@ public class QuizManagerImpl implements QuizManager {
 
         // Only display the first three methods
         if (resultIndexes.size() > 3) {
+            result = "recommended_methods_menstruation";
             resultIndexes = resultIndexes.subList(0, 3);
         }
 
