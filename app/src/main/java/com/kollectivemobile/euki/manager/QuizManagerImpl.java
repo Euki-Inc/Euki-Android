@@ -229,9 +229,8 @@ public class QuizManagerImpl implements QuizManager {
                     if (Objects.equals(menstruationCounts.get(index), maxValue)) {
                         resultIndexes.add(index);
                     }
-                    if (resultIndexes.size() == 3) break;
                 }
-                if (resultIndexes.size() == 3) break;
+                if (resultIndexes.size() >= 3) break;
                 maxValue = maxValue - 1;
             }
         }
