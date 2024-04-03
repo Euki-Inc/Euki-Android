@@ -325,6 +325,45 @@
 
             </androidx.gridlayout.widget.GridLayout>
 
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_x3_5"
+                android:layout_marginLeft="@dimen/dimen_x4_5"
+                android:layout_marginBottom="@dimen/dimen_x2_5"
+                android:text="@string/shot"
+                style="@style/BodyDefault"/>
+
+            <androidx.gridlayout.widget.GridLayout
+                style="@style/GridLayout">
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_shot_1"
+                    android:tag="1"
+                    app:title="@string/shot"
+                    app:imageRes="@drawable/icon_contraception_shot_1"
+                    app:isRadio="true"
+                    style="@style/SelectableButton"/>
+
+
+                <com.kollectivemobile.euki.ui.common.views.SelectableButton
+                    android:id="@+id/sb_shot_2"
+                    android:tag="2"
+                    app:title="@string/shot"
+                    app:imageRes="@drawable/icon_contraception_shot_1"
+                    app:isRadio="true"
+                    android:visibility="invisible"
+                    style="@style/SelectableButton"/>
+
+                <View
+                    android:layout_width="@dimen/calendar_item_width"
+                    style="@style/SelectableButton"/>
+
+            </androidx.gridlayout.widget.GridLayout>
+
         </LinearLayout>
 
     </LinearLayout>

@@ -146,6 +146,9 @@ public class CalendarListAdapter extends RecyclerView.Adapter {
             if (calendarItem.getContraceptionRing() != null) {
                 items.add(calendarItem.getContraceptionRing().getText() + "_list");
             }
+            if (calendarItem.getContraceptionShot() != null) {
+                items.add(calendarItem.getContraceptionShot().getText() + "_list");
+            }
             for (Constants.ContraceptionLongTermOther contraceptionLongTermOther : calendarItem.getContraceptionLongTermOthers()) {
                 items.add(contraceptionLongTermOther.getText());
             }

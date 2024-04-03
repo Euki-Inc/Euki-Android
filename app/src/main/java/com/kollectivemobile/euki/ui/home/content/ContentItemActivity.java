@@ -3,6 +3,7 @@ package com.kollectivemobile.euki.ui.home.content;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.fragment.app.Fragment;
 
 import com.kollectivemobile.euki.App;
@@ -22,14 +23,16 @@ public class ContentItemActivity extends BaseActivity {
     final static String CONTENT_ITEM_KEY = "CONTENT_ITEM_KEY";
     final static String EXPANDED_ITEM_KEY = "EXPANDED_ITEM_KEY";
 
-    @Inject AbortionContentManager mAbortionContentManager;
-    @Inject ContentManager mContentManager;
+    @Inject
+    AbortionContentManager mAbortionContentManager;
+    @Inject
+    ContentManager mContentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_bar_main);
-        ((App)getApplication()).getAppComponent().inject(this);
+        ((App) getApplication()).getAppComponent().inject(this);
         if (savedInstanceState == null) {
             ContentItem contentItem = getIntent().getParcelableExtra(CONTENT_ITEM_KEY);
             ContentItem expandedItem = getIntent().getParcelableExtra(EXPANDED_ITEM_KEY);
@@ -67,6 +70,7 @@ public class ContentItemActivity extends BaseActivity {
         Fragment fragment = null;
         switch (contentItem.getId()) {
             case "compare_methods":
+            case "product_quiz":
                 break;
             case "medical_abortion":
                 fragment = MedicalAbortionFragment.newInstance();

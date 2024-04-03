@@ -23,12 +23,13 @@ public class HomeManagerImpl implements HomeManager {
     public List<TileItem> getMainItems() {
         AppSettings appSettings = mAppSettingsDAO.getAppSettings();
         List<TileItem> items = new ArrayList<>();
-        items.add(new TileItem(0, "abortion", "ic_main_abortion"));
-        items.add(new TileItem(1, "contraception", "ic_main_contraception"));
-        items.add(new TileItem(2, "sexuality", "ic_main_sexuality"));
-        items.add(new TileItem(3, "miscarriage", "ic_main_miscarriage"));
-        items.add(new TileItem(4, "pregnancy_options", "ic_main_pregnancy"));
-        items.add(new TileItem(5, "stis", "ic_main_stis"));
+        items.add(new TileItem(0, "menstruation", "ic_main_menstruation"));
+        items.add(new TileItem(1, "abortion", "ic_main_abortion"));
+        items.add(new TileItem(2, "contraception", "ic_main_contraception"));
+        items.add(new TileItem(3, "sexuality", "ic_main_sexuality"));
+        items.add(new TileItem(4, "miscarriage", "ic_main_miscarriage"));
+        items.add(new TileItem(5, "pregnancy_options", "ic_main_pregnancy"));
+        items.add(new TileItem(6, "stis", "ic_main_stis"));
 
         for (ContentItem item : items) {
             item.setTitle(appSettings.getMainTitles().get(item.getId()));

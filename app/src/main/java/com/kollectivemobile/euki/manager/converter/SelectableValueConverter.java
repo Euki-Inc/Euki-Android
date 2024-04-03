@@ -88,6 +88,11 @@ public class SelectableValueConverter {
         if (calendarItem.getContraceptionRing() != null) {
             selectItems.add(new SelectableValue(calendarItem.getContraceptionRing().getImageName(), calendarItem.getContraceptionRing().getText() + "_list", 0));
         }
+
+        if (calendarItem.getContraceptionShot() != null) {
+            selectItems.add(new SelectableValue(calendarItem.getContraceptionShot().getImageName(), calendarItem.getContraceptionShot().getText(), 0));
+        }
+
         for (Constants.ContraceptionLongTermOther contraceptionLongTermOther : calendarItem.getContraceptionLongTermOthers()) {
             selectItems.add(new SelectableValue(contraceptionLongTermOther.getImageName(), contraceptionLongTermOther.getText(), 0));
         }

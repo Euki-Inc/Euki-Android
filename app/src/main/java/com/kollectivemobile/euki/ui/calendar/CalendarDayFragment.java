@@ -113,6 +113,7 @@ public class CalendarDayFragment extends BaseFragment {
         return " ";
     }
 
+
     private void setUIElements() {
         mCalendarDayAdapter = new CalendarDayAdapter(getContext());
         rvMain.setAdapter(mCalendarDayAdapter);

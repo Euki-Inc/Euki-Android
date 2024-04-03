@@ -5,21 +5,34 @@ import android.util.Pair;
 import com.kollectivemobile.euki.model.Question;
 import com.kollectivemobile.euki.model.Quiz;
 import com.kollectivemobile.euki.model.QuizMethod;
+import com.kollectivemobile.euki.model.QuizType;
 import com.kollectivemobile.euki.networking.EukiCallback;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class QuizManagerImpl implements QuizManager {
     @Override
-    public List<QuizMethod> getMethods() {
+    public List<QuizMethod> getMethods(QuizType quizType) {
         List<QuizMethod> methods = new ArrayList<>();
-        for (int i=1; i<=12; i++) {
-            methods.add(new QuizMethod("contraception_" + i, "icon_contraception_" + i));
+        switch (quizType) {
+            case CONTRACEPTION:
+                for (int i = 1; i <= 12; i++) {
+                    methods.add(new QuizMethod("contraception_" + i, "icon_contraception_" + i));
+                }
+                break;
+            case MENSTRUATION:
+                for (int i = 1; i <= 7; i++) {
+                    methods.add(new QuizMethod("menstruation_" + i, "icon_menstruation_" + i));
+                }
+                break;
         }
+
         return methods;
     }
 
@@ -70,11 +83,12 @@ public class QuizManagerImpl implements QuizManager {
         callback.onSuccess(quiz);
     }
 
+
     @Override
     public Pair<String, List<Integer>> getresultContraception(Quiz quiz) {
         Boolean hasAnswer = false;
         Map<Integer, Integer> contraceptionCounts = new HashMap<>();
-        for (int i=1; i<=12; i++) {
+        for (int i = 1; i <= 12; i++) {
             contraceptionCounts.put(i, 0);
         }
 
@@ -124,4 +138,106 @@ public class QuizManagerImpl implements QuizManager {
         String result = hasAnswer ? "recommended_methods" : "no_recommended_methods";
         return new Pair<>(result, resultIndexes);
     }
+
+    @Override
+    public void getMenstruationQuiz(EukiCallback<Quiz> callback) {
+        Quiz quiz = new Quiz("menstruation_quiz_instructions");
+
+        Question question = new Question("id_prefer_to_get_menstrual_products");
+        question.getOptions().add(new Pair("at_the_pharmacy", Arrays.asList(2, 3, 4, 5, 7)));
+        question.getOptions().add(new Pair("at_the_grocery_store", Arrays.asList(1, 2, 3, 7)));
+        question.getOptions().add(new Pair("at_the_gas_station", Arrays.asList(2, 3, 7)));
+        question.getOptions().add(new Pair("online", Arrays.asList(1, 2, 3, 4, 5, 6, 7)));
+        question.getOptions().add(new Pair("free_at_a_clinic", Arrays.asList(2, 3, 7)));
+        quiz.getQuestions().add(question);
+
+        question = new Question("id_prefer_to_pay");
+        question.getOptions().add(new Pair("about_5_10_per_month", Arrays.asList(2, 3, 7)));
+        question.getOptions().add(new Pair("about_15_20_per_month", Arrays.asList(5)));
+        question.getOptions().add(new Pair("about_20_50_one_time", Arrays.asList(1, 4, 6)));
+        quiz.getQuestions().add(question);
+
+        question = new Question("id_like_a_product_i_can_swim_in");
+        question.getOptions().add(new Pair("yes", Arrays.asList(3, 4, 5)));
+        question.getOptions().add(new Pair("no", Arrays.asList(1, 2, 6, 7)));
+        quiz.getQuestions().add(question);
+
+        question = new Question("i_want_a_product_that_i_only_have_to_change_every");
+        question.getOptions().add(new Pair("two_four_hours", Arrays.asList(1, 2, 3, 7)));
+        question.getOptions().add(new Pair("four_eight_hours", Arrays.asList(3, 6)));
+        question.getOptions().add(new Pair("up_to_12_hours", Arrays.asList(4, 5, 6)));
+        quiz.getQuestions().add(question);
+
+        question = new Question("id_prefer_a_product_that_i_can");
+        question.getOptions().add(new Pair("wear_outside_of_my_body", Arrays.asList(1, 2, 6, 7)));
+        question.getOptions().add(new Pair("insert_into_my_body", Arrays.asList(3, 4, 5)));
+        quiz.getQuestions().add(question);
+
+        callback.onSuccess(quiz);
+    }
+
+    @Override
+    public Pair<String, List<Integer>> getResultMenstruation(Quiz quiz) {
+        boolean hasAnswer = false;
+        Map<Integer, Integer> menstruationCounts = new HashMap<>();
+
+        for (int i = 1; i <= 7; i++) {
+            menstruationCounts.put(i, 0);
+        }
+
+        // Rule #1: User must answer at least one question
+        for (Question question : quiz.getQuestions()) {
+            Integer answerIndex = question.getAnswerIndex();
+            if (answerIndex != null) {
+                hasAnswer = true;
+                for (Integer menstruationIndex : question.getOptions().get(answerIndex).second) {
+                    int value = menstruationCounts.get(menstruationIndex);
+                    menstruationCounts.put(menstruationIndex, value + 1);
+                }
+            }
+        }
+
+        // Rule #2: If user does not select any answers during the quiz
+        if (!hasAnswer) {
+            return new Pair<>("no_recommended_methods_menstruation", Collections.emptyList());
+        }
+
+        // Find max recommendations
+        int maxValue = 1; // it has to be at least 1
+        for (int index : menstruationCounts.keySet()) {
+            if (menstruationCounts.get(index) > maxValue) {
+                maxValue = menstruationCounts.get(index);
+            }
+        }
+
+        // We are displaying all with the max recommendations
+        String result = "recommended_methods_menstruation";
+        List<Integer> resultIndexes = new ArrayList<>();
+
+        for (int index : menstruationCounts.keySet()) {
+            if (menstruationCounts.get(index) == maxValue) {
+                resultIndexes.add(index);
+            }
+        }
+
+        // If number of recommended methods is less than 3, add up to a 3 (if possible)
+        if (resultIndexes.size() < 3) {
+            maxValue = maxValue - 1;
+
+            while (maxValue > 0) {
+                for (int index : menstruationCounts.keySet()) {
+                    if (Objects.equals(menstruationCounts.get(index), maxValue)) {
+                        resultIndexes.add(index);
+                    }
+                }
+                if (resultIndexes.size() >= 3) break;
+                maxValue = maxValue - 1;
+            }
+        }
+
+        return new Pair<>(result, resultIndexes);
+    }
+
 }
+
+

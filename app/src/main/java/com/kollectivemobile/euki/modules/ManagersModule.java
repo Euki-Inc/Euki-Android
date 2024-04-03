@@ -18,6 +18,8 @@ import com.kollectivemobile.euki.manager.HomeManager;
 import com.kollectivemobile.euki.manager.HomeManagerImpl;
 import com.kollectivemobile.euki.manager.LocalNotificationManager;
 import com.kollectivemobile.euki.manager.LocalNotificationManagerImpl;
+import com.kollectivemobile.euki.manager.MenstruationContentManager;
+import com.kollectivemobile.euki.manager.MenstruationContentManagerImpl;
 import com.kollectivemobile.euki.manager.PrivacyContentManager;
 import com.kollectivemobile.euki.manager.PrivacyContentManagerImpl;
 import com.kollectivemobile.euki.manager.PrivacyManager;
@@ -74,6 +76,12 @@ public class ManagersModule {
     @Provides
     public ContraceptionContentManager providesContraceptionContentManager(ContentManager contentManager) {
         return new ContraceptionContentManagerImpl(contentManager);
+    }
+
+    @Singleton
+    @Provides
+    public MenstruationContentManager providesMenstruationContentManager(ContentManager contentManager) {
+        return new MenstruationContentManagerImpl(contentManager);
     }
 
     @Singleton

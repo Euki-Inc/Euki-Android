@@ -1,5 +1,5 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ll_main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -10,21 +10,27 @@
         android:id="@+id/iv_bookmark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
         android:layout_marginRight="@dimen/dimen_x3_5"
-        android:src="@drawable/ic_bookmark_on"
-        android:layout_gravity="right"/>
+        android:src="@drawable/ic_bookmark_on" />
 
     <TextView
         android:id="@+id/tv_title"
+        style="@style/BodyDefault"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/dimen_x3_5"
         android:layout_marginLeft="@dimen/dimen_x3_5"
         android:layout_marginTop="@dimen/dimen_x1_5"
+        android:layout_marginRight="@dimen/dimen_x3_5"
         android:layout_marginBottom="@dimen/dimen_x3_5"
-        android:text="Compare methods"
         android:gravity="center_vertical"
-        style="@style/BodyDefault"/>
+        tools:text="Compare methods" />
+
+    <com.kollectivemobile.euki.utils.siwperview.CustomContainerView
+        android:id="@+id/swiper_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.kollectivemobile.euki.utils.siwperview.CustomContainerView>
 
     <View
         android:id="@+id/v_separator_bottom"

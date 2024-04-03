@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+
 import androidx.annotation.Nullable;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +19,7 @@ import com.kollectivemobile.euki.listeners.LinkListener;
 import com.kollectivemobile.euki.manager.AbortionContentManager;
 import com.kollectivemobile.euki.manager.ContentManager;
 import com.kollectivemobile.euki.model.ContentItem;
+import com.kollectivemobile.euki.model.QuizType;
 import com.kollectivemobile.euki.networking.EukiCallback;
 import com.kollectivemobile.euki.networking.ServerError;
 import com.kollectivemobile.euki.ui.browser.BrowserActivity;
@@ -39,8 +42,10 @@ import uk.co.samuelwall.materialtaptargetprompt.MaterialTapTargetPrompt;
  * Created by pAk on 6/17/16.
  */
 public abstract class BaseFragment extends Fragment implements LinkListener {
-    @Inject AbortionContentManager mAbortionContentManager;
-    @Inject ContentManager mContentManager;
+    @Inject
+    AbortionContentManager mAbortionContentManager;
+    @Inject
+    ContentManager mContentManager;
 
     protected InteractionListener mInteractionListener;
     private Unbinder mUnbinder;
@@ -73,7 +78,7 @@ public abstract class BaseFragment extends Fragment implements LinkListener {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ((App)getActivity().getApplication()).getAppComponent().inject(this);
+        ((App) getActivity().getApplication()).getAppComponent().inject(this);
     }
 
     @Override
@@ -110,7 +115,7 @@ public abstract class BaseFragment extends Fragment implements LinkListener {
         mInteractionListener.showError(message);
     }
 
-    public void showToast(String message){
+    public void showToast(String message) {
         Toast.makeText(getActivity(), message, Toast.LENGTH_LONG).show();
     }
 
@@ -135,7 +140,10 @@ public abstract class BaseFragment extends Fragment implements LinkListener {
             getActivity().startActivity(RemindersActivity.makeIntent(getActivity()));
             return;
         }
-        if (link.equals("resources") || link.equals("sexuality_resources")) {
+        if (link.equals("resources") || link.equals("sexuality_resources") || link.equals("method_information")
+                || link.equals("symptom_management") || link.equals("menstrual_cycle_101") || link.equals("contraception") ||
+                link.equals("menstruation_faqs")
+        ) {
             ContentItem contentItem = mContentManager.getContentItem(link);
             if (contentItem != null) {
                 Intent intent = ContentItemActivity.makeIntent(getActivity(), contentItem);
@@ -143,6 +151,17 @@ public abstract class BaseFragment extends Fragment implements LinkListener {
                 return;
             }
         }
+
+
+        if (link.equals("product_quiz")) {
+            ContentItem contentItem = mContentManager.getContentItem(link);
+            if (contentItem != null) {
+                Intent intent = QuizActivity.makeIntent(getActivity(), QuizType.MENSTRUATION);
+                startActivity(intent);
+                return;
+            }
+        }
+
         if (link.equals("telehealth_popup_info") || link.equals("implant_content_3_info")) {
             Dialogs.createSimpleDialog(getActivity(), "", Utils.getLocalized(link), null).show();
             return;
@@ -165,13 +184,21 @@ public abstract class BaseFragment extends Fragment implements LinkListener {
 
     public interface InteractionListener {
         void replaceFragment(Fragment fragment, boolean addToBackStack);
+
         void showProgressDialog();
+
         void dismissProgressDialog();
+
         void showProgressBar();
+
         void hideProgressBar();
+
         void showError(String message);
+
         void updateTitle(String title, boolean showBack);
+
         void showTutorial(String title, String text, View view, MaterialTapTargetPrompt.PromptStateChangeListener listener);
+
         void showTutorial(String title, String text, Integer resId, MaterialTapTargetPrompt.PromptStateChangeListener listener);
     }
 
@@ -191,7 +218,10 @@ public abstract class BaseFragment extends Fragment implements LinkListener {
         Fragment fragment = null;
         switch (contentItem.getId()) {
             case "compare_methods":
-                startActivity(QuizActivity.makeIntent(getActivity()));
+                startActivity(QuizActivity.makeIntent(getActivity(), QuizType.CONTRACEPTION));
+                break;
+            case "product_quiz":
+                startActivity(QuizActivity.makeIntent(getActivity(), QuizType.MENSTRUATION));
                 break;
             case "medical_abortion":
                 fragment = MedicalAbortionFragment.newInstance();

@@ -1,5 +1,6 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rl_main"
     android:layout_width="match_parent"
     android:layout_height="@dimen/content_cells_height"
@@ -18,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/dimen_x2_5"
-            android:text="Compare methods"
+            tools:text="Compare methods"
             android:gravity="center_vertical"
             android:layout_weight="1"
             style="@style/LinkExpandableOnTap"/>
@@ -28,8 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:tint="@color/blueberry"
-            android:src="@drawable/ic_arrow_down"/>
+            android:src="@drawable/ic_arrow_down"
+            app:tint="@color/blueberry" />
 
     </LinearLayout>
 

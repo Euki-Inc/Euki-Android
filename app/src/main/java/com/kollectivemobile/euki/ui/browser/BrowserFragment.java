@@ -1,13 +1,16 @@
 package com.kollectivemobile.euki.ui.browser;
 
+import android.os.Build;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebChromeClient;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import androidx.annotation.Nullable;
 
 import com.kollectivemobile.euki.App;
 import com.kollectivemobile.euki.R;
@@ -16,7 +19,8 @@ import com.kollectivemobile.euki.ui.common.BaseFragment;
 import butterknife.BindView;
 
 public class BrowserFragment extends BaseFragment {
-    @BindView(R.id.wv_main) WebView wvMain;
+    @BindView(R.id.wv_main)
+    WebView wvMain;
 
     private String url;
 
@@ -29,7 +33,7 @@ public class BrowserFragment extends BaseFragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ((App)getActivity().getApplication()).getAppComponent().inject(this);
+        ((App) getActivity().getApplication()).getAppComponent().inject(this);
         setUIElements();
     }
 
@@ -45,16 +49,30 @@ public class BrowserFragment extends BaseFragment {
 
     private void setUIElements() {
         wvMain.requestFocus();
+        wvMain.clearCache(true);
         wvMain.getSettings().setLightTouchEnabled(true);
-        wvMain.getSettings().setJavaScriptEnabled(true);
-        wvMain.getSettings().setGeolocationEnabled(true);
-        wvMain.setSoundEffectsEnabled(true);
-        wvMain.loadUrl(url);
+        WebSettings webSettings = wvMain.getSettings();
+        webSettings.setUserAgentString("android-leavesCZY");
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setAllowContentAccess(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+        webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+        wvMain.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+
+
+        // Check the API level before setting WebViewClient
         wvMain.setWebViewClient(new WebViewClient() {
-            public boolean shouldOverrideUrlLoading(WebView view, String url){
-                view.loadUrl(url);
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                view.loadUrl(request.getUrl().toString());
                 return false;
             }
         });
+
+        wvMain.loadUrl(url);
     }
 }
+

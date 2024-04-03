@@ -10,13 +10,9 @@ import com.kollectivemobile.euki.App;
 import com.kollectivemobile.euki.R;
 import com.kollectivemobile.euki.manager.AppSettingsManager;
 import com.kollectivemobile.euki.manager.ContentManager;
-import com.kollectivemobile.euki.model.ContentItem;
-import com.kollectivemobile.euki.ui.home.content.ContentItemActivity;
 import com.kollectivemobile.euki.ui.main.MainActivity;
 import com.kollectivemobile.euki.ui.onboarding.OnboardingActivity;
 import com.kollectivemobile.euki.ui.pin.CheckPinActivity;
-
-import java.util.List;
 
 import javax.inject.Inject;
 

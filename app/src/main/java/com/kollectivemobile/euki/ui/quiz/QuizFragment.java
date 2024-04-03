@@ -1,10 +1,14 @@
 package com.kollectivemobile.euki.ui.quiz;
 
+import static com.kollectivemobile.euki.ui.quiz.QuizActivity.QUIZ_TYPE;
+
 import android.os.Bundle;
+
 import androidx.annotation.Nullable;
 import androidx.viewpager.widget.ViewPager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -15,10 +19,12 @@ import android.view.ViewGroup;
 import com.kollectivemobile.euki.App;
 import com.kollectivemobile.euki.R;
 import com.kollectivemobile.euki.manager.ContraceptionContentManager;
+import com.kollectivemobile.euki.manager.MenstruationContentManager;
 import com.kollectivemobile.euki.manager.QuizManager;
 import com.kollectivemobile.euki.model.Question;
 import com.kollectivemobile.euki.model.Quiz;
 import com.kollectivemobile.euki.model.QuizMethod;
+import com.kollectivemobile.euki.model.QuizType;
 import com.kollectivemobile.euki.networking.EukiCallback;
 import com.kollectivemobile.euki.networking.ServerError;
 import com.kollectivemobile.euki.ui.common.BaseFragment;
@@ -39,28 +45,40 @@ import javax.inject.Inject;
 import butterknife.BindView;
 
 public class QuizFragment extends BaseFragment implements MethodAdapter.MethodListener {
-    @Inject QuizManager mQuizManager;
-    @Inject ContraceptionContentManager mContraceptionContentManager;
-
-    @BindView(R.id.kkvp_questions) KKViewPager vpQuestions;
-    @BindView(R.id.rv_methods) RecyclerView rvMethods;
+    @Inject
+    QuizManager mQuizManager;
+    @Inject
+    ContraceptionContentManager mContraceptionContentManager;
+    @Inject
+    MenstruationContentManager mMenstruationContentManager;
+    @BindView(R.id.kkvp_questions)
+    KKViewPager vpQuestions;
+    @BindView(R.id.rv_methods)
+    RecyclerView rvMethods;
 
     private MethodAdapter mMethodAdapter;
     private Quiz mQuiz;
     private List<QuizMethod> mMethods;
     private int mCurrentPage = 0;
+    private QuizType quizType;
 
-    public static QuizFragment newInstance() {
+    public static QuizFragment newInstance(QuizType quizType) {
         Bundle args = new Bundle();
+        args.putSerializable(QUIZ_TYPE, quizType);
+
         QuizFragment fragment = new QuizFragment();
         fragment.setArguments(args);
+
         return fragment;
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ((App)getActivity().getApplication()).getAppComponent().inject(this);
+        if (getArguments() != null) {
+            quizType = (QuizType) getArguments().getSerializable(QUIZ_TYPE);
+        }
+        ((App) getActivity().getApplication()).getAppComponent().inject(this);
         requestQuiz();
         setHasOptionsMenu(true);
     }
@@ -105,11 +123,22 @@ public class QuizFragment extends BaseFragment implements MethodAdapter.MethodLi
     }
 
     private void requestQuiz() {
+        switch (quizType) {
+            case CONTRACEPTION:
+                requestContraceptionQuiz();
+                break;
+
+            case MENSTRUATION:
+                requestMenstruationQuiz();
+                break;
+        }
+    }
+
+    private void requestContraceptionQuiz() {
         mQuizManager.getContraceptionQuiz(new EukiCallback<Quiz>() {
             @Override
             public void onSuccess(Quiz quiz) {
-                mQuiz = quiz;
-                setUIElements();
+                handleQuizResponse(quiz);
             }
 
             @Override
@@ -119,8 +148,27 @@ public class QuizFragment extends BaseFragment implements MethodAdapter.MethodLi
         });
     }
 
+    private void requestMenstruationQuiz() {
+        mQuizManager.getMenstruationQuiz(new EukiCallback<Quiz>() {
+            @Override
+            public void onSuccess(Quiz quiz) {
+                handleQuizResponse(quiz);
+            }
+
+            @Override
+            public void onError(ServerError serverError) {
+                showError(serverError.getMessage());
+            }
+        });
+    }
+
+    private void handleQuizResponse(Quiz quiz) {
+        mQuiz = quiz;
+        setUIElements();
+    }
+
     private void setUIElements() {
-        vpQuestions.setAdapter(new QuizQuestionsFragmentAdapter(getFragmentManager(), getActivity(), mQuiz));
+        vpQuestions.setAdapter(new QuizQuestionsFragmentAdapter(getFragmentManager(), getActivity(), mQuiz, quizType));
         vpQuestions.setAnimationEnabled(true);
         vpQuestions.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -138,7 +186,7 @@ public class QuizFragment extends BaseFragment implements MethodAdapter.MethodLi
             }
         });
 
-        mMethods = mQuizManager.getMethods();
+        mMethods = mQuizManager.getMethods(quizType);
         mMethodAdapter = new MethodAdapter(getActivity(), mMethods, this);
         rvMethods.setAdapter(mMethodAdapter);
         rvMethods.setLayoutManager(new GridLayoutManager(requireContext(), 3, RecyclerView.VERTICAL, false));
@@ -146,7 +194,14 @@ public class QuizFragment extends BaseFragment implements MethodAdapter.MethodLi
 
     @Override
     public void methodSelected(int position) {
-        startActivity(ContentItemActivity.makeIntent(getActivity(), mContraceptionContentManager.getMethodContentItem(position)));
+        switch (quizType) {
+            case CONTRACEPTION:
+                startActivity(ContentItemActivity.makeIntent(getActivity(), mContraceptionContentManager.getMethodContentItem(position)));
+                break;
+            case MENSTRUATION:
+                startActivity(ContentItemActivity.makeIntent(getActivity(), mMenstruationContentManager.getMethodContentItem(position)));
+                break;
+        }
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
@@ -161,12 +216,19 @@ public class QuizFragment extends BaseFragment implements MethodAdapter.MethodLi
                 selectedIndexes.addAll(question.getOptions().get(question.getAnswerIndex()).second);
             }
         } else if (mCurrentPage == quiz.getQuestions().size() + 1) {
-            selectedIndexes.addAll(mQuizManager.getresultContraception(mQuiz).second);
+            switch (quizType) {
+                case CONTRACEPTION:
+                    selectedIndexes.addAll(mQuizManager.getresultContraception(mQuiz).second);
+                    break;
+                case MENSTRUATION:
+                    selectedIndexes.addAll(mQuizManager.getResultMenstruation(mQuiz).second);
+                    break;
+            }
         }
 
-        for (int i=0; i<mMethods.size(); i++) {
+        for (int i = 0; i < mMethods.size(); i++) {
             QuizMethod method = mMethods.get(i);
-            method.setSelected(selectedIndexes.contains(i+1));
+            method.setSelected(selectedIndexes.contains(i + 1));
         }
 
         mMethodAdapter.notifyDataSetChanged();

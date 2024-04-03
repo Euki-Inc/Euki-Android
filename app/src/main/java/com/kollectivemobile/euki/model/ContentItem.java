@@ -13,13 +13,18 @@ import com.kollectivemobile.euki.utils.Utils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Represents a content item with various properties.
+ * This class is Parcelable for inter-process communication.
+ * When adding new Parcelable objects, ensure they are written and read
+ * in the same order to maintain consistency.
+ */
 public class ContentItem implements Parcelable {
     protected long mItemId;
     private String mId;
@@ -32,12 +37,15 @@ public class ContentItem implements Parcelable {
     private List<ContentItem> mExpandableItems;
     private List<ContentItem> mSelectableItems;
     private List<ContentItem> mSelectableRowItems;
+
+    private List<SwipeableItem> mSwiperItems;
     private String mSource;
     private Map<String, String> mLinks;
     private List<String> mBoldStrings;
     private Boolean mIsAbottionItem;
 
     public ContentItem() {
+        this.mSwiperItems = new ArrayList<>();
         this.mContentItems = new ArrayList<>();
         this.mExpandableItems = new ArrayList<>();
         this.mSelectableItems = new ArrayList<>();
@@ -135,6 +143,15 @@ public class ContentItem implements Parcelable {
                 }
             }
 
+            if (json.has("swipe_pager_item")) {
+                JSONArray swiperItems = json.getJSONArray("swipe_pager_item");
+                for (int i = 0; i < swiperItems.length(); i++) {
+                    JSONObject itemJson = swiperItems.getJSONObject(i);
+                    this.mSwiperItems.add(new SwipeableItem(itemJson));
+                }
+            }
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -156,9 +173,11 @@ public class ContentItem implements Parcelable {
         mSelectableRowItems = in.createTypedArrayList(ContentItem.CREATOR);
         mSource = in.readString();
         mBoldStrings = in.createStringArrayList();
+
         byte tmpMIsAbottionItem = in.readByte();
         mIsAbottionItem = tmpMIsAbottionItem == 0 ? null : tmpMIsAbottionItem == 1;
         mLinks = new Gson().fromJson(in.readString(), new TypeToken<Map<String, String>>(){}.getType());
+        mSwiperItems = in.createTypedArrayList(SwipeableItem.CREATOR);
     }
 
     @Override
@@ -178,6 +197,8 @@ public class ContentItem implements Parcelable {
         dest.writeStringList(mBoldStrings);
         dest.writeByte((byte) (mIsAbottionItem == null ? 0 : mIsAbottionItem ? 1 : 2));
         dest.writeString(mLinks == null ? "" : new Gson().toJson(mLinks));
+        dest.writeTypedList(mSwiperItems);
+
     }
 
     @Override
@@ -280,6 +301,14 @@ public class ContentItem implements Parcelable {
 
     public void setExpandableItems(List<ContentItem> expandableItems) {
         mExpandableItems = expandableItems;
+    }
+
+    public List<SwipeableItem> getSwiperItems() {
+        return mSwiperItems;
+    }
+
+    public void setSwiperItems(List<SwipeableItem> expandableWithSwiperItems) {
+        mSwiperItems = expandableWithSwiperItems;
     }
 
     public List<ContentItem> getSelectableItems() {
