@@ -13,7 +13,7 @@ android {
         applicationId "com.kollectivemobile.euki"
         minSdkVersion 24
         targetSdk 33
-        versionCode 13
+        versionCode 14
         versionName "1.1.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
