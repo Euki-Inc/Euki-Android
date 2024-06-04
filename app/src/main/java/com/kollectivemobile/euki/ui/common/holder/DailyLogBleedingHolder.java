@@ -20,7 +20,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class DailyLogBleedingHolder extends BaseDailyLogHolder implements View.OnClickListener {
     public @BindViews({R.id.sb_bleeding_size_1, R.id.sb_bleeding_size_2, R.id.sb_bleeding_size_3,
