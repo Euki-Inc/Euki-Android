@@ -85,7 +85,7 @@ public class DaysFragment extends BaseFragment implements DaysFragmentListener {
                         rvMain.scrollToPosition(cycleDayItems.size());
                         rvMain.smoothScrollToPosition(cycleDayItems.size() + 1);
                     }
-                }, 100);
+                }, 200);
             }
 
             @Override
