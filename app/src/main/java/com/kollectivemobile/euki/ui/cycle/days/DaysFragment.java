@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import androidx.annotation.Nullable;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -82,10 +84,12 @@ public class DaysFragment extends BaseFragment implements DaysFragmentListener {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        rvMain.scrollToPosition(cycleDayItems.size());
-                        rvMain.smoothScrollToPosition(cycleDayItems.size() + 1);
+                        if(rvMain != null && cycleDayItems != null) {
+                            rvMain.scrollToPosition(cycleDayItems.size());
+                            rvMain.smoothScrollToPosition(cycleDayItems.size() + 1);
+                        }
                     }
-                }, 200);
+                }, 100);
             }
 
             @Override
