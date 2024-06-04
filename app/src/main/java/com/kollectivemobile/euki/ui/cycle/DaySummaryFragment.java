@@ -57,7 +57,7 @@ public class DaySummaryFragment extends BaseFragment implements DaysFragmentList
 
     private void setUIElements() {
         llEmpty.setVisibility(View.GONE);
-        FragmentManagerHelper mFragmentManagerHelper = new FragmentManagerHelper(getActivity().getSupportFragmentManager());
+        FragmentManagerHelper mFragmentManagerHelper = new FragmentManagerHelper(getChildFragmentManager());
         mFragmentManagerHelper.replace(R.id.fl_header_content, DaysFragment.newInstance(this), false);
 
         mAdapter = new CycleDaySummaryAdapter(getContext());
