@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <resources>
-  <string name="today">Hoy</string>
-  <string name="fake_screen_title">Ahora estamos arreglando algunos problemas técnicos. Lo sentimos.</string>
-  <string name="fake_screen_info">Vuelve mañana.</string>
-  <string name="app_name">Euki</string>
-  <string name="error_message_title">Ocurrió un error</string>
-  <string name="loading">Cargando...</string>
-  <string name="save">Guardar</string>
-  <string name="dimsiss">Ocultar</string>
-  <string name="go_to_daily_log">Ir a registro diario</string>
-  <string name="quiz">Encuesta</string>
+    <string name="app_name">Euki</string>
+    <string name="error_message_title">Ocurrió un error</string>
+    <string name="loading">Cargando...</string>
+    <string name="save">Guardar</string>
+    <string name="dimsiss">Ocultar</string>
+    <string name="go_to_daily_log">Ir a registro diario</string>
+    <string name="quiz">Quiz</string>
+    <string name="today">Hoy</string>
+    <string name="fake_screen_title">Ahora estamos arreglando algunos problemas técnicos. Lo sentimos.</string>
+    <string name="fake_screen_info">Vuelve mañana.</string>
 </resources>
