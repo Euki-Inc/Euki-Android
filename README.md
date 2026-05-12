@@ -1,3 +1,24 @@
+**⚠️ Project Status Update (May 2026)**
+
+This repository contains our legacy Android codebase. Euki is 
+currently undergoing a migration to React Native to improve stability, 
+maintainability, and our ability to maintain the code ourselves.
+
+**Current Status:**
+- Active development is happening on the React Native migration
+- We expect to publish the new React Native codebase here in Q4 2026
+- The app remains safe to use (see Exodus Privacy report)
+
+**Open Source Commitment:**
+Euki is a small nonprofit team committed to transparency and privacy-first 
+digital health tools. We remain committed to being open source. However, 
+we don't currently have capacity to review and accept community code 
+contributions.
+
+For more information, see the discussion in our Issues section.
+
+*****************************************************************************
+
 **Overview**
 
 Euki App is the privacy first period tracker. Designed in collaboration with our users, Euki is made for any body and every body.
